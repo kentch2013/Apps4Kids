@@ -1,0 +1,52 @@
+name: Agent PR Deterministic Gates
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+jobs:
+  enforce-agent-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enforce Closes #<N> and Branch-Issue Binding
+        if: startsWith(github.head_ref, 'agent/') || startsWith(github.head_ref, 'task/')
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+          HEAD_REF: ${{ github.head_ref }}
+        run: |
+          node - <<'EOF'
+          const body = (process.env.PR_BODY || "").replace(/\r\n/g, "\n").trimStart();
+          const headRef = process.env.HEAD_REF || "";
+          const firstLine = body.split("\n")[0]?.trim() || "";
+
+          const closeMatch = firstLine.match(/^Closes\s+#(\d+)$/);
+          if (!closeMatch) {
+            console.error(`❌ PR Gate Failed: Line 1 of PR body must be "Closes #<N>". Found: "${firstLine}"`);
+            process.exit(1);
+          }
+
+          const linkedIssue = closeMatch[1];
+          const branchMatch = headRef.match(/^agent\/issue-(\d+)$/);
+          if (branchMatch && branchMatch[1] !== linkedIssue) {
+            console.error(
+              `❌ PR Gate Failed: Branch "${headRef}" targets issue #${branchMatch[1]}, but PR body says "Closes #${linkedIssue}".`
+            );
+            process.exit(1);
+          }
+
+          console.log(`✅ PR Gate Passed: Branch "${headRef}" cleanly bound to Closes #${linkedIssue}.`);
+          EOF
+
+      - name: Checkout Repository (Full History for Contract Audit)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Contract Immutability Audit (if present)
+        if: startsWith(github.head_ref, 'agent/') || startsWith(github.head_ref, 'task/')
+        run: |
+          if [ -f "scripts/audit-contract.js" ]; then
+            node scripts/audit-contract.js --ci --base "origin/${{ github.base_ref }}"
+          else
+            echo "ℹ️ scripts/audit-contract.js not found in repo; skipping contract immutability check."
+          fi
