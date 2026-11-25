@@ -1,0 +1,1131 @@
+{
+  "set": "comprehensive",
+  "domain": "time_money",
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "money-penny",
+      "label": "Penny (1¢)",
+      "domain": "time_money",
+      "category": "us_coins",
+      "tier": 3,
+      "visual_type": "currency_visual",
+      "display_token": "1¢",
+      "visual_prompt": "Detailed front-view illustration of a copper us penny coin showing abraham lincoln profile",
+      "audio_prompt": "Find the penny",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "us_coins",
+      "in_core": true
+    },
+    {
+      "id": "money-nickel",
+      "label": "Nickel (5¢)",
+      "domain": "time_money",
+      "category": "us_coins",
+      "tier": 3,
+      "visual_type": "currency_visual",
+      "display_token": "5¢",
+      "visual_prompt": "Detailed front-view illustration of a silver us nickel coin showing thomas jefferson",
+      "audio_prompt": "Find the nickel",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "us_coins",
+      "in_core": true
+    },
+    {
+      "id": "money-dime",
+      "label": "Dime (10¢)",
+      "domain": "time_money",
+      "category": "us_coins",
+      "tier": 3,
+      "visual_type": "currency_visual",
+      "display_token": "10¢",
+      "visual_prompt": "Detailed front-view illustration of a small silver us dime coin showing franklin d. roosevelt",
+      "audio_prompt": "Find the dime",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "us_coins",
+      "in_core": true
+    },
+    {
+      "id": "money-quarter",
+      "label": "Quarter (25¢)",
+      "domain": "time_money",
+      "category": "us_coins",
+      "tier": 3,
+      "visual_type": "currency_visual",
+      "display_token": "25¢",
+      "visual_prompt": "Detailed front-view illustration of a large silver us quarter coin showing george washington",
+      "audio_prompt": "Find the quarter",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "us_coins",
+      "in_core": true
+    },
+    {
+      "id": "money-bill-1",
+      "label": "One Dollar Bill ($1)",
+      "domain": "time_money",
+      "category": "us_bills",
+      "tier": 3,
+      "visual_type": "currency_visual",
+      "display_token": "$1",
+      "visual_prompt": "Crisp green US one-dollar paper bill showing George Washington",
+      "audio_prompt": "Find the one dollar bill",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2"
+      ],
+      "distractor_group": "us_bills",
+      "in_core": true
+    },
+    {
+      "id": "clock-hour-1",
+      "label": "Clock 1:00",
+      "domain": "time_money",
+      "category": "clocks_on_hour",
+      "tier": 3,
+      "visual_type": "clock_visual",
+      "display_token": "1:00",
+      "visual_prompt": "Round analog wall clock with short hour hand pointing to 1 and long minute hand pointing straight up to 12",
+      "audio_prompt": "Find the clock showing 1 o'clock",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "clocks_on_hour",
+      "in_core": true
+    },
+    {
+      "id": "clock-hour-2",
+      "label": "Clock 2:00",
+      "domain": "time_money",
+      "category": "clocks_on_hour",
+      "tier": 3,
+      "visual_type": "clock_visual",
+      "display_token": "2:00",
+      "visual_prompt": "Round analog wall clock with short hour hand pointing to 2 and long minute hand pointing straight up to 12",
+      "audio_prompt": "Find the clock showing 2 o'clock",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "clocks_on_hour",
+      "in_core": true
+    },
+    {
+      "id": "clock-hour-3",
+      "label": "Clock 3:00",
+      "domain": "time_money",
+      "category": "clocks_on_hour",
+      "tier": 3,
+      "visual_type": "clock_visual",
+      "display_token": "3:00",
+      "visual_prompt": "Round analog wall clock with short hour hand pointing to 3 and long minute hand pointing straight up to 12",
+      "audio_prompt": "Find the clock showing 3 o'clock",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "clocks_on_hour",
+      "in_core": true
+    },
+    {
+      "id": "clock-hour-4",
+      "label": "Clock 4:00",
+      "domain": "time_money",
+      "category": "clocks_on_hour",
+      "tier": 3,
+      "visual_type": "clock_visual",
+      "display_token": "4:00",
+      "visual_prompt": "Round analog wall clock with short hour hand pointing to 4 and long minute hand pointing straight up to 12",
+      "audio_prompt": "Find the clock showing 4 o'clock",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "clocks_on_hour",
+      "in_core": true
+    },
+    {
+      "id": "clock-hour-5",
+      "label": "Clock 5:00",
+      "domain": "time_money",
+      "category": "clocks_on_hour",
+      "tier": 3,
+      "visual_type": "clock_visual",
+      "display_token": "5:00",
+      "visual_prompt": "Round analog wall clock with short hour hand pointing to 5 and long minute hand pointing straight up to 12",
+      "audio_prompt": "Find the clock showing 5 o'clock",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "clocks_on_hour",
+      "in_core": true
+    },
+    {
+      "id": "clock-hour-6",
+      "label": "Clock 6:00",
+      "domain": "time_money",
+      "category": "clocks_on_hour",
+      "tier": 3,
+      "visual_type": "clock_visual",
+      "display_token": "6:00",
+      "visual_prompt": "Round analog wall clock with short hour hand pointing to 6 and long minute hand pointing straight up to 12",
+      "audio_prompt": "Find the clock showing 6 o'clock",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "clocks_on_hour",
+      "in_core": true
+    },
+    {
+      "id": "clock-hour-7",
+      "label": "Clock 7:00",
+      "domain": "time_money",
+      "category": "clocks_on_hour",
+      "tier": 3,
+      "visual_type": "clock_visual",
+      "display_token": "7:00",
+      "visual_prompt": "Round analog wall clock with short hour hand pointing to 7 and long minute hand pointing straight up to 12",
+      "audio_prompt": "Find the clock showing 7 o'clock",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "clocks_on_hour",
+      "in_core": true
+    },
+    {
+      "id": "clock-hour-8",
+      "label": "Clock 8:00",
+      "domain": "time_money",
+      "category": "clocks_on_hour",
+      "tier": 3,
+      "visual_type": "clock_visual",
+      "display_token": "8:00",
+      "visual_prompt": "Round analog wall clock with short hour hand pointing to 8 and long minute hand pointing straight up to 12",
+      "audio_prompt": "Find the clock showing 8 o'clock",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "clocks_on_hour",
+      "in_core": true
+    },
+    {
+      "id": "clock-hour-9",
+      "label": "Clock 9:00",
+      "domain": "time_money",
+      "category": "clocks_on_hour",
+      "tier": 3,
+      "visual_type": "clock_visual",
+      "display_token": "9:00",
+      "visual_prompt": "Round analog wall clock with short hour hand pointing to 9 and long minute hand pointing straight up to 12",
+      "audio_prompt": "Find the clock showing 9 o'clock",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "clocks_on_hour",
+      "in_core": true
+    },
+    {
+      "id": "clock-hour-10",
+      "label": "Clock 10:00",
+      "domain": "time_money",
+      "category": "clocks_on_hour",
+      "tier": 3,
+      "visual_type": "clock_visual",
+      "display_token": "10:00",
+      "visual_prompt": "Round analog wall clock with short hour hand pointing to 10 and long minute hand pointing straight up to 12",
+      "audio_prompt": "Find the clock showing 10 o'clock",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "clocks_on_hour",
+      "in_core": true
+    },
+    {
+      "id": "clock-hour-11",
+      "label": "Clock 11:00",
+      "domain": "time_money",
+      "category": "clocks_on_hour",
+      "tier": 3,
+      "visual_type": "clock_visual",
+      "display_token": "11:00",
+      "visual_prompt": "Round analog wall clock with short hour hand pointing to 11 and long minute hand pointing straight up to 12",
+      "audio_prompt": "Find the clock showing 11 o'clock",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "clocks_on_hour",
+      "in_core": true
+    },
+    {
+      "id": "clock-hour-12",
+      "label": "Clock 12:00",
+      "domain": "time_money",
+      "category": "clocks_on_hour",
+      "tier": 3,
+      "visual_type": "clock_visual",
+      "display_token": "12:00",
+      "visual_prompt": "Round analog wall clock with short hour hand pointing to 12 and long minute hand pointing straight up to 12",
+      "audio_prompt": "Find the clock showing 12 o'clock",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "clocks_on_hour",
+      "in_core": true
+    },
+    {
+      "id": "time-day-morning",
+      "label": "Sunrise / Morning",
+      "domain": "time_money",
+      "category": "times_of_day",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Golden sun rising over green hills with waking birds",
+      "audio_prompt": "Find the picture of sunrise",
+      "standard_refs": [
+        "NGSS.K-ESS2-1",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "times_of_day",
+      "in_core": true
+    },
+    {
+      "id": "time-day-noon",
+      "label": "Noon / Daytime",
+      "domain": "time_money",
+      "category": "times_of_day",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Bright sun high in a clear blue sky at midday",
+      "audio_prompt": "Find the picture of noon",
+      "standard_refs": [
+        "NGSS.K-ESS2-1",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "times_of_day",
+      "in_core": true
+    },
+    {
+      "id": "time-day-evening",
+      "label": "Sunset / Evening",
+      "domain": "time_money",
+      "category": "times_of_day",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Warm orange and pink sun setting behind trees",
+      "audio_prompt": "Find the picture of sunset",
+      "standard_refs": [
+        "NGSS.K-ESS2-1",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "times_of_day",
+      "in_core": true
+    },
+    {
+      "id": "time-day-night",
+      "label": "Nighttime",
+      "domain": "time_money",
+      "category": "times_of_day",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Dark indigo sky with glowing crescent moon and twinkling stars",
+      "audio_prompt": "Find the picture of nighttime",
+      "standard_refs": [
+        "NGSS.K-ESS2-1",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "times_of_day",
+      "in_core": true
+    },
+    {
+      "id": "time-tool-analog-clock",
+      "label": "Analog Clock",
+      "domain": "time_money",
+      "category": "time_tools",
+      "tier": 2,
+      "visual_type": "clock_visual",
+      "display_token": null,
+      "visual_prompt": "Classic round analog wall clock with moving hands",
+      "audio_prompt": "Find the analog clock",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "time_tools",
+      "in_core": true
+    },
+    {
+      "id": "time-tool-digital-clock",
+      "label": "Digital Clock",
+      "domain": "time_money",
+      "category": "time_tools",
+      "tier": 2,
+      "visual_type": "clock_visual",
+      "display_token": null,
+      "visual_prompt": "Modern bedside digital clock displaying numbers",
+      "audio_prompt": "Find the digital clock",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "time_tools",
+      "in_core": true
+    },
+    {
+      "id": "time-tool-calendar",
+      "label": "Wall Calendar",
+      "domain": "time_money",
+      "category": "time_tools",
+      "tier": 2,
+      "visual_type": "clock_visual",
+      "display_token": null,
+      "visual_prompt": "Monthly wall calendar grid with colorful day squares",
+      "audio_prompt": "Find the wall calendar",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "time_tools",
+      "in_core": true
+    },
+    {
+      "id": "time-tool-hourglass",
+      "label": "Hourglass Timer",
+      "domain": "time_money",
+      "category": "time_tools",
+      "tier": 3,
+      "visual_type": "clock_visual",
+      "display_token": null,
+      "visual_prompt": "Glass hourglass with golden sand flowing through the middle",
+      "audio_prompt": "Find the hourglass timer",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "time_tools",
+      "in_core": true
+    },
+    {
+      "id": "money-penny-back",
+      "label": "Penny Back (Shield)",
+      "domain": "time_money",
+      "category": "us_coin_backs",
+      "tier": 4,
+      "visual_type": "currency_visual",
+      "display_token": null,
+      "visual_prompt": "Copper US penny reverse side showing the Union shield",
+      "audio_prompt": "Find the back of the penny",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2"
+      ],
+      "distractor_group": "us_coin_backs",
+      "in_core": false
+    },
+    {
+      "id": "money-nickel-back",
+      "label": "Nickel Back (Monticello)",
+      "domain": "time_money",
+      "category": "us_coin_backs",
+      "tier": 4,
+      "visual_type": "currency_visual",
+      "display_token": null,
+      "visual_prompt": "Silver US nickel reverse side showing Monticello",
+      "audio_prompt": "Find the back of the nickel",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2"
+      ],
+      "distractor_group": "us_coin_backs",
+      "in_core": false
+    },
+    {
+      "id": "money-dime-back",
+      "label": "Dime Back (Torch)",
+      "domain": "time_money",
+      "category": "us_coin_backs",
+      "tier": 4,
+      "visual_type": "currency_visual",
+      "display_token": null,
+      "visual_prompt": "Silver US dime reverse side showing torch and olive branch",
+      "audio_prompt": "Find the back of the dime",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2"
+      ],
+      "distractor_group": "us_coin_backs",
+      "in_core": false
+    },
+    {
+      "id": "money-quarter-back",
+      "label": "Quarter Back (Eagle)",
+      "domain": "time_money",
+      "category": "us_coin_backs",
+      "tier": 4,
+      "visual_type": "currency_visual",
+      "display_token": null,
+      "visual_prompt": "Silver US quarter reverse side showing spread-wing eagle",
+      "audio_prompt": "Find the back of the quarter",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2"
+      ],
+      "distractor_group": "us_coin_backs",
+      "in_core": false
+    },
+    {
+      "id": "money-bill-5",
+      "label": "5 Dollar Bill ($5)",
+      "domain": "time_money",
+      "category": "us_bills",
+      "tier": 4,
+      "visual_type": "currency_visual",
+      "display_token": "$5",
+      "visual_prompt": "Green US 5-dollar paper bill featuring Abraham Lincoln",
+      "audio_prompt": "Find the 5 dollar bill",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2"
+      ],
+      "distractor_group": "us_bills",
+      "in_core": false
+    },
+    {
+      "id": "money-bill-10",
+      "label": "10 Dollar Bill ($10)",
+      "domain": "time_money",
+      "category": "us_bills",
+      "tier": 4,
+      "visual_type": "currency_visual",
+      "display_token": "$10",
+      "visual_prompt": "Green US 10-dollar paper bill featuring Alexander Hamilton",
+      "audio_prompt": "Find the 10 dollar bill",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2"
+      ],
+      "distractor_group": "us_bills",
+      "in_core": false
+    },
+    {
+      "id": "money-bill-20",
+      "label": "20 Dollar Bill ($20)",
+      "domain": "time_money",
+      "category": "us_bills",
+      "tier": 4,
+      "visual_type": "currency_visual",
+      "display_token": "$20",
+      "visual_prompt": "Green US 20-dollar paper bill featuring Andrew Jackson",
+      "audio_prompt": "Find the 20 dollar bill",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2"
+      ],
+      "distractor_group": "us_bills",
+      "in_core": false
+    },
+    {
+      "id": "money-bill-50",
+      "label": "50 Dollar Bill ($50)",
+      "domain": "time_money",
+      "category": "us_bills",
+      "tier": 4,
+      "visual_type": "currency_visual",
+      "display_token": "$50",
+      "visual_prompt": "Green US 50-dollar paper bill featuring Ulysses S. Grant",
+      "audio_prompt": "Find the 50 dollar bill",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2"
+      ],
+      "distractor_group": "us_bills",
+      "in_core": false
+    },
+    {
+      "id": "money-bill-100",
+      "label": "100 Dollar Bill ($100)",
+      "domain": "time_money",
+      "category": "us_bills",
+      "tier": 4,
+      "visual_type": "currency_visual",
+      "display_token": "$100",
+      "visual_prompt": "Green US 100-dollar paper bill featuring Benjamin Franklin",
+      "audio_prompt": "Find the 100 dollar bill",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2"
+      ],
+      "distractor_group": "us_bills",
+      "in_core": false
+    },
+    {
+      "id": "money-equiv-5pennies-nickel",
+      "label": "5 Pennies = 1 Nickel",
+      "domain": "time_money",
+      "category": "coin_equivalencies",
+      "tier": 4,
+      "visual_type": "currency_visual",
+      "display_token": null,
+      "visual_prompt": "Five copper pennies lined up next to an equals sign and one silver nickel",
+      "audio_prompt": "Find the coin match showing 5 Pennies = 1 Nickel",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2",
+        "ELOF.P-MATH.4"
+      ],
+      "distractor_group": "coin_equivalencies",
+      "in_core": false
+    },
+    {
+      "id": "money-equiv-2nickels-dime",
+      "label": "2 Nickels = 1 Dime",
+      "domain": "time_money",
+      "category": "coin_equivalencies",
+      "tier": 4,
+      "visual_type": "currency_visual",
+      "display_token": null,
+      "visual_prompt": "Two silver nickels next to an equals sign and one small dime",
+      "audio_prompt": "Find the coin match showing 2 Nickels = 1 Dime",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2",
+        "ELOF.P-MATH.4"
+      ],
+      "distractor_group": "coin_equivalencies",
+      "in_core": false
+    },
+    {
+      "id": "money-equiv-10pennies-dime",
+      "label": "10 Pennies = 1 Dime",
+      "domain": "time_money",
+      "category": "coin_equivalencies",
+      "tier": 4,
+      "visual_type": "currency_visual",
+      "display_token": null,
+      "visual_prompt": "Ten copper pennies grouped next to one silver dime",
+      "audio_prompt": "Find the coin match showing 10 Pennies = 1 Dime",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2",
+        "ELOF.P-MATH.4"
+      ],
+      "distractor_group": "coin_equivalencies",
+      "in_core": false
+    },
+    {
+      "id": "money-equiv-4quarters-dollar",
+      "label": "4 Quarters = $1",
+      "domain": "time_money",
+      "category": "coin_equivalencies",
+      "tier": 4,
+      "visual_type": "currency_visual",
+      "display_token": null,
+      "visual_prompt": "Four silver quarters arranged next to a green one-dollar bill",
+      "audio_prompt": "Find the coin match showing 4 Quarters = $1",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2",
+        "ELOF.P-MATH.4"
+      ],
+      "distractor_group": "coin_equivalencies",
+      "in_core": false
+    },
+    {
+      "id": "clock-half-1",
+      "label": "Clock 1:30",
+      "domain": "time_money",
+      "category": "clocks_half_hour",
+      "tier": 4,
+      "visual_type": "clock_visual",
+      "display_token": "1:30",
+      "visual_prompt": "Analog clock with hour hand halfway past 1 and minute hand pointing down to 6",
+      "audio_prompt": "Find the clock showing 1 thirty",
+      "standard_refs": [
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "clocks_half_hour",
+      "in_core": false
+    },
+    {
+      "id": "clock-half-2",
+      "label": "Clock 2:30",
+      "domain": "time_money",
+      "category": "clocks_half_hour",
+      "tier": 4,
+      "visual_type": "clock_visual",
+      "display_token": "2:30",
+      "visual_prompt": "Analog clock with hour hand halfway past 2 and minute hand pointing down to 6",
+      "audio_prompt": "Find the clock showing 2 thirty",
+      "standard_refs": [
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "clocks_half_hour",
+      "in_core": false
+    },
+    {
+      "id": "clock-half-3",
+      "label": "Clock 3:30",
+      "domain": "time_money",
+      "category": "clocks_half_hour",
+      "tier": 4,
+      "visual_type": "clock_visual",
+      "display_token": "3:30",
+      "visual_prompt": "Analog clock with hour hand halfway past 3 and minute hand pointing down to 6",
+      "audio_prompt": "Find the clock showing 3 thirty",
+      "standard_refs": [
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "clocks_half_hour",
+      "in_core": false
+    },
+    {
+      "id": "clock-half-4",
+      "label": "Clock 4:30",
+      "domain": "time_money",
+      "category": "clocks_half_hour",
+      "tier": 4,
+      "visual_type": "clock_visual",
+      "display_token": "4:30",
+      "visual_prompt": "Analog clock with hour hand halfway past 4 and minute hand pointing down to 6",
+      "audio_prompt": "Find the clock showing 4 thirty",
+      "standard_refs": [
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "clocks_half_hour",
+      "in_core": false
+    },
+    {
+      "id": "clock-half-5",
+      "label": "Clock 5:30",
+      "domain": "time_money",
+      "category": "clocks_half_hour",
+      "tier": 4,
+      "visual_type": "clock_visual",
+      "display_token": "5:30",
+      "visual_prompt": "Analog clock with hour hand halfway past 5 and minute hand pointing down to 6",
+      "audio_prompt": "Find the clock showing 5 thirty",
+      "standard_refs": [
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "clocks_half_hour",
+      "in_core": false
+    },
+    {
+      "id": "clock-half-6",
+      "label": "Clock 6:30",
+      "domain": "time_money",
+      "category": "clocks_half_hour",
+      "tier": 4,
+      "visual_type": "clock_visual",
+      "display_token": "6:30",
+      "visual_prompt": "Analog clock with hour hand halfway past 6 and minute hand pointing down to 6",
+      "audio_prompt": "Find the clock showing 6 thirty",
+      "standard_refs": [
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "clocks_half_hour",
+      "in_core": false
+    },
+    {
+      "id": "clock-half-7",
+      "label": "Clock 7:30",
+      "domain": "time_money",
+      "category": "clocks_half_hour",
+      "tier": 4,
+      "visual_type": "clock_visual",
+      "display_token": "7:30",
+      "visual_prompt": "Analog clock with hour hand halfway past 7 and minute hand pointing down to 6",
+      "audio_prompt": "Find the clock showing 7 thirty",
+      "standard_refs": [
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "clocks_half_hour",
+      "in_core": false
+    },
+    {
+      "id": "clock-half-8",
+      "label": "Clock 8:30",
+      "domain": "time_money",
+      "category": "clocks_half_hour",
+      "tier": 4,
+      "visual_type": "clock_visual",
+      "display_token": "8:30",
+      "visual_prompt": "Analog clock with hour hand halfway past 8 and minute hand pointing down to 6",
+      "audio_prompt": "Find the clock showing 8 thirty",
+      "standard_refs": [
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "clocks_half_hour",
+      "in_core": false
+    },
+    {
+      "id": "clock-half-9",
+      "label": "Clock 9:30",
+      "domain": "time_money",
+      "category": "clocks_half_hour",
+      "tier": 4,
+      "visual_type": "clock_visual",
+      "display_token": "9:30",
+      "visual_prompt": "Analog clock with hour hand halfway past 9 and minute hand pointing down to 6",
+      "audio_prompt": "Find the clock showing 9 thirty",
+      "standard_refs": [
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "clocks_half_hour",
+      "in_core": false
+    },
+    {
+      "id": "clock-half-10",
+      "label": "Clock 10:30",
+      "domain": "time_money",
+      "category": "clocks_half_hour",
+      "tier": 4,
+      "visual_type": "clock_visual",
+      "display_token": "10:30",
+      "visual_prompt": "Analog clock with hour hand halfway past 10 and minute hand pointing down to 6",
+      "audio_prompt": "Find the clock showing 10 thirty",
+      "standard_refs": [
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "clocks_half_hour",
+      "in_core": false
+    },
+    {
+      "id": "clock-half-11",
+      "label": "Clock 11:30",
+      "domain": "time_money",
+      "category": "clocks_half_hour",
+      "tier": 4,
+      "visual_type": "clock_visual",
+      "display_token": "11:30",
+      "visual_prompt": "Analog clock with hour hand halfway past 11 and minute hand pointing down to 6",
+      "audio_prompt": "Find the clock showing 11 thirty",
+      "standard_refs": [
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "clocks_half_hour",
+      "in_core": false
+    },
+    {
+      "id": "clock-half-12",
+      "label": "Clock 12:30",
+      "domain": "time_money",
+      "category": "clocks_half_hour",
+      "tier": 4,
+      "visual_type": "clock_visual",
+      "display_token": "12:30",
+      "visual_prompt": "Analog clock with hour hand halfway past 12 and minute hand pointing down to 6",
+      "audio_prompt": "Find the clock showing 12 thirty",
+      "standard_refs": [
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "clocks_half_hour",
+      "in_core": false
+    },
+    {
+      "id": "clock-qtr-3-15",
+      "label": "Clock 3:15",
+      "domain": "time_money",
+      "category": "clocks_quarter_hour",
+      "tier": 4,
+      "visual_type": "clock_visual",
+      "display_token": "3:15",
+      "visual_prompt": "Analog clock showing 3:15 with minute hand pointing to 3",
+      "audio_prompt": "Find the clock showing 3 15",
+      "standard_refs": [
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "clocks_quarter_hour",
+      "in_core": false
+    },
+    {
+      "id": "clock-qtr-6-15",
+      "label": "Clock 6:15",
+      "domain": "time_money",
+      "category": "clocks_quarter_hour",
+      "tier": 4,
+      "visual_type": "clock_visual",
+      "display_token": "6:15",
+      "visual_prompt": "Analog clock showing 6:15 with minute hand pointing to 3",
+      "audio_prompt": "Find the clock showing 6 15",
+      "standard_refs": [
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "clocks_quarter_hour",
+      "in_core": false
+    },
+    {
+      "id": "clock-qtr-9-15",
+      "label": "Clock 9:15",
+      "domain": "time_money",
+      "category": "clocks_quarter_hour",
+      "tier": 4,
+      "visual_type": "clock_visual",
+      "display_token": "9:15",
+      "visual_prompt": "Analog clock showing 9:15 with minute hand pointing to 3",
+      "audio_prompt": "Find the clock showing 9 15",
+      "standard_refs": [
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "clocks_quarter_hour",
+      "in_core": false
+    },
+    {
+      "id": "clock-qtr-12-15",
+      "label": "Clock 12:15",
+      "domain": "time_money",
+      "category": "clocks_quarter_hour",
+      "tier": 4,
+      "visual_type": "clock_visual",
+      "display_token": "12:15",
+      "visual_prompt": "Analog clock showing 12:15 with minute hand pointing to 3",
+      "audio_prompt": "Find the clock showing 12 15",
+      "standard_refs": [
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "clocks_quarter_hour",
+      "in_core": false
+    },
+    {
+      "id": "clock-qtr-3-45",
+      "label": "Clock 3:45",
+      "domain": "time_money",
+      "category": "clocks_quarter_hour",
+      "tier": 4,
+      "visual_type": "clock_visual",
+      "display_token": "3:45",
+      "visual_prompt": "Analog clock showing 3:45 with minute hand pointing to 9",
+      "audio_prompt": "Find the clock showing 3 45",
+      "standard_refs": [
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "clocks_quarter_hour",
+      "in_core": false
+    },
+    {
+      "id": "clock-qtr-6-45",
+      "label": "Clock 6:45",
+      "domain": "time_money",
+      "category": "clocks_quarter_hour",
+      "tier": 4,
+      "visual_type": "clock_visual",
+      "display_token": "6:45",
+      "visual_prompt": "Analog clock showing 6:45 with minute hand pointing to 9",
+      "audio_prompt": "Find the clock showing 6 45",
+      "standard_refs": [
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "clocks_quarter_hour",
+      "in_core": false
+    },
+    {
+      "id": "routine-wake-up",
+      "label": "Daily Routine: Wake Up",
+      "domain": "time_money",
+      "category": "daily_routines",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Smiling child stretching awake in bed as morning sun shines",
+      "audio_prompt": "Find the picture of wake up",
+      "standard_refs": [
+        "C3.D2.His.2.K-2",
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "daily_routines",
+      "in_core": false
+    },
+    {
+      "id": "routine-brush-teeth",
+      "label": "Daily Routine: Brush Teeth",
+      "domain": "time_money",
+      "category": "daily_routines",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Child brushing teeth with a foaming toothbrush at the sink",
+      "audio_prompt": "Find the picture of brush teeth",
+      "standard_refs": [
+        "C3.D2.His.2.K-2",
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "daily_routines",
+      "in_core": false
+    },
+    {
+      "id": "routine-breakfast",
+      "label": "Daily Routine: Eat Breakfast",
+      "domain": "time_money",
+      "category": "daily_routines",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Bowl of oatmeal, fruit, and milk on a morning breakfast table",
+      "audio_prompt": "Find the picture of eat breakfast",
+      "standard_refs": [
+        "C3.D2.His.2.K-2",
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "daily_routines",
+      "in_core": false
+    },
+    {
+      "id": "routine-school",
+      "label": "Daily Routine: Go to School",
+      "domain": "time_money",
+      "category": "daily_routines",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Children with backpacks walking into a cheerful preschool",
+      "audio_prompt": "Find the picture of go to school",
+      "standard_refs": [
+        "C3.D2.His.2.K-2",
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "daily_routines",
+      "in_core": false
+    },
+    {
+      "id": "routine-lunch",
+      "label": "Daily Routine: Eat Lunch",
+      "domain": "time_money",
+      "category": "daily_routines",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Midday lunchbox with sandwich, apple, and water bottle",
+      "audio_prompt": "Find the picture of eat lunch",
+      "standard_refs": [
+        "C3.D2.His.2.K-2",
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "daily_routines",
+      "in_core": false
+    },
+    {
+      "id": "routine-play",
+      "label": "Daily Routine: Play Outside",
+      "domain": "time_money",
+      "category": "daily_routines",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Children playing on swings and slides in afternoon sun",
+      "audio_prompt": "Find the picture of play outside",
+      "standard_refs": [
+        "C3.D2.His.2.K-2",
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "daily_routines",
+      "in_core": false
+    },
+    {
+      "id": "routine-dinner",
+      "label": "Daily Routine: Eat Dinner",
+      "domain": "time_money",
+      "category": "daily_routines",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Family sitting together around a warm evening dinner table",
+      "audio_prompt": "Find the picture of eat dinner",
+      "standard_refs": [
+        "C3.D2.His.2.K-2",
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "daily_routines",
+      "in_core": false
+    },
+    {
+      "id": "routine-bedtime",
+      "label": "Daily Routine: Bedtime Sleep",
+      "domain": "time_money",
+      "category": "daily_routines",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Cozy child sleeping under a starry blanket at night",
+      "audio_prompt": "Find the picture of bedtime sleep",
+      "standard_refs": [
+        "C3.D2.His.2.K-2",
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "daily_routines",
+      "in_core": false
+    },
+    {
+      "id": "time-cal-birthday",
+      "label": "Birthday Celebration",
+      "domain": "time_money",
+      "category": "calendar_concepts",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Cake with lit candles and colorful balloons marking a special day",
+      "audio_prompt": "Find the picture for birthday celebration",
+      "standard_refs": [
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "calendar_concepts",
+      "in_core": false
+    },
+    {
+      "id": "time-cal-weekend",
+      "label": "Weekend Family Time",
+      "domain": "time_money",
+      "category": "calendar_concepts",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Cozy Saturday morning picnic blanket in the park",
+      "audio_prompt": "Find the picture for weekend family time",
+      "standard_refs": [
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "calendar_concepts",
+      "in_core": false
+    },
+    {
+      "id": "time-cal-week-7",
+      "label": "7 Days in a Week",
+      "domain": "time_money",
+      "category": "calendar_concepts",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Row of 7 colorful calendar blocks representing one week",
+      "audio_prompt": "Find the picture for 7 days in a week",
+      "standard_refs": [
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "calendar_concepts",
+      "in_core": false
+    },
+    {
+      "id": "time-cal-year-12",
+      "label": "12 Months in a Year",
+      "domain": "time_money",
+      "category": "calendar_concepts",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Circular wheel of 4 seasons showing 12 monthly slices",
+      "audio_prompt": "Find the picture for 12 months in a year",
+      "standard_refs": [
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "calendar_concepts",
+      "in_core": false
+    }
+  ]
+}

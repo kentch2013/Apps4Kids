@@ -1,0 +1,709 @@
+{
+  "set": "core",
+  "domain": "social_community",
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "soc-helper-firefighter",
+      "label": "Firefighter",
+      "domain": "social_community",
+      "category": "community_helpers",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated firefighter in uniform with typical gear",
+      "audio_prompt": "Find the firefighter",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "community_helpers",
+      "in_core": true
+    },
+    {
+      "id": "soc-helper-police-officer",
+      "label": "Police Officer",
+      "domain": "social_community",
+      "category": "community_helpers",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated police officer in uniform with typical gear",
+      "audio_prompt": "Find the police officer",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "community_helpers",
+      "in_core": true
+    },
+    {
+      "id": "soc-helper-doctor",
+      "label": "Doctor",
+      "domain": "social_community",
+      "category": "community_helpers",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated doctor in uniform with typical gear",
+      "audio_prompt": "Find the doctor",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "community_helpers",
+      "in_core": true
+    },
+    {
+      "id": "soc-helper-nurse",
+      "label": "Nurse",
+      "domain": "social_community",
+      "category": "community_helpers",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated nurse in uniform with typical gear",
+      "audio_prompt": "Find the nurse",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "community_helpers",
+      "in_core": true
+    },
+    {
+      "id": "soc-helper-teacher",
+      "label": "Teacher",
+      "domain": "social_community",
+      "category": "community_helpers",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated teacher in uniform with typical gear",
+      "audio_prompt": "Find the teacher",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "community_helpers",
+      "in_core": true
+    },
+    {
+      "id": "soc-helper-dentist",
+      "label": "Dentist",
+      "domain": "social_community",
+      "category": "community_helpers",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated dentist in uniform with typical gear",
+      "audio_prompt": "Find the dentist",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "community_helpers",
+      "in_core": true
+    },
+    {
+      "id": "soc-helper-mail-carrier",
+      "label": "Mail Carrier",
+      "domain": "social_community",
+      "category": "community_helpers",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated mail carrier in uniform with typical gear",
+      "audio_prompt": "Find the mail carrier",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "community_helpers",
+      "in_core": true
+    },
+    {
+      "id": "soc-helper-chef",
+      "label": "Chef",
+      "domain": "social_community",
+      "category": "community_helpers",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated chef in uniform with typical gear",
+      "audio_prompt": "Find the chef",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "community_helpers",
+      "in_core": true
+    },
+    {
+      "id": "soc-helper-farmer",
+      "label": "Farmer",
+      "domain": "social_community",
+      "category": "community_helpers",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated farmer in uniform with typical gear",
+      "audio_prompt": "Find the farmer",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "community_helpers",
+      "in_core": true
+    },
+    {
+      "id": "soc-helper-construction-worker",
+      "label": "Construction Worker",
+      "domain": "social_community",
+      "category": "community_helpers",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated construction worker in uniform with typical gear",
+      "audio_prompt": "Find the construction worker",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "community_helpers",
+      "in_core": true
+    },
+    {
+      "id": "soc-helper-librarian",
+      "label": "Librarian",
+      "domain": "social_community",
+      "category": "community_helpers",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated librarian in uniform with typical gear",
+      "audio_prompt": "Find the librarian",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "community_helpers",
+      "in_core": true
+    },
+    {
+      "id": "soc-helper-sanitation-worker",
+      "label": "Sanitation Worker",
+      "domain": "social_community",
+      "category": "community_helpers",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated sanitation worker in uniform with typical gear",
+      "audio_prompt": "Find the sanitation worker",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "community_helpers",
+      "in_core": true
+    },
+    {
+      "id": "soc-helper-pilot",
+      "label": "Pilot",
+      "domain": "social_community",
+      "category": "community_helpers",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated pilot in uniform with typical gear",
+      "audio_prompt": "Find the pilot",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "community_helpers",
+      "in_core": true
+    },
+    {
+      "id": "soc-helper-bus-driver",
+      "label": "Bus Driver",
+      "domain": "social_community",
+      "category": "community_helpers",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated bus driver in uniform with typical gear",
+      "audio_prompt": "Find the bus driver",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "community_helpers",
+      "in_core": true
+    },
+    {
+      "id": "soc-veh-car",
+      "label": "Car",
+      "domain": "social_community",
+      "category": "vehicles",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Colorful side-view illustration of a car",
+      "audio_prompt": "Find the car",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "vehicles",
+      "in_core": true
+    },
+    {
+      "id": "soc-veh-bus",
+      "label": "Bus",
+      "domain": "social_community",
+      "category": "vehicles",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Colorful side-view illustration of a bus",
+      "audio_prompt": "Find the bus",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "vehicles",
+      "in_core": true
+    },
+    {
+      "id": "soc-veh-fire-truck",
+      "label": "Fire Truck",
+      "domain": "social_community",
+      "category": "vehicles",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Colorful side-view illustration of a fire truck",
+      "audio_prompt": "Find the fire truck",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "vehicles",
+      "in_core": true
+    },
+    {
+      "id": "soc-veh-police-car",
+      "label": "Police Car",
+      "domain": "social_community",
+      "category": "vehicles",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Colorful side-view illustration of a police car",
+      "audio_prompt": "Find the police car",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "vehicles",
+      "in_core": true
+    },
+    {
+      "id": "soc-veh-ambulance",
+      "label": "Ambulance",
+      "domain": "social_community",
+      "category": "vehicles",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Colorful side-view illustration of a ambulance",
+      "audio_prompt": "Find the ambulance",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "vehicles",
+      "in_core": true
+    },
+    {
+      "id": "soc-veh-airplane",
+      "label": "Airplane",
+      "domain": "social_community",
+      "category": "vehicles",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Colorful side-view illustration of a airplane",
+      "audio_prompt": "Find the airplane",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "vehicles",
+      "in_core": true
+    },
+    {
+      "id": "soc-veh-train",
+      "label": "Train",
+      "domain": "social_community",
+      "category": "vehicles",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Colorful side-view illustration of a train",
+      "audio_prompt": "Find the train",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "vehicles",
+      "in_core": true
+    },
+    {
+      "id": "soc-veh-boat",
+      "label": "Boat",
+      "domain": "social_community",
+      "category": "vehicles",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Colorful side-view illustration of a boat",
+      "audio_prompt": "Find the boat",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "vehicles",
+      "in_core": true
+    },
+    {
+      "id": "soc-veh-bicycle",
+      "label": "Bicycle",
+      "domain": "social_community",
+      "category": "vehicles",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Colorful side-view illustration of a bicycle",
+      "audio_prompt": "Find the bicycle",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "vehicles",
+      "in_core": true
+    },
+    {
+      "id": "soc-veh-garbage-truck",
+      "label": "Garbage Truck",
+      "domain": "social_community",
+      "category": "vehicles",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Colorful side-view illustration of a garbage truck",
+      "audio_prompt": "Find the garbage truck",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "vehicles",
+      "in_core": true
+    },
+    {
+      "id": "soc-place-school",
+      "label": "School",
+      "domain": "social_community",
+      "category": "community_places",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Welcoming exterior illustration of a school",
+      "audio_prompt": "Find the school",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2",
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "community_places",
+      "in_core": true
+    },
+    {
+      "id": "soc-place-hospital",
+      "label": "Hospital",
+      "domain": "social_community",
+      "category": "community_places",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Welcoming exterior illustration of a hospital",
+      "audio_prompt": "Find the hospital",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2",
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "community_places",
+      "in_core": true
+    },
+    {
+      "id": "soc-place-fire-station",
+      "label": "Fire Station",
+      "domain": "social_community",
+      "category": "community_places",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Welcoming exterior illustration of a fire station",
+      "audio_prompt": "Find the fire station",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2",
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "community_places",
+      "in_core": true
+    },
+    {
+      "id": "soc-place-library",
+      "label": "Library",
+      "domain": "social_community",
+      "category": "community_places",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Welcoming exterior illustration of a library",
+      "audio_prompt": "Find the library",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2",
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "community_places",
+      "in_core": true
+    },
+    {
+      "id": "soc-place-grocery-store",
+      "label": "Grocery Store",
+      "domain": "social_community",
+      "category": "community_places",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Welcoming exterior illustration of a grocery store",
+      "audio_prompt": "Find the grocery store",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2",
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "community_places",
+      "in_core": true
+    },
+    {
+      "id": "soc-place-park",
+      "label": "Park",
+      "domain": "social_community",
+      "category": "community_places",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Welcoming exterior illustration of a park",
+      "audio_prompt": "Find the park",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2",
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "community_places",
+      "in_core": true
+    },
+    {
+      "id": "soc-place-house",
+      "label": "House",
+      "domain": "social_community",
+      "category": "community_places",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Welcoming exterior illustration of a house",
+      "audio_prompt": "Find the house",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2",
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "community_places",
+      "in_core": true
+    },
+    {
+      "id": "soc-place-post-office",
+      "label": "Post Office",
+      "domain": "social_community",
+      "category": "community_places",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Welcoming exterior illustration of a post office",
+      "audio_prompt": "Find the post office",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2",
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "community_places",
+      "in_core": true
+    },
+    {
+      "id": "soc-place-farm",
+      "label": "Farm",
+      "domain": "social_community",
+      "category": "community_places",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Welcoming exterior illustration of a farm",
+      "audio_prompt": "Find the farm",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2",
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "community_places",
+      "in_core": true
+    },
+    {
+      "id": "soc-geo-globe",
+      "label": "World Globe",
+      "domain": "social_community",
+      "category": "maps_geography",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear preschool illustration of a world globe",
+      "audio_prompt": "Find the world globe",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "maps_geography",
+      "in_core": true
+    },
+    {
+      "id": "soc-geo-map",
+      "label": "Folded Map",
+      "domain": "social_community",
+      "category": "maps_geography",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear preschool illustration of a folded map",
+      "audio_prompt": "Find the folded map",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "maps_geography",
+      "in_core": true
+    },
+    {
+      "id": "soc-geo-compass-rose",
+      "label": "Compass Rose",
+      "domain": "social_community",
+      "category": "maps_geography",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear preschool illustration of a compass rose",
+      "audio_prompt": "Find the compass rose",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "maps_geography",
+      "in_core": true
+    },
+    {
+      "id": "soc-geo-road",
+      "label": "Paved Road",
+      "domain": "social_community",
+      "category": "maps_geography",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear preschool illustration of a paved road",
+      "audio_prompt": "Find the paved road",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "maps_geography",
+      "in_core": true
+    },
+    {
+      "id": "soc-geo-bridge",
+      "label": "Bridge",
+      "domain": "social_community",
+      "category": "maps_geography",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear preschool illustration of a bridge",
+      "audio_prompt": "Find the bridge",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "maps_geography",
+      "in_core": true
+    },
+    {
+      "id": "soc-us-us-flag",
+      "label": "US Flag",
+      "domain": "social_community",
+      "category": "us_symbols",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Stars and stripes United States flag waving gently",
+      "audio_prompt": "Find the US Flag",
+      "standard_refs": [
+        "C3.D2.His.2.K-2",
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "us_symbols",
+      "in_core": true
+    },
+    {
+      "id": "soc-us-bald-eagle",
+      "label": "Bald Eagle",
+      "domain": "social_community",
+      "category": "us_symbols",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Majestic American bald eagle with white head and golden beak",
+      "audio_prompt": "Find the Bald Eagle",
+      "standard_refs": [
+        "C3.D2.His.2.K-2",
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "us_symbols",
+      "in_core": true
+    },
+    {
+      "id": "soc-us-statue-of-liberty",
+      "label": "Statue of Liberty",
+      "domain": "social_community",
+      "category": "us_symbols",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Green Statue of Liberty holding up a golden torch",
+      "audio_prompt": "Find the Statue of Liberty",
+      "standard_refs": [
+        "C3.D2.His.2.K-2",
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "us_symbols",
+      "in_core": true
+    },
+    {
+      "id": "soc-us-liberty-bell",
+      "label": "Liberty Bell",
+      "domain": "social_community",
+      "category": "us_symbols",
+      "tier": 4,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Historic bronze Liberty Bell hanging on a wooden beam",
+      "audio_prompt": "Find the Liberty Bell",
+      "standard_refs": [
+        "C3.D2.His.2.K-2",
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "us_symbols",
+      "in_core": true
+    },
+    {
+      "id": "soc-us-white-house",
+      "label": "White House",
+      "domain": "social_community",
+      "category": "us_symbols",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Classic White House with columns and green front lawn",
+      "audio_prompt": "Find the White House",
+      "standard_refs": [
+        "C3.D2.His.2.K-2",
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "us_symbols",
+      "in_core": true
+    }
+  ]
+}

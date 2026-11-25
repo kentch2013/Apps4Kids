@@ -1,0 +1,1044 @@
+{
+  "set": "core",
+  "domain": "numbers_quantities",
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "num-digit-0",
+      "label": "Numeral 0",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 1,
+      "visual_type": "numeral_glyph",
+      "display_token": "0",
+      "visual_prompt": "Large, bold sans-serif numeral 0 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 0",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-1",
+      "label": "Numeral 1",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 1,
+      "visual_type": "numeral_glyph",
+      "display_token": "1",
+      "visual_prompt": "Large, bold sans-serif numeral 1 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 1",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-2",
+      "label": "Numeral 2",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 1,
+      "visual_type": "numeral_glyph",
+      "display_token": "2",
+      "visual_prompt": "Large, bold sans-serif numeral 2 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 2",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-3",
+      "label": "Numeral 3",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 1,
+      "visual_type": "numeral_glyph",
+      "display_token": "3",
+      "visual_prompt": "Large, bold sans-serif numeral 3 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 3",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-4",
+      "label": "Numeral 4",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 1,
+      "visual_type": "numeral_glyph",
+      "display_token": "4",
+      "visual_prompt": "Large, bold sans-serif numeral 4 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 4",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-5",
+      "label": "Numeral 5",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 1,
+      "visual_type": "numeral_glyph",
+      "display_token": "5",
+      "visual_prompt": "Large, bold sans-serif numeral 5 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 5",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-6",
+      "label": "Numeral 6",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 2,
+      "visual_type": "numeral_glyph",
+      "display_token": "6",
+      "visual_prompt": "Large, bold sans-serif numeral 6 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 6",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-7",
+      "label": "Numeral 7",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 2,
+      "visual_type": "numeral_glyph",
+      "display_token": "7",
+      "visual_prompt": "Large, bold sans-serif numeral 7 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 7",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-8",
+      "label": "Numeral 8",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 2,
+      "visual_type": "numeral_glyph",
+      "display_token": "8",
+      "visual_prompt": "Large, bold sans-serif numeral 8 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 8",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-9",
+      "label": "Numeral 9",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 2,
+      "visual_type": "numeral_glyph",
+      "display_token": "9",
+      "visual_prompt": "Large, bold sans-serif numeral 9 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 9",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-10",
+      "label": "Numeral 10",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 2,
+      "visual_type": "numeral_glyph",
+      "display_token": "10",
+      "visual_prompt": "Large, bold sans-serif numeral 10 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 10",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-11",
+      "label": "Numeral 11",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 3,
+      "visual_type": "numeral_glyph",
+      "display_token": "11",
+      "visual_prompt": "Large, bold sans-serif numeral 11 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 11",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-12",
+      "label": "Numeral 12",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 3,
+      "visual_type": "numeral_glyph",
+      "display_token": "12",
+      "visual_prompt": "Large, bold sans-serif numeral 12 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 12",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-13",
+      "label": "Numeral 13",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 3,
+      "visual_type": "numeral_glyph",
+      "display_token": "13",
+      "visual_prompt": "Large, bold sans-serif numeral 13 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 13",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-14",
+      "label": "Numeral 14",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 3,
+      "visual_type": "numeral_glyph",
+      "display_token": "14",
+      "visual_prompt": "Large, bold sans-serif numeral 14 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 14",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-15",
+      "label": "Numeral 15",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 3,
+      "visual_type": "numeral_glyph",
+      "display_token": "15",
+      "visual_prompt": "Large, bold sans-serif numeral 15 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 15",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-16",
+      "label": "Numeral 16",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 3,
+      "visual_type": "numeral_glyph",
+      "display_token": "16",
+      "visual_prompt": "Large, bold sans-serif numeral 16 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 16",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-17",
+      "label": "Numeral 17",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 3,
+      "visual_type": "numeral_glyph",
+      "display_token": "17",
+      "visual_prompt": "Large, bold sans-serif numeral 17 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 17",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-18",
+      "label": "Numeral 18",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 3,
+      "visual_type": "numeral_glyph",
+      "display_token": "18",
+      "visual_prompt": "Large, bold sans-serif numeral 18 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 18",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-19",
+      "label": "Numeral 19",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 3,
+      "visual_type": "numeral_glyph",
+      "display_token": "19",
+      "visual_prompt": "Large, bold sans-serif numeral 19 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 19",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "num-digit-20",
+      "label": "Numeral 20",
+      "domain": "numbers_quantities",
+      "category": "numerals_0_20",
+      "tier": 3,
+      "visual_type": "numeral_glyph",
+      "display_token": "20",
+      "visual_prompt": "Large, bold sans-serif numeral 20 in bright teal on a clean white card",
+      "audio_prompt": "Find the number 20",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.A.3",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "numerals_0_20",
+      "in_core": true
+    },
+    {
+      "id": "qty-dice-1",
+      "label": "Dice Dots 1",
+      "domain": "numbers_quantities",
+      "category": "dice_subitizing",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "White square die face showing 1 crisp black pip dots in standard dice arrangement",
+      "audio_prompt": "Find the die with 1 dots",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.2"
+      ],
+      "distractor_group": "dice_subitizing",
+      "in_core": true
+    },
+    {
+      "id": "qty-dice-2",
+      "label": "Dice Dots 2",
+      "domain": "numbers_quantities",
+      "category": "dice_subitizing",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "White square die face showing 2 crisp black pip dots in standard dice arrangement",
+      "audio_prompt": "Find the die with 2 dots",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.2"
+      ],
+      "distractor_group": "dice_subitizing",
+      "in_core": true
+    },
+    {
+      "id": "qty-dice-3",
+      "label": "Dice Dots 3",
+      "domain": "numbers_quantities",
+      "category": "dice_subitizing",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "White square die face showing 3 crisp black pip dots in standard dice arrangement",
+      "audio_prompt": "Find the die with 3 dots",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.2"
+      ],
+      "distractor_group": "dice_subitizing",
+      "in_core": true
+    },
+    {
+      "id": "qty-dice-4",
+      "label": "Dice Dots 4",
+      "domain": "numbers_quantities",
+      "category": "dice_subitizing",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "White square die face showing 4 crisp black pip dots in standard dice arrangement",
+      "audio_prompt": "Find the die with 4 dots",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.2"
+      ],
+      "distractor_group": "dice_subitizing",
+      "in_core": true
+    },
+    {
+      "id": "qty-dice-5",
+      "label": "Dice Dots 5",
+      "domain": "numbers_quantities",
+      "category": "dice_subitizing",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "White square die face showing 5 crisp black pip dots in standard dice arrangement",
+      "audio_prompt": "Find the die with 5 dots",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.2"
+      ],
+      "distractor_group": "dice_subitizing",
+      "in_core": true
+    },
+    {
+      "id": "qty-dice-6",
+      "label": "Dice Dots 6",
+      "domain": "numbers_quantities",
+      "category": "dice_subitizing",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "White square die face showing 6 crisp black pip dots in standard dice arrangement",
+      "audio_prompt": "Find the die with 6 dots",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.2"
+      ],
+      "distractor_group": "dice_subitizing",
+      "in_core": true
+    },
+    {
+      "id": "qty-fingers-0",
+      "label": "Finger Count 0",
+      "domain": "numbers_quantities",
+      "category": "finger_counting",
+      "tier": 1,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated child hands holding up exactly 0 fingers",
+      "audio_prompt": "Find the hands showing 0 fingers",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "finger_counting",
+      "in_core": true
+    },
+    {
+      "id": "qty-fingers-1",
+      "label": "Finger Count 1",
+      "domain": "numbers_quantities",
+      "category": "finger_counting",
+      "tier": 1,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated child hands holding up exactly 1 fingers",
+      "audio_prompt": "Find the hands showing 1 fingers",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "finger_counting",
+      "in_core": true
+    },
+    {
+      "id": "qty-fingers-2",
+      "label": "Finger Count 2",
+      "domain": "numbers_quantities",
+      "category": "finger_counting",
+      "tier": 1,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated child hands holding up exactly 2 fingers",
+      "audio_prompt": "Find the hands showing 2 fingers",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "finger_counting",
+      "in_core": true
+    },
+    {
+      "id": "qty-fingers-3",
+      "label": "Finger Count 3",
+      "domain": "numbers_quantities",
+      "category": "finger_counting",
+      "tier": 1,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated child hands holding up exactly 3 fingers",
+      "audio_prompt": "Find the hands showing 3 fingers",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "finger_counting",
+      "in_core": true
+    },
+    {
+      "id": "qty-fingers-4",
+      "label": "Finger Count 4",
+      "domain": "numbers_quantities",
+      "category": "finger_counting",
+      "tier": 1,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated child hands holding up exactly 4 fingers",
+      "audio_prompt": "Find the hands showing 4 fingers",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "finger_counting",
+      "in_core": true
+    },
+    {
+      "id": "qty-fingers-5",
+      "label": "Finger Count 5",
+      "domain": "numbers_quantities",
+      "category": "finger_counting",
+      "tier": 1,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated child hands holding up exactly 5 fingers",
+      "audio_prompt": "Find the hands showing 5 fingers",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "finger_counting",
+      "in_core": true
+    },
+    {
+      "id": "qty-fingers-6",
+      "label": "Finger Count 6",
+      "domain": "numbers_quantities",
+      "category": "finger_counting",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated child hands holding up exactly 6 fingers",
+      "audio_prompt": "Find the hands showing 6 fingers",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "finger_counting",
+      "in_core": true
+    },
+    {
+      "id": "qty-fingers-7",
+      "label": "Finger Count 7",
+      "domain": "numbers_quantities",
+      "category": "finger_counting",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated child hands holding up exactly 7 fingers",
+      "audio_prompt": "Find the hands showing 7 fingers",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "finger_counting",
+      "in_core": true
+    },
+    {
+      "id": "qty-fingers-8",
+      "label": "Finger Count 8",
+      "domain": "numbers_quantities",
+      "category": "finger_counting",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated child hands holding up exactly 8 fingers",
+      "audio_prompt": "Find the hands showing 8 fingers",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "finger_counting",
+      "in_core": true
+    },
+    {
+      "id": "qty-fingers-9",
+      "label": "Finger Count 9",
+      "domain": "numbers_quantities",
+      "category": "finger_counting",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated child hands holding up exactly 9 fingers",
+      "audio_prompt": "Find the hands showing 9 fingers",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "finger_counting",
+      "in_core": true
+    },
+    {
+      "id": "qty-fingers-10",
+      "label": "Finger Count 10",
+      "domain": "numbers_quantities",
+      "category": "finger_counting",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Friendly illustrated child hands holding up exactly 10 fingers",
+      "audio_prompt": "Find the hands showing 10 fingers",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.1"
+      ],
+      "distractor_group": "finger_counting",
+      "in_core": true
+    },
+    {
+      "id": "qty-fiveframe-1",
+      "label": "Five Frame 1",
+      "domain": "numbers_quantities",
+      "category": "five_frames",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Horizontal 1x5 grid frame with 1 red circle counters filled from left to right",
+      "audio_prompt": "Find the five-frame showing 1",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.2"
+      ],
+      "distractor_group": "five_frames",
+      "in_core": true
+    },
+    {
+      "id": "qty-fiveframe-2",
+      "label": "Five Frame 2",
+      "domain": "numbers_quantities",
+      "category": "five_frames",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Horizontal 1x5 grid frame with 2 red circle counters filled from left to right",
+      "audio_prompt": "Find the five-frame showing 2",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.2"
+      ],
+      "distractor_group": "five_frames",
+      "in_core": true
+    },
+    {
+      "id": "qty-fiveframe-3",
+      "label": "Five Frame 3",
+      "domain": "numbers_quantities",
+      "category": "five_frames",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Horizontal 1x5 grid frame with 3 red circle counters filled from left to right",
+      "audio_prompt": "Find the five-frame showing 3",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.2"
+      ],
+      "distractor_group": "five_frames",
+      "in_core": true
+    },
+    {
+      "id": "qty-fiveframe-4",
+      "label": "Five Frame 4",
+      "domain": "numbers_quantities",
+      "category": "five_frames",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Horizontal 1x5 grid frame with 4 red circle counters filled from left to right",
+      "audio_prompt": "Find the five-frame showing 4",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.2"
+      ],
+      "distractor_group": "five_frames",
+      "in_core": true
+    },
+    {
+      "id": "qty-fiveframe-5",
+      "label": "Five Frame 5",
+      "domain": "numbers_quantities",
+      "category": "five_frames",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Horizontal 1x5 grid frame with 5 red circle counters filled from left to right",
+      "audio_prompt": "Find the five-frame showing 5",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.2"
+      ],
+      "distractor_group": "five_frames",
+      "in_core": true
+    },
+    {
+      "id": "qty-tenframe-6",
+      "label": "Ten Frame 6",
+      "domain": "numbers_quantities",
+      "category": "ten_frames",
+      "tier": 3,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "2x5 grid ten-frame with top row full (5) and 1 blue counters on the bottom row",
+      "audio_prompt": "Find the ten-frame showing 6",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.2"
+      ],
+      "distractor_group": "ten_frames",
+      "in_core": true
+    },
+    {
+      "id": "qty-tenframe-7",
+      "label": "Ten Frame 7",
+      "domain": "numbers_quantities",
+      "category": "ten_frames",
+      "tier": 3,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "2x5 grid ten-frame with top row full (5) and 2 blue counters on the bottom row",
+      "audio_prompt": "Find the ten-frame showing 7",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.2"
+      ],
+      "distractor_group": "ten_frames",
+      "in_core": true
+    },
+    {
+      "id": "qty-tenframe-8",
+      "label": "Ten Frame 8",
+      "domain": "numbers_quantities",
+      "category": "ten_frames",
+      "tier": 3,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "2x5 grid ten-frame with top row full (5) and 3 blue counters on the bottom row",
+      "audio_prompt": "Find the ten-frame showing 8",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.2"
+      ],
+      "distractor_group": "ten_frames",
+      "in_core": true
+    },
+    {
+      "id": "qty-tenframe-9",
+      "label": "Ten Frame 9",
+      "domain": "numbers_quantities",
+      "category": "ten_frames",
+      "tier": 3,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "2x5 grid ten-frame with top row full (5) and 4 blue counters on the bottom row",
+      "audio_prompt": "Find the ten-frame showing 9",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.2"
+      ],
+      "distractor_group": "ten_frames",
+      "in_core": true
+    },
+    {
+      "id": "qty-tenframe-10",
+      "label": "Ten Frame 10",
+      "domain": "numbers_quantities",
+      "category": "ten_frames",
+      "tier": 3,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "2x5 grid ten-frame with top row full (5) and 5 blue counters on the bottom row",
+      "audio_prompt": "Find the ten-frame showing 10",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.2"
+      ],
+      "distractor_group": "ten_frames",
+      "in_core": true
+    },
+    {
+      "id": "qty-tally-1",
+      "label": "Tally Marks 1",
+      "domain": "numbers_quantities",
+      "category": "tally_marks",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Crisp dark-gray tally marks representing the quantity 1 with diagonal fifth-mark bundles",
+      "audio_prompt": "Find the tally marks for 1",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.3"
+      ],
+      "distractor_group": "tally_marks",
+      "in_core": true
+    },
+    {
+      "id": "qty-tally-2",
+      "label": "Tally Marks 2",
+      "domain": "numbers_quantities",
+      "category": "tally_marks",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Crisp dark-gray tally marks representing the quantity 2 with diagonal fifth-mark bundles",
+      "audio_prompt": "Find the tally marks for 2",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.3"
+      ],
+      "distractor_group": "tally_marks",
+      "in_core": true
+    },
+    {
+      "id": "qty-tally-3",
+      "label": "Tally Marks 3",
+      "domain": "numbers_quantities",
+      "category": "tally_marks",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Crisp dark-gray tally marks representing the quantity 3 with diagonal fifth-mark bundles",
+      "audio_prompt": "Find the tally marks for 3",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.3"
+      ],
+      "distractor_group": "tally_marks",
+      "in_core": true
+    },
+    {
+      "id": "qty-tally-4",
+      "label": "Tally Marks 4",
+      "domain": "numbers_quantities",
+      "category": "tally_marks",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Crisp dark-gray tally marks representing the quantity 4 with diagonal fifth-mark bundles",
+      "audio_prompt": "Find the tally marks for 4",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.3"
+      ],
+      "distractor_group": "tally_marks",
+      "in_core": true
+    },
+    {
+      "id": "qty-tally-5",
+      "label": "Tally Marks 5",
+      "domain": "numbers_quantities",
+      "category": "tally_marks",
+      "tier": 2,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Crisp dark-gray tally marks representing the quantity 5 with diagonal fifth-mark bundles",
+      "audio_prompt": "Find the tally marks for 5",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.3"
+      ],
+      "distractor_group": "tally_marks",
+      "in_core": true
+    },
+    {
+      "id": "qty-tally-6",
+      "label": "Tally Marks 6",
+      "domain": "numbers_quantities",
+      "category": "tally_marks",
+      "tier": 3,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Crisp dark-gray tally marks representing the quantity 6 with diagonal fifth-mark bundles",
+      "audio_prompt": "Find the tally marks for 6",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.3"
+      ],
+      "distractor_group": "tally_marks",
+      "in_core": true
+    },
+    {
+      "id": "qty-tally-7",
+      "label": "Tally Marks 7",
+      "domain": "numbers_quantities",
+      "category": "tally_marks",
+      "tier": 3,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Crisp dark-gray tally marks representing the quantity 7 with diagonal fifth-mark bundles",
+      "audio_prompt": "Find the tally marks for 7",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.3"
+      ],
+      "distractor_group": "tally_marks",
+      "in_core": true
+    },
+    {
+      "id": "qty-tally-8",
+      "label": "Tally Marks 8",
+      "domain": "numbers_quantities",
+      "category": "tally_marks",
+      "tier": 3,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Crisp dark-gray tally marks representing the quantity 8 with diagonal fifth-mark bundles",
+      "audio_prompt": "Find the tally marks for 8",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.3"
+      ],
+      "distractor_group": "tally_marks",
+      "in_core": true
+    },
+    {
+      "id": "qty-tally-9",
+      "label": "Tally Marks 9",
+      "domain": "numbers_quantities",
+      "category": "tally_marks",
+      "tier": 3,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Crisp dark-gray tally marks representing the quantity 9 with diagonal fifth-mark bundles",
+      "audio_prompt": "Find the tally marks for 9",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.3"
+      ],
+      "distractor_group": "tally_marks",
+      "in_core": true
+    },
+    {
+      "id": "qty-tally-10",
+      "label": "Tally Marks 10",
+      "domain": "numbers_quantities",
+      "category": "tally_marks",
+      "tier": 3,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Crisp dark-gray tally marks representing the quantity 10 with diagonal fifth-mark bundles",
+      "audio_prompt": "Find the tally marks for 10",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.B.4",
+        "ELOF.P-MATH.3"
+      ],
+      "distractor_group": "tally_marks",
+      "in_core": true
+    },
+    {
+      "id": "num-ordinal-1st",
+      "label": "Ordinal First 1st",
+      "domain": "numbers_quantities",
+      "category": "ordinal_positions",
+      "tier": 3,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Row of three colorful toy cars with a golden star above the 1st car in line",
+      "audio_prompt": "Find the 1st car in the line",
+      "standard_refs": [
+        "ELOF.P-MATH.1",
+        "CCSS.MATH.K.CC.B.4"
+      ],
+      "distractor_group": "ordinal_positions",
+      "in_core": true
+    },
+    {
+      "id": "num-ordinal-2nd",
+      "label": "Ordinal Second 2nd",
+      "domain": "numbers_quantities",
+      "category": "ordinal_positions",
+      "tier": 3,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Row of three colorful toy cars with a golden star above the 2nd car in line",
+      "audio_prompt": "Find the 2nd car in the line",
+      "standard_refs": [
+        "ELOF.P-MATH.1",
+        "CCSS.MATH.K.CC.B.4"
+      ],
+      "distractor_group": "ordinal_positions",
+      "in_core": true
+    },
+    {
+      "id": "num-ordinal-3rd",
+      "label": "Ordinal Third 3rd",
+      "domain": "numbers_quantities",
+      "category": "ordinal_positions",
+      "tier": 3,
+      "visual_type": "quantity_visual",
+      "display_token": null,
+      "visual_prompt": "Row of three colorful toy cars with a golden star above the 3rd car in line",
+      "audio_prompt": "Find the 3rd car in the line",
+      "standard_refs": [
+        "ELOF.P-MATH.1",
+        "CCSS.MATH.K.CC.B.4"
+      ],
+      "distractor_group": "ordinal_positions",
+      "in_core": true
+    }
+  ]
+}

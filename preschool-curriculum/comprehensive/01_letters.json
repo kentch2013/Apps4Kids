@@ -1,0 +1,1554 @@
+{
+  "set": "comprehensive",
+  "domain": "letters",
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "let-upper-a",
+      "label": "Uppercase A",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 1,
+      "visual_type": "letter_glyph",
+      "display_token": "A",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter A in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter A",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-b",
+      "label": "Uppercase B",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 1,
+      "visual_type": "letter_glyph",
+      "display_token": "B",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter B in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter B",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-c",
+      "label": "Uppercase C",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 1,
+      "visual_type": "letter_glyph",
+      "display_token": "C",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter C in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter C",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-d",
+      "label": "Uppercase D",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 1,
+      "visual_type": "letter_glyph",
+      "display_token": "D",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter D in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter D",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-e",
+      "label": "Uppercase E",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 1,
+      "visual_type": "letter_glyph",
+      "display_token": "E",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter E in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter E",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-f",
+      "label": "Uppercase F",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "F",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter F in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter F",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-g",
+      "label": "Uppercase G",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "G",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter G in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter G",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-h",
+      "label": "Uppercase H",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "H",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter H in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter H",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-i",
+      "label": "Uppercase I",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "I",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter I in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter I",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-j",
+      "label": "Uppercase J",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "J",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter J in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter J",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-k",
+      "label": "Uppercase K",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "K",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter K in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter K",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-l",
+      "label": "Uppercase L",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "L",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter L in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter L",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-m",
+      "label": "Uppercase M",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 1,
+      "visual_type": "letter_glyph",
+      "display_token": "M",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter M in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter M",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-n",
+      "label": "Uppercase N",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "N",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter N in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter N",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-o",
+      "label": "Uppercase O",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 1,
+      "visual_type": "letter_glyph",
+      "display_token": "O",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter O in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter O",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-p",
+      "label": "Uppercase P",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "P",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter P in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter P",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-q",
+      "label": "Uppercase Q",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "Q",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter Q in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter Q",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-r",
+      "label": "Uppercase R",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "R",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter R in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter R",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-s",
+      "label": "Uppercase S",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 1,
+      "visual_type": "letter_glyph",
+      "display_token": "S",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter S in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter S",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-t",
+      "label": "Uppercase T",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 1,
+      "visual_type": "letter_glyph",
+      "display_token": "T",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter T in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter T",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-u",
+      "label": "Uppercase U",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "U",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter U in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter U",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-v",
+      "label": "Uppercase V",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "V",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter V in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter V",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-w",
+      "label": "Uppercase W",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "W",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter W in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter W",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-x",
+      "label": "Uppercase X",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "X",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter X in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter X",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-y",
+      "label": "Uppercase Y",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "Y",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter Y in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter Y",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-upper-z",
+      "label": "Uppercase Z",
+      "domain": "letters",
+      "category": "uppercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "Z",
+      "visual_prompt": "Bold, rounded sans-serif uppercase letter Z in dark navy on a clean white card",
+      "audio_prompt": "Find the uppercase letter Z",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "uppercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-a",
+      "label": "Lowercase a",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "a",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter a in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter a",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-b",
+      "label": "Lowercase b",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "b",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter b in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter b",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-c",
+      "label": "Lowercase c",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "c",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter c in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter c",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-d",
+      "label": "Lowercase d",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "d",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter d in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter d",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-e",
+      "label": "Lowercase e",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "e",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter e in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter e",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-f",
+      "label": "Lowercase f",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "f",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter f in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter f",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-g",
+      "label": "Lowercase g",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "g",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter g in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter g",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-h",
+      "label": "Lowercase h",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "h",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter h in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter h",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-i",
+      "label": "Lowercase i",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "i",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter i in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter i",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-j",
+      "label": "Lowercase j",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "j",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter j in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter j",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-k",
+      "label": "Lowercase k",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "k",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter k in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter k",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-l",
+      "label": "Lowercase l",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "l",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter l in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter l",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-m",
+      "label": "Lowercase m",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "m",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter m in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter m",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-n",
+      "label": "Lowercase n",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "n",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter n in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter n",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-o",
+      "label": "Lowercase o",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "o",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter o in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter o",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-p",
+      "label": "Lowercase p",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "p",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter p in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter p",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-q",
+      "label": "Lowercase q",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "q",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter q in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter q",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-r",
+      "label": "Lowercase r",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "r",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter r in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter r",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-s",
+      "label": "Lowercase s",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "s",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter s in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter s",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-t",
+      "label": "Lowercase t",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "t",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter t in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter t",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-u",
+      "label": "Lowercase u",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "u",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter u in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter u",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-v",
+      "label": "Lowercase v",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "v",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter v in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter v",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-w",
+      "label": "Lowercase w",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "w",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter w in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter w",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-x",
+      "label": "Lowercase x",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "x",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter x in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter x",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-y",
+      "label": "Lowercase y",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "y",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter y in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter y",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-lower-z",
+      "label": "Lowercase z",
+      "domain": "letters",
+      "category": "lowercase_letters",
+      "tier": 2,
+      "visual_type": "letter_glyph",
+      "display_token": "z",
+      "visual_prompt": "Bold, rounded sans-serif lowercase letter z in royal blue on a clean white card",
+      "audio_prompt": "Find the lowercase letter z",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "lowercase_letters",
+      "in_core": true
+    },
+    {
+      "id": "let-pair-a",
+      "label": "Letter Pair A a",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "A a",
+      "visual_prompt": "Side-by-side uppercase A and lowercase a in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter A",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-b",
+      "label": "Letter Pair B b",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "B b",
+      "visual_prompt": "Side-by-side uppercase B and lowercase b in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter B",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-c",
+      "label": "Letter Pair C c",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "C c",
+      "visual_prompt": "Side-by-side uppercase C and lowercase c in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter C",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-d",
+      "label": "Letter Pair D d",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "D d",
+      "visual_prompt": "Side-by-side uppercase D and lowercase d in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter D",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-e",
+      "label": "Letter Pair E e",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "E e",
+      "visual_prompt": "Side-by-side uppercase E and lowercase e in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter E",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-f",
+      "label": "Letter Pair F f",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "F f",
+      "visual_prompt": "Side-by-side uppercase F and lowercase f in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter F",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-g",
+      "label": "Letter Pair G g",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "G g",
+      "visual_prompt": "Side-by-side uppercase G and lowercase g in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter G",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-h",
+      "label": "Letter Pair H h",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "H h",
+      "visual_prompt": "Side-by-side uppercase H and lowercase h in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter H",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-i",
+      "label": "Letter Pair I i",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "I i",
+      "visual_prompt": "Side-by-side uppercase I and lowercase i in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter I",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-j",
+      "label": "Letter Pair J j",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "J j",
+      "visual_prompt": "Side-by-side uppercase J and lowercase j in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter J",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-k",
+      "label": "Letter Pair K k",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "K k",
+      "visual_prompt": "Side-by-side uppercase K and lowercase k in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter K",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-l",
+      "label": "Letter Pair L l",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "L l",
+      "visual_prompt": "Side-by-side uppercase L and lowercase l in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter L",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-m",
+      "label": "Letter Pair M m",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "M m",
+      "visual_prompt": "Side-by-side uppercase M and lowercase m in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter M",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-n",
+      "label": "Letter Pair N n",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "N n",
+      "visual_prompt": "Side-by-side uppercase N and lowercase n in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter N",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-o",
+      "label": "Letter Pair O o",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "O o",
+      "visual_prompt": "Side-by-side uppercase O and lowercase o in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter O",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-p",
+      "label": "Letter Pair P p",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "P p",
+      "visual_prompt": "Side-by-side uppercase P and lowercase p in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter P",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-q",
+      "label": "Letter Pair Q q",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "Q q",
+      "visual_prompt": "Side-by-side uppercase Q and lowercase q in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter Q",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-r",
+      "label": "Letter Pair R r",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "R r",
+      "visual_prompt": "Side-by-side uppercase R and lowercase r in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter R",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-s",
+      "label": "Letter Pair S s",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "S s",
+      "visual_prompt": "Side-by-side uppercase S and lowercase s in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter S",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-t",
+      "label": "Letter Pair T t",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "T t",
+      "visual_prompt": "Side-by-side uppercase T and lowercase t in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter T",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-u",
+      "label": "Letter Pair U u",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "U u",
+      "visual_prompt": "Side-by-side uppercase U and lowercase u in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter U",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-v",
+      "label": "Letter Pair V v",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "V v",
+      "visual_prompt": "Side-by-side uppercase V and lowercase v in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter V",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-w",
+      "label": "Letter Pair W w",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "W w",
+      "visual_prompt": "Side-by-side uppercase W and lowercase w in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter W",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-x",
+      "label": "Letter Pair X x",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "X x",
+      "visual_prompt": "Side-by-side uppercase X and lowercase x in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter X",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-y",
+      "label": "Letter Pair Y y",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "Y y",
+      "visual_prompt": "Side-by-side uppercase Y and lowercase y in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter Y",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-pair-z",
+      "label": "Letter Pair Z z",
+      "domain": "letters",
+      "category": "case_match_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "Z z",
+      "visual_prompt": "Side-by-side uppercase Z and lowercase z in matching child-friendly sans-serif font",
+      "audio_prompt": "Find the matching pair for letter Z",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "case_match_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-confuse-b-d",
+      "label": "Confusable Pair Lowercase b and d",
+      "domain": "letters",
+      "category": "confusable_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "b / d",
+      "visual_prompt": "Visual comparison card showing Lowercase b and d side by side with subtle color highlights on distinguishing strokes",
+      "audio_prompt": "Look closely and find the pair Lowercase b and d",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "confusable_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-confuse-p-q",
+      "label": "Confusable Pair Lowercase p and q",
+      "domain": "letters",
+      "category": "confusable_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "p / q",
+      "visual_prompt": "Visual comparison card showing Lowercase p and q side by side with subtle color highlights on distinguishing strokes",
+      "audio_prompt": "Look closely and find the pair Lowercase p and q",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "confusable_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-confuse-m-w",
+      "label": "Confusable Pair Uppercase M and W",
+      "domain": "letters",
+      "category": "confusable_pairs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "M / W",
+      "visual_prompt": "Visual comparison card showing Uppercase M and W side by side with subtle color highlights on distinguishing strokes",
+      "audio_prompt": "Look closely and find the pair Uppercase M and W",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "confusable_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-confuse-n-u",
+      "label": "Confusable Pair Lowercase n and u",
+      "domain": "letters",
+      "category": "confusable_pairs",
+      "tier": 4,
+      "visual_type": "letter_glyph",
+      "display_token": "n / u",
+      "visual_prompt": "Visual comparison card showing Lowercase n and u side by side with subtle color highlights on distinguishing strokes",
+      "audio_prompt": "Look closely and find the pair Lowercase n and u",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "confusable_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-confuse-i-l",
+      "label": "Confusable Pair Uppercase I and lowercase l",
+      "domain": "letters",
+      "category": "confusable_pairs",
+      "tier": 4,
+      "visual_type": "letter_glyph",
+      "display_token": "I / l",
+      "visual_prompt": "Visual comparison card showing Uppercase I and lowercase l side by side with subtle color highlights on distinguishing strokes",
+      "audio_prompt": "Look closely and find the pair Uppercase I and lowercase l",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "confusable_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-confuse-c-g",
+      "label": "Confusable Pair Uppercase C and G",
+      "domain": "letters",
+      "category": "confusable_pairs",
+      "tier": 4,
+      "visual_type": "letter_glyph",
+      "display_token": "C / G",
+      "visual_prompt": "Visual comparison card showing Uppercase C and G side by side with subtle color highlights on distinguishing strokes",
+      "audio_prompt": "Look closely and find the pair Uppercase C and G",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "confusable_pairs",
+      "in_core": false
+    },
+    {
+      "id": "let-vowel-a",
+      "label": "Vowel A",
+      "domain": "letters",
+      "category": "vowel_glyphs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "A",
+      "visual_prompt": "Highlighted golden-amber uppercase vowel A on a soft cream card",
+      "audio_prompt": "Find the vowel A",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "vowel_glyphs",
+      "in_core": false
+    },
+    {
+      "id": "let-vowel-e",
+      "label": "Vowel E",
+      "domain": "letters",
+      "category": "vowel_glyphs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "E",
+      "visual_prompt": "Highlighted golden-amber uppercase vowel E on a soft cream card",
+      "audio_prompt": "Find the vowel E",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "vowel_glyphs",
+      "in_core": false
+    },
+    {
+      "id": "let-vowel-i",
+      "label": "Vowel I",
+      "domain": "letters",
+      "category": "vowel_glyphs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "I",
+      "visual_prompt": "Highlighted golden-amber uppercase vowel I on a soft cream card",
+      "audio_prompt": "Find the vowel I",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "vowel_glyphs",
+      "in_core": false
+    },
+    {
+      "id": "let-vowel-o",
+      "label": "Vowel O",
+      "domain": "letters",
+      "category": "vowel_glyphs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "O",
+      "visual_prompt": "Highlighted golden-amber uppercase vowel O on a soft cream card",
+      "audio_prompt": "Find the vowel O",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "vowel_glyphs",
+      "in_core": false
+    },
+    {
+      "id": "let-vowel-u",
+      "label": "Vowel U",
+      "domain": "letters",
+      "category": "vowel_glyphs",
+      "tier": 3,
+      "visual_type": "letter_glyph",
+      "display_token": "U",
+      "visual_prompt": "Highlighted golden-amber uppercase vowel U on a soft cream card",
+      "audio_prompt": "Find the vowel U",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.3"
+      ],
+      "distractor_group": "vowel_glyphs",
+      "in_core": false
+    },
+    {
+      "id": "let-serif-a",
+      "label": "Book Print a",
+      "domain": "letters",
+      "category": "typography_variants",
+      "tier": 4,
+      "visual_type": "letter_glyph",
+      "display_token": "a",
+      "visual_prompt": "Clean book-style double-story serif a shown on a white flashcard",
+      "audio_prompt": "Find the book-print lowercase letter a",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "typography_variants",
+      "in_core": false
+    },
+    {
+      "id": "let-serif-g",
+      "label": "Book Print g",
+      "domain": "letters",
+      "category": "typography_variants",
+      "tier": 4,
+      "visual_type": "letter_glyph",
+      "display_token": "g",
+      "visual_prompt": "Clean book-style loop-tail serif g shown on a white flashcard",
+      "audio_prompt": "Find the book-print lowercase letter g",
+      "standard_refs": [
+        "CCSS.ELA.RF.K.1.D",
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "typography_variants",
+      "in_core": false
+    }
+  ]
+}
