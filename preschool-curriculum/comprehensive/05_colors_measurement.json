@@ -1,0 +1,1424 @@
+{
+  "set": "comprehensive",
+  "domain": "colors_measurement",
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "color-red",
+      "label": "Color Red",
+      "domain": "colors_measurement",
+      "category": "core_colors",
+      "tier": 1,
+      "visual_type": "color_swatch",
+      "display_token": "#E53935",
+      "visual_prompt": "Clean rounded paint-splash swatch in solid red (#E53935) on a neutral card",
+      "audio_prompt": "Find the color red",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "core_colors",
+      "in_core": true
+    },
+    {
+      "id": "color-blue",
+      "label": "Color Blue",
+      "domain": "colors_measurement",
+      "category": "core_colors",
+      "tier": 1,
+      "visual_type": "color_swatch",
+      "display_token": "#1E88E5",
+      "visual_prompt": "Clean rounded paint-splash swatch in solid blue (#1E88E5) on a neutral card",
+      "audio_prompt": "Find the color blue",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "core_colors",
+      "in_core": true
+    },
+    {
+      "id": "color-yellow",
+      "label": "Color Yellow",
+      "domain": "colors_measurement",
+      "category": "core_colors",
+      "tier": 1,
+      "visual_type": "color_swatch",
+      "display_token": "#FDD835",
+      "visual_prompt": "Clean rounded paint-splash swatch in solid yellow (#FDD835) on a neutral card",
+      "audio_prompt": "Find the color yellow",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "core_colors",
+      "in_core": true
+    },
+    {
+      "id": "color-green",
+      "label": "Color Green",
+      "domain": "colors_measurement",
+      "category": "core_colors",
+      "tier": 2,
+      "visual_type": "color_swatch",
+      "display_token": "#43A047",
+      "visual_prompt": "Clean rounded paint-splash swatch in solid green (#43A047) on a neutral card",
+      "audio_prompt": "Find the color green",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "core_colors",
+      "in_core": true
+    },
+    {
+      "id": "color-orange",
+      "label": "Color Orange",
+      "domain": "colors_measurement",
+      "category": "core_colors",
+      "tier": 2,
+      "visual_type": "color_swatch",
+      "display_token": "#FB8C00",
+      "visual_prompt": "Clean rounded paint-splash swatch in solid orange (#FB8C00) on a neutral card",
+      "audio_prompt": "Find the color orange",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "core_colors",
+      "in_core": true
+    },
+    {
+      "id": "color-purple",
+      "label": "Color Purple",
+      "domain": "colors_measurement",
+      "category": "core_colors",
+      "tier": 2,
+      "visual_type": "color_swatch",
+      "display_token": "#8E24AA",
+      "visual_prompt": "Clean rounded paint-splash swatch in solid purple (#8E24AA) on a neutral card",
+      "audio_prompt": "Find the color purple",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "core_colors",
+      "in_core": true
+    },
+    {
+      "id": "color-pink",
+      "label": "Color Pink",
+      "domain": "colors_measurement",
+      "category": "core_colors",
+      "tier": 2,
+      "visual_type": "color_swatch",
+      "display_token": "#EC407A",
+      "visual_prompt": "Clean rounded paint-splash swatch in solid pink (#EC407A) on a neutral card",
+      "audio_prompt": "Find the color pink",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "core_colors",
+      "in_core": true
+    },
+    {
+      "id": "color-brown",
+      "label": "Color Brown",
+      "domain": "colors_measurement",
+      "category": "core_colors",
+      "tier": 2,
+      "visual_type": "color_swatch",
+      "display_token": "#6D4C41",
+      "visual_prompt": "Clean rounded paint-splash swatch in solid brown (#6D4C41) on a neutral card",
+      "audio_prompt": "Find the color brown",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "core_colors",
+      "in_core": true
+    },
+    {
+      "id": "color-black",
+      "label": "Color Black",
+      "domain": "colors_measurement",
+      "category": "core_colors",
+      "tier": 2,
+      "visual_type": "color_swatch",
+      "display_token": "#212121",
+      "visual_prompt": "Clean rounded paint-splash swatch in solid black (#212121) on a neutral card",
+      "audio_prompt": "Find the color black",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "core_colors",
+      "in_core": true
+    },
+    {
+      "id": "color-white",
+      "label": "Color White",
+      "domain": "colors_measurement",
+      "category": "core_colors",
+      "tier": 2,
+      "visual_type": "color_swatch",
+      "display_token": "#FFFFFF",
+      "visual_prompt": "Clean rounded paint-splash swatch in solid white (#FFFFFF) on a neutral card",
+      "audio_prompt": "Find the color white",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "core_colors",
+      "in_core": true
+    },
+    {
+      "id": "color-gray",
+      "label": "Color Gray",
+      "domain": "colors_measurement",
+      "category": "core_colors",
+      "tier": 2,
+      "visual_type": "color_swatch",
+      "display_token": "#9E9E9E",
+      "visual_prompt": "Clean rounded paint-splash swatch in solid gray (#9E9E9E) on a neutral card",
+      "audio_prompt": "Find the color gray",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "core_colors",
+      "in_core": true
+    },
+    {
+      "id": "meas-big-small",
+      "label": "Big vs Small",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 1,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing big elephant next to a small mouse",
+      "audio_prompt": "Find the picture showing big vs small",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-tall-short",
+      "label": "Tall vs Short",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 2,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing tall giraffe standing next to a short turtle",
+      "audio_prompt": "Find the picture showing tall vs short",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-long-short",
+      "label": "Long vs Short",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 2,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing long green caterpillar next to a short caterpillar",
+      "audio_prompt": "Find the picture showing long vs short",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-heavy-light",
+      "label": "Heavy vs Light",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 2,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing balance scale tilted down by a heavy bowling ball vs a light feather",
+      "audio_prompt": "Find the picture showing heavy vs light",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-full-empty",
+      "label": "Full vs Empty",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 1,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing full glass of orange juice next to an empty glass",
+      "audio_prompt": "Find the picture showing full vs empty",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-hot-cold",
+      "label": "Hot vs Cold",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 2,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing steaming mug of cocoa next to an ice-cold popsicle",
+      "audio_prompt": "Find the picture showing hot vs cold",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-fast-slow",
+      "label": "Fast vs Slow",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 2,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing speeding cheetah next to a slow-moving snail",
+      "audio_prompt": "Find the picture showing fast vs slow",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-wide-narrow",
+      "label": "Wide vs Narrow",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 3,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing wide highway bridge next to a narrow garden footpath",
+      "audio_prompt": "Find the picture showing wide vs narrow",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-thick-thin",
+      "label": "Thick vs Thin",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 3,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing thick hardcover encyclopedia next to a thin paper leaflet",
+      "audio_prompt": "Find the picture showing thick vs thin",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-loud-quiet",
+      "label": "Loud vs Quiet",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 2,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing booming bass drum with sound waves vs a tiptoeing mouse",
+      "audio_prompt": "Find the picture showing loud vs quiet",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-more-less",
+      "label": "More vs Less",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 2,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing jar packed with 10 marbles vs a jar with 2 marbles",
+      "audio_prompt": "Find the picture showing more vs less",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-same-different",
+      "label": "Same vs Different",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 2,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing two identical red stars vs a red star and a blue circle",
+      "audio_prompt": "Find the picture showing same vs different",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-open-closed",
+      "label": "Open vs Closed",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 1,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing open wooden treasure chest vs a closed treasure chest",
+      "audio_prompt": "Find the picture showing open vs closed",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-wet-dry",
+      "label": "Wet vs Dry",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 2,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing dripping wet umbrella in rain vs a dry folded umbrella",
+      "audio_prompt": "Find the picture showing wet vs dry",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-clean-dirty",
+      "label": "Clean vs Dirty",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 2,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing sparkling clean white sneaker vs a muddy sneaker",
+      "audio_prompt": "Find the picture showing clean vs dirty",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-light-dark",
+      "label": "Light vs Dark",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 2,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing bright sunlit daytime sky vs a dark starry night sky",
+      "audio_prompt": "Find the picture showing light vs dark",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-hard-soft",
+      "label": "Hard vs Soft",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 3,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing hard gray rock next to a soft fluffy cotton pillow",
+      "audio_prompt": "Find the picture showing hard vs soft",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-rough-smooth",
+      "label": "Rough vs Smooth",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 3,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing rough bumpy tree bark next to a smooth polished river stone",
+      "audio_prompt": "Find the picture showing rough vs smooth",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-sink-float",
+      "label": "Sink vs Float",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 3,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing water tank with a rubber duck floating on top and a heavy key sunk at bottom",
+      "audio_prompt": "Find the picture showing sink vs float",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-straight-curved",
+      "label": "Straight vs Curved",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 3,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing straight wooden ruler next to a curved winding ribbon",
+      "audio_prompt": "Find the picture showing straight vs curved",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-whole-part",
+      "label": "Whole vs Part",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 3,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing whole round pizza next to a single pizza slice",
+      "audio_prompt": "Find the picture showing whole vs part",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-near-far",
+      "label": "Near vs Far",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 3,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing large close-up red barn vs a tiny barn far in the distance",
+      "audio_prompt": "Find the picture showing near vs far",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "meas-high-low",
+      "label": "High vs Low",
+      "domain": "colors_measurement",
+      "category": "attribute_pairs",
+      "tier": 2,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Side-by-side visual comparison showing kite flying high in the clouds vs a puppy sitting low on the grass",
+      "audio_prompt": "Find the picture showing high vs low",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "CCSS.MATH.K.MD.A.2",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "attribute_pairs",
+      "in_core": true
+    },
+    {
+      "id": "color-ext-turquoise",
+      "label": "Color Turquoise",
+      "domain": "colors_measurement",
+      "category": "extended_colors",
+      "tier": 3,
+      "visual_type": "color_swatch",
+      "display_token": "#26A69A",
+      "visual_prompt": "Clean rounded paint-splash swatch in turquoise (#26A69A) on a neutral card",
+      "audio_prompt": "Find the color turquoise",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "extended_colors",
+      "in_core": false
+    },
+    {
+      "id": "color-ext-gold",
+      "label": "Color Gold",
+      "domain": "colors_measurement",
+      "category": "extended_colors",
+      "tier": 3,
+      "visual_type": "color_swatch",
+      "display_token": "#FFD700",
+      "visual_prompt": "Clean rounded paint-splash swatch in gold (#FFD700) on a neutral card",
+      "audio_prompt": "Find the color gold",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "extended_colors",
+      "in_core": false
+    },
+    {
+      "id": "color-ext-silver",
+      "label": "Color Silver",
+      "domain": "colors_measurement",
+      "category": "extended_colors",
+      "tier": 3,
+      "visual_type": "color_swatch",
+      "display_token": "#C0C0C0",
+      "visual_prompt": "Clean rounded paint-splash swatch in silver (#C0C0C0) on a neutral card",
+      "audio_prompt": "Find the color silver",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "extended_colors",
+      "in_core": false
+    },
+    {
+      "id": "color-ext-navy",
+      "label": "Color Navy Blue",
+      "domain": "colors_measurement",
+      "category": "extended_colors",
+      "tier": 4,
+      "visual_type": "color_swatch",
+      "display_token": "#1A237E",
+      "visual_prompt": "Clean rounded paint-splash swatch in navy blue (#1A237E) on a neutral card",
+      "audio_prompt": "Find the color navy blue",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "extended_colors",
+      "in_core": false
+    },
+    {
+      "id": "color-ext-maroon",
+      "label": "Color Maroon",
+      "domain": "colors_measurement",
+      "category": "extended_colors",
+      "tier": 4,
+      "visual_type": "color_swatch",
+      "display_token": "#800000",
+      "visual_prompt": "Clean rounded paint-splash swatch in maroon (#800000) on a neutral card",
+      "audio_prompt": "Find the color maroon",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "extended_colors",
+      "in_core": false
+    },
+    {
+      "id": "color-ext-lavender",
+      "label": "Color Lavender",
+      "domain": "colors_measurement",
+      "category": "extended_colors",
+      "tier": 3,
+      "visual_type": "color_swatch",
+      "display_token": "#B39DDB",
+      "visual_prompt": "Clean rounded paint-splash swatch in lavender (#B39DDB) on a neutral card",
+      "audio_prompt": "Find the color lavender",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "extended_colors",
+      "in_core": false
+    },
+    {
+      "id": "color-ext-lime",
+      "label": "Color Lime Green",
+      "domain": "colors_measurement",
+      "category": "extended_colors",
+      "tier": 3,
+      "visual_type": "color_swatch",
+      "display_token": "#CDDC39",
+      "visual_prompt": "Clean rounded paint-splash swatch in lime green (#CDDC39) on a neutral card",
+      "audio_prompt": "Find the color lime green",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "extended_colors",
+      "in_core": false
+    },
+    {
+      "id": "color-ext-peach",
+      "label": "Color Peach",
+      "domain": "colors_measurement",
+      "category": "extended_colors",
+      "tier": 3,
+      "visual_type": "color_swatch",
+      "display_token": "#FFAB91",
+      "visual_prompt": "Clean rounded paint-splash swatch in peach (#FFAB91) on a neutral card",
+      "audio_prompt": "Find the color peach",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "extended_colors",
+      "in_core": false
+    },
+    {
+      "id": "color-ext-magenta",
+      "label": "Color Magenta",
+      "domain": "colors_measurement",
+      "category": "extended_colors",
+      "tier": 4,
+      "visual_type": "color_swatch",
+      "display_token": "#D81B60",
+      "visual_prompt": "Clean rounded paint-splash swatch in magenta (#D81B60) on a neutral card",
+      "audio_prompt": "Find the color magenta",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "extended_colors",
+      "in_core": false
+    },
+    {
+      "id": "color-ext-beige",
+      "label": "Color Beige",
+      "domain": "colors_measurement",
+      "category": "extended_colors",
+      "tier": 4,
+      "visual_type": "color_swatch",
+      "display_token": "#F5F5DC",
+      "visual_prompt": "Clean rounded paint-splash swatch in beige (#F5F5DC) on a neutral card",
+      "audio_prompt": "Find the color beige",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "extended_colors",
+      "in_core": false
+    },
+    {
+      "id": "color-ext-indigo",
+      "label": "Color Indigo",
+      "domain": "colors_measurement",
+      "category": "extended_colors",
+      "tier": 4,
+      "visual_type": "color_swatch",
+      "display_token": "#3F51B5",
+      "visual_prompt": "Clean rounded paint-splash swatch in indigo (#3F51B5) on a neutral card",
+      "audio_prompt": "Find the color indigo",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "extended_colors",
+      "in_core": false
+    },
+    {
+      "id": "color-ext-coral",
+      "label": "Color Coral",
+      "domain": "colors_measurement",
+      "category": "extended_colors",
+      "tier": 4,
+      "visual_type": "color_swatch",
+      "display_token": "#FF7043",
+      "visual_prompt": "Clean rounded paint-splash swatch in coral (#FF7043) on a neutral card",
+      "audio_prompt": "Find the color coral",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "extended_colors",
+      "in_core": false
+    },
+    {
+      "id": "color-ext-light-blue",
+      "label": "Color Light Blue",
+      "domain": "colors_measurement",
+      "category": "extended_colors",
+      "tier": 3,
+      "visual_type": "color_swatch",
+      "display_token": "#81D4FA",
+      "visual_prompt": "Clean rounded paint-splash swatch in light blue (#81D4FA) on a neutral card",
+      "audio_prompt": "Find the color light blue",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "extended_colors",
+      "in_core": false
+    },
+    {
+      "id": "color-ext-dark-green",
+      "label": "Color Dark Green",
+      "domain": "colors_measurement",
+      "category": "extended_colors",
+      "tier": 3,
+      "visual_type": "color_swatch",
+      "display_token": "#1B5E20",
+      "visual_prompt": "Clean rounded paint-splash swatch in dark green (#1B5E20) on a neutral card",
+      "audio_prompt": "Find the color dark green",
+      "standard_refs": [
+        "ELOF.P-MATH.8",
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "extended_colors",
+      "in_core": false
+    },
+    {
+      "id": "color-mix-red-yellow-orange",
+      "label": "Color Mixing: Red + Yellow = Orange",
+      "domain": "colors_measurement",
+      "category": "color_mixing",
+      "tier": 3,
+      "visual_type": "color_swatch",
+      "display_token": null,
+      "visual_prompt": "Red paint drop plus yellow paint drop swirling into bright orange",
+      "audio_prompt": "Find the color mixing picture that makes orange",
+      "standard_refs": [
+        "ELOF.P-SCI.1",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "color_mixing",
+      "in_core": false
+    },
+    {
+      "id": "color-mix-blue-yellow-green",
+      "label": "Color Mixing: Blue + Yellow = Green",
+      "domain": "colors_measurement",
+      "category": "color_mixing",
+      "tier": 3,
+      "visual_type": "color_swatch",
+      "display_token": null,
+      "visual_prompt": "Blue paint drop plus yellow paint drop swirling into bright green",
+      "audio_prompt": "Find the color mixing picture that makes green",
+      "standard_refs": [
+        "ELOF.P-SCI.1",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "color_mixing",
+      "in_core": false
+    },
+    {
+      "id": "color-mix-red-blue-purple",
+      "label": "Color Mixing: Red + Blue = Purple",
+      "domain": "colors_measurement",
+      "category": "color_mixing",
+      "tier": 3,
+      "visual_type": "color_swatch",
+      "display_token": null,
+      "visual_prompt": "Red paint drop plus blue paint drop swirling into purple",
+      "audio_prompt": "Find the color mixing picture that makes purple",
+      "standard_refs": [
+        "ELOF.P-SCI.1",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "color_mixing",
+      "in_core": false
+    },
+    {
+      "id": "color-mix-red-white-pink",
+      "label": "Color Mixing: Red + White = Pink",
+      "domain": "colors_measurement",
+      "category": "color_mixing",
+      "tier": 3,
+      "visual_type": "color_swatch",
+      "display_token": null,
+      "visual_prompt": "Red paint drop plus white paint drop swirling into soft pink",
+      "audio_prompt": "Find the color mixing picture that makes pink",
+      "standard_refs": [
+        "ELOF.P-SCI.1",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "color_mixing",
+      "in_core": false
+    },
+    {
+      "id": "color-mix-black-white-gray",
+      "label": "Color Mixing: Black + White = Gray",
+      "domain": "colors_measurement",
+      "category": "color_mixing",
+      "tier": 3,
+      "visual_type": "color_swatch",
+      "display_token": null,
+      "visual_prompt": "Black paint drop plus white paint drop swirling into gray",
+      "audio_prompt": "Find the color mixing picture that makes gray",
+      "standard_refs": [
+        "ELOF.P-SCI.1",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "color_mixing",
+      "in_core": false
+    },
+    {
+      "id": "color-mix-yellow-green-lime",
+      "label": "Color Mixing: Yellow + Green = Lime",
+      "domain": "colors_measurement",
+      "category": "color_mixing",
+      "tier": 4,
+      "visual_type": "color_swatch",
+      "display_token": null,
+      "visual_prompt": "Yellow paint drop plus green paint drop swirling into lime green",
+      "audio_prompt": "Find the color mixing picture that makes lime",
+      "standard_refs": [
+        "ELOF.P-SCI.1",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "color_mixing",
+      "in_core": false
+    },
+    {
+      "id": "meas-order-size",
+      "label": "Ordering: Smallest to Largest",
+      "domain": "colors_measurement",
+      "category": "visual_seriation",
+      "tier": 3,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Four Russian nesting dolls lined up from smallest to largest",
+      "audio_prompt": "Find the picture ordered from smallest to largest",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.2",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "visual_seriation",
+      "in_core": false
+    },
+    {
+      "id": "meas-order-height",
+      "label": "Ordering: Shortest to Tallest",
+      "domain": "colors_measurement",
+      "category": "visual_seriation",
+      "tier": 3,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Four sunflowers lined up from shortest to tallest",
+      "audio_prompt": "Find the picture ordered from shortest to tallest",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.2",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "visual_seriation",
+      "in_core": false
+    },
+    {
+      "id": "meas-order-length",
+      "label": "Ordering: Shortest to Longest",
+      "domain": "colors_measurement",
+      "category": "visual_seriation",
+      "tier": 3,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Four colored pencils lined up from shortest to longest",
+      "audio_prompt": "Find the picture ordered from shortest to longest",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.2",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "visual_seriation",
+      "in_core": false
+    },
+    {
+      "id": "meas-order-weight",
+      "label": "Ordering: Lightest to Heaviest",
+      "domain": "colors_measurement",
+      "category": "visual_seriation",
+      "tier": 4,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Feather, apple, brick, and boulder ordered lightest to heaviest",
+      "audio_prompt": "Find the picture ordered from lightest to heaviest",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.2",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "visual_seriation",
+      "in_core": false
+    },
+    {
+      "id": "meas-order-volume",
+      "label": "Ordering: Emptiest to Fullest",
+      "domain": "colors_measurement",
+      "category": "visual_seriation",
+      "tier": 4,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Four clear beakers filled from nearly empty to completely full",
+      "audio_prompt": "Find the picture ordered from emptiest to fullest",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.2",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "visual_seriation",
+      "in_core": false
+    },
+    {
+      "id": "meas-order-temp",
+      "label": "Ordering: Coldest to Hottest",
+      "domain": "colors_measurement",
+      "category": "visual_seriation",
+      "tier": 4,
+      "visual_type": "comparison_pair",
+      "display_token": null,
+      "visual_prompt": "Ice cube, cool water, warm tea, and steaming soup ordered coldest to hottest",
+      "audio_prompt": "Find the picture ordered from coldest to hottest",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.2",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "visual_seriation",
+      "in_core": false
+    },
+    {
+      "id": "meas-tool-ruler",
+      "label": "Tool: Ruler",
+      "domain": "colors_measurement",
+      "category": "measurement_tools",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clean child-friendly illustration of a wooden 12-inch school ruler with clear tick marks",
+      "audio_prompt": "Find the ruler",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "measurement_tools",
+      "in_core": false
+    },
+    {
+      "id": "meas-tool-balance-scale",
+      "label": "Tool: Balance Scale",
+      "domain": "colors_measurement",
+      "category": "measurement_tools",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clean child-friendly illustration of a two-pan classroom balance scale comparing weights",
+      "audio_prompt": "Find the balance scale",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "measurement_tools",
+      "in_core": false
+    },
+    {
+      "id": "meas-tool-thermometer",
+      "label": "Tool: Thermometer",
+      "domain": "colors_measurement",
+      "category": "measurement_tools",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clean child-friendly illustration of a glass thermometer with red mercury column",
+      "audio_prompt": "Find the thermometer",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "measurement_tools",
+      "in_core": false
+    },
+    {
+      "id": "meas-tool-measuring-cup",
+      "label": "Tool: Measuring Cup",
+      "domain": "colors_measurement",
+      "category": "measurement_tools",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clean child-friendly illustration of a clear kitchen measuring cup with level lines",
+      "audio_prompt": "Find the measuring cup",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "measurement_tools",
+      "in_core": false
+    },
+    {
+      "id": "meas-tool-tape-measure",
+      "label": "Tool: Tape Measure",
+      "domain": "colors_measurement",
+      "category": "measurement_tools",
+      "tier": 4,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clean child-friendly illustration of a yellow flexible cloth measuring tape",
+      "audio_prompt": "Find the tape measure",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "measurement_tools",
+      "in_core": false
+    },
+    {
+      "id": "meas-tool-kitchen-scale",
+      "label": "Tool: Dial Scale",
+      "domain": "colors_measurement",
+      "category": "measurement_tools",
+      "tier": 4,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clean child-friendly illustration of a analog kitchen dial scale with needle",
+      "audio_prompt": "Find the dial scale",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "measurement_tools",
+      "in_core": false
+    },
+    {
+      "id": "meas-tool-timer",
+      "label": "Tool: Sand Timer",
+      "domain": "colors_measurement",
+      "category": "measurement_tools",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clean child-friendly illustration of a wooden hourglass sand timer",
+      "audio_prompt": "Find the sand timer",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "measurement_tools",
+      "in_core": false
+    },
+    {
+      "id": "meas-tool-height-chart",
+      "label": "Tool: Growth Chart",
+      "domain": "colors_measurement",
+      "category": "measurement_tools",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clean child-friendly illustration of a wall height chart beside a smiling child",
+      "audio_prompt": "Find the growth chart",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1",
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "measurement_tools",
+      "in_core": false
+    },
+    {
+      "id": "mat-wood",
+      "label": "Material: Wood",
+      "domain": "colors_measurement",
+      "category": "textures_materials",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Close-up visual swatch and everyday object showing natural wood texture",
+      "audio_prompt": "Find the object made of wood",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.B.3",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "textures_materials",
+      "in_core": false
+    },
+    {
+      "id": "mat-metal",
+      "label": "Material: Metal",
+      "domain": "colors_measurement",
+      "category": "textures_materials",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Close-up visual swatch and everyday object showing natural metal texture",
+      "audio_prompt": "Find the object made of metal",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.B.3",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "textures_materials",
+      "in_core": false
+    },
+    {
+      "id": "mat-glass",
+      "label": "Material: Glass",
+      "domain": "colors_measurement",
+      "category": "textures_materials",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Close-up visual swatch and everyday object showing natural glass texture",
+      "audio_prompt": "Find the object made of glass",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.B.3",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "textures_materials",
+      "in_core": false
+    },
+    {
+      "id": "mat-fabric",
+      "label": "Material: Fabric",
+      "domain": "colors_measurement",
+      "category": "textures_materials",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Close-up visual swatch and everyday object showing natural fabric texture",
+      "audio_prompt": "Find the object made of fabric",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.B.3",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "textures_materials",
+      "in_core": false
+    },
+    {
+      "id": "mat-paper",
+      "label": "Material: Paper",
+      "domain": "colors_measurement",
+      "category": "textures_materials",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Close-up visual swatch and everyday object showing natural paper texture",
+      "audio_prompt": "Find the object made of paper",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.B.3",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "textures_materials",
+      "in_core": false
+    },
+    {
+      "id": "mat-plastic",
+      "label": "Material: Plastic",
+      "domain": "colors_measurement",
+      "category": "textures_materials",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Close-up visual swatch and everyday object showing natural plastic texture",
+      "audio_prompt": "Find the object made of plastic",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.B.3",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "textures_materials",
+      "in_core": false
+    },
+    {
+      "id": "mat-stone",
+      "label": "Material: Stone",
+      "domain": "colors_measurement",
+      "category": "textures_materials",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Close-up visual swatch and everyday object showing natural stone texture",
+      "audio_prompt": "Find the object made of stone",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.B.3",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "textures_materials",
+      "in_core": false
+    },
+    {
+      "id": "mat-brick",
+      "label": "Material: Brick",
+      "domain": "colors_measurement",
+      "category": "textures_materials",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Close-up visual swatch and everyday object showing natural brick texture",
+      "audio_prompt": "Find the object made of brick",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.B.3",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "textures_materials",
+      "in_core": false
+    },
+    {
+      "id": "mat-wool",
+      "label": "Material: Wool",
+      "domain": "colors_measurement",
+      "category": "textures_materials",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Close-up visual swatch and everyday object showing natural wool texture",
+      "audio_prompt": "Find the object made of wool",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.B.3",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "textures_materials",
+      "in_core": false
+    },
+    {
+      "id": "mat-rubber",
+      "label": "Material: Rubber",
+      "domain": "colors_measurement",
+      "category": "textures_materials",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Close-up visual swatch and everyday object showing natural rubber texture",
+      "audio_prompt": "Find the object made of rubber",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.B.3",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "textures_materials",
+      "in_core": false
+    },
+    {
+      "id": "mat-sand",
+      "label": "Material: Sand",
+      "domain": "colors_measurement",
+      "category": "textures_materials",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Close-up visual swatch and everyday object showing natural sand texture",
+      "audio_prompt": "Find the object made of sand",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.B.3",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "textures_materials",
+      "in_core": false
+    },
+    {
+      "id": "mat-fur",
+      "label": "Material: Fur",
+      "domain": "colors_measurement",
+      "category": "textures_materials",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Close-up visual swatch and everyday object showing natural fur texture",
+      "audio_prompt": "Find the object made of fur",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.B.3",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "textures_materials",
+      "in_core": false
+    },
+    {
+      "id": "mat-feathers",
+      "label": "Material: Feathers",
+      "domain": "colors_measurement",
+      "category": "textures_materials",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Close-up visual swatch and everyday object showing natural feathers texture",
+      "audio_prompt": "Find the object made of feathers",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.B.3",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "textures_materials",
+      "in_core": false
+    },
+    {
+      "id": "mat-leather",
+      "label": "Material: Leather",
+      "domain": "colors_measurement",
+      "category": "textures_materials",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Close-up visual swatch and everyday object showing natural leather texture",
+      "audio_prompt": "Find the object made of leather",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.B.3",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "textures_materials",
+      "in_core": false
+    }
+  ]
+}

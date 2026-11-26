@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/kentch2013/Apps4Kids/preschool-curriculum/schema.json",
+  "title": "Apps4Kids Preschool Visual Curriculum Domain Dataset",
+  "description": "Schema for US Kindergarten-readiness visual-only curriculum domain files (core and comprehensive).",
+  "type": "object",
+  "required": ["set", "domain", "version", "items"],
+  "additionalProperties": false,
+  "properties": {
+    "set": {
+      "type": "string",
+      "enum": ["core", "comprehensive"],
+      "description": "Dataset tier: 'core' (~400 items) or 'comprehensive' (1,050+ items superset)."
+    },
+    "domain": {
+      "type": "string",
+      "enum": [
+        "letters",
+        "numbers_quantities",
+        "symbols_icons",
+        "shapes_spatial",
+        "colors_measurement",
+        "time_money",
+        "science_nature",
+        "social_community",
+        "emotions_everyday"
+      ],
+      "description": "Academic domain slug."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version of the dataset."
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/curriculumItem"
+      }
+    }
+  },
+  "$defs": {
+    "curriculumItem": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "domain",
+        "category",
+        "tier",
+        "visual_type",
+        "display_token",
+        "visual_prompt",
+        "audio_prompt",
+        "standard_refs",
+        "distractor_group",
+        "in_core"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)+$",
+          "description": "Unique kebab-case identifier with at least one hyphen."
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Human-readable developer/TTS label (never rendered as text to the child)."
+        },
+        "domain": {
+          "type": "string",
+          "enum": [
+            "letters",
+            "numbers_quantities",
+            "symbols_icons",
+            "shapes_spatial",
+            "colors_measurement",
+            "time_money",
+            "science_nature",
+            "social_community",
+            "emotions_everyday"
+          ]
+        },
+        "category": {
+          "type": "string",
+          "minLength": 2,
+          "description": "Sub-category within the domain."
+        },
+        "tier": {
+          "type": "integer",
+          "enum": [1, 2, 3, 4],
+          "description": "Difficulty tier: 1=foundational, 2=developing, 3=k_ready, 4=stretch."
+        },
+        "visual_type": {
+          "type": "string",
+          "enum": [
+            "letter_glyph",
+            "numeral_glyph",
+            "quantity_visual",
+            "symbol_glyph",
+            "shape_geometry",
+            "color_swatch",
+            "pattern_sequence",
+            "clock_visual",
+            "currency_visual",
+            "diagram_illustration",
+            "pictogram_sign",
+            "comparison_pair"
+          ]
+        },
+        "display_token": {
+          "type": ["string", "null"],
+          "description": "Optional non-word visual token (single letter, letter pair, numeral, hex color, symbol, emoji, clock time, fraction) or null. Must never contain multi-letter English words."
+        },
+        "visual_prompt": {
+          "type": "string",
+          "minLength": 12,
+          "description": "Detailed visual description for illustration or SVG rendering."
+        },
+        "audio_prompt": {
+          "type": "string",
+          "minLength": 5,
+          "description": "Spoken TTS prompt for the child."
+        },
+        "standard_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 3
+          },
+          "description": "Aligned US Kindergarten readiness standards (ELOF, CCSS, NGSS, C3)."
+        },
+        "distractor_group": {
+          "type": "string",
+          "minLength": 2,
+          "description": "Grouping key for selecting plausible visual distractors."
+        },
+        "in_core": {
+          "type": "boolean",
+          "description": "True if this item is part of the core dataset."
+        }
+      }
+    }
+  }
+}

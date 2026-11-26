@@ -1,0 +1,1367 @@
+{
+  "set": "comprehensive",
+  "domain": "symbols_icons",
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "sym-plus",
+      "label": "Plus Sign",
+      "domain": "symbols_icons",
+      "category": "math_symbols",
+      "tier": 3,
+      "visual_type": "symbol_glyph",
+      "display_token": "+",
+      "visual_prompt": "Bold green plus sign + centered on a white card",
+      "audio_prompt": "Find the plus sign",
+      "standard_refs": [
+        "CCSS.MATH.K.OA.A.1"
+      ],
+      "distractor_group": "math_symbols",
+      "in_core": true
+    },
+    {
+      "id": "sym-minus",
+      "label": "Minus Sign",
+      "domain": "symbols_icons",
+      "category": "math_symbols",
+      "tier": 3,
+      "visual_type": "symbol_glyph",
+      "display_token": "-",
+      "visual_prompt": "Bold red minus sign - centered on a white card",
+      "audio_prompt": "Find the minus sign",
+      "standard_refs": [
+        "CCSS.MATH.K.OA.A.1"
+      ],
+      "distractor_group": "math_symbols",
+      "in_core": true
+    },
+    {
+      "id": "sym-equals",
+      "label": "Equals Sign",
+      "domain": "symbols_icons",
+      "category": "math_symbols",
+      "tier": 3,
+      "visual_type": "symbol_glyph",
+      "display_token": "=",
+      "visual_prompt": "Bold blue equals sign = centered on a white card",
+      "audio_prompt": "Find the equals sign",
+      "standard_refs": [
+        "CCSS.MATH.K.OA.A.1"
+      ],
+      "distractor_group": "math_symbols",
+      "in_core": true
+    },
+    {
+      "id": "sym-greater",
+      "label": "Greater Than",
+      "domain": "symbols_icons",
+      "category": "math_symbols",
+      "tier": 4,
+      "visual_type": "symbol_glyph",
+      "display_token": ">",
+      "visual_prompt": "Bold purple greater-than symbol > on a white card",
+      "audio_prompt": "Find the greater than symbol",
+      "standard_refs": [
+        "CCSS.MATH.1.NBT.B.3"
+      ],
+      "distractor_group": "math_symbols",
+      "in_core": true
+    },
+    {
+      "id": "sym-less",
+      "label": "Less Than",
+      "domain": "symbols_icons",
+      "category": "math_symbols",
+      "tier": 4,
+      "visual_type": "symbol_glyph",
+      "display_token": "<",
+      "visual_prompt": "Bold orange less-than symbol < on a white card",
+      "audio_prompt": "Find the less than symbol",
+      "standard_refs": [
+        "CCSS.MATH.1.NBT.B.3"
+      ],
+      "distractor_group": "math_symbols",
+      "in_core": true
+    },
+    {
+      "id": "sym-multiply",
+      "label": "Times Sign",
+      "domain": "symbols_icons",
+      "category": "math_symbols",
+      "tier": 4,
+      "visual_type": "symbol_glyph",
+      "display_token": "×",
+      "visual_prompt": "Bold teal multiplication sign × centered on a white card",
+      "audio_prompt": "Find the times sign",
+      "standard_refs": [
+        "CCSS.MATH.K.OA.A.1"
+      ],
+      "distractor_group": "math_symbols",
+      "in_core": true
+    },
+    {
+      "id": "sym-dollar",
+      "label": "Dollar Sign",
+      "domain": "symbols_icons",
+      "category": "currency_symbols",
+      "tier": 3,
+      "visual_type": "symbol_glyph",
+      "display_token": "$",
+      "visual_prompt": "Crisp green dollar sign $ on a clean white card",
+      "audio_prompt": "Find the dollar sign",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2"
+      ],
+      "distractor_group": "math_symbols",
+      "in_core": true
+    },
+    {
+      "id": "sym-cent",
+      "label": "Cent Sign",
+      "domain": "symbols_icons",
+      "category": "currency_symbols",
+      "tier": 3,
+      "visual_type": "symbol_glyph",
+      "display_token": "¢",
+      "visual_prompt": "Crisp copper-colored cent sign ¢ on a clean white card",
+      "audio_prompt": "Find the cent sign",
+      "standard_refs": [
+        "C3.D2.Eco.1.K-2"
+      ],
+      "distractor_group": "math_symbols",
+      "in_core": true
+    },
+    {
+      "id": "sym-period",
+      "label": "Period",
+      "domain": "symbols_icons",
+      "category": "punctuation",
+      "tier": 3,
+      "visual_type": "symbol_glyph",
+      "display_token": ".",
+      "visual_prompt": "Large dark-navy period dot . at baseline on a white card",
+      "audio_prompt": "Find the period",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "punctuation",
+      "in_core": true
+    },
+    {
+      "id": "sym-question",
+      "label": "Question Mark",
+      "domain": "symbols_icons",
+      "category": "punctuation",
+      "tier": 2,
+      "visual_type": "symbol_glyph",
+      "display_token": "?",
+      "visual_prompt": "Friendly bright-blue question mark ? on a white card",
+      "audio_prompt": "Find the question mark",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "punctuation",
+      "in_core": true
+    },
+    {
+      "id": "sym-exclaim",
+      "label": "Exclamation Point",
+      "domain": "symbols_icons",
+      "category": "punctuation",
+      "tier": 2,
+      "visual_type": "symbol_glyph",
+      "display_token": "!",
+      "visual_prompt": "Friendly bright-orange exclamation point ! on a white card",
+      "audio_prompt": "Find the exclamation point",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "punctuation",
+      "in_core": true
+    },
+    {
+      "id": "sym-comma",
+      "label": "Comma",
+      "domain": "symbols_icons",
+      "category": "punctuation",
+      "tier": 4,
+      "visual_type": "symbol_glyph",
+      "display_token": ",",
+      "visual_prompt": "Large curved dark-navy comma , on a white card",
+      "audio_prompt": "Find the comma",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "punctuation",
+      "in_core": true
+    },
+    {
+      "id": "icon-traffic-red",
+      "label": "Red Traffic Light",
+      "domain": "symbols_icons",
+      "category": "safety_pictograms",
+      "tier": 1,
+      "visual_type": "pictogram_sign",
+      "display_token": "🔴",
+      "visual_prompt": "Vertical traffic light with bright red top lamp glowing",
+      "audio_prompt": "Find the red stop light",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "safety_pictograms",
+      "in_core": true
+    },
+    {
+      "id": "icon-traffic-yellow",
+      "label": "Yellow Traffic Light",
+      "domain": "symbols_icons",
+      "category": "safety_pictograms",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "🟡",
+      "visual_prompt": "Vertical traffic light with bright yellow middle lamp glowing",
+      "audio_prompt": "Find the yellow slow-down light",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "safety_pictograms",
+      "in_core": true
+    },
+    {
+      "id": "icon-traffic-green",
+      "label": "Green Traffic Light",
+      "domain": "symbols_icons",
+      "category": "safety_pictograms",
+      "tier": 1,
+      "visual_type": "pictogram_sign",
+      "display_token": "🟢",
+      "visual_prompt": "Vertical traffic light with bright green bottom lamp glowing",
+      "audio_prompt": "Find the green go light",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "safety_pictograms",
+      "in_core": true
+    },
+    {
+      "id": "icon-stop-octagon",
+      "label": "Red Stop Octagon",
+      "domain": "symbols_icons",
+      "category": "safety_pictograms",
+      "tier": 1,
+      "visual_type": "pictogram_sign",
+      "display_token": "🛑",
+      "visual_prompt": "Solid bright-red octagon traffic sign with white border and no text",
+      "audio_prompt": "Find the red stop sign shape",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "safety_pictograms",
+      "in_core": true
+    },
+    {
+      "id": "icon-crosswalk",
+      "label": "Crosswalk Stripes",
+      "domain": "symbols_icons",
+      "category": "safety_pictograms",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": null,
+      "visual_prompt": "White zebra crosswalk stripes painted across a dark gray street",
+      "audio_prompt": "Find the crosswalk",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "safety_pictograms",
+      "in_core": true
+    },
+    {
+      "id": "icon-pedestrian",
+      "label": "Pedestrian Walking Icon",
+      "domain": "symbols_icons",
+      "category": "safety_pictograms",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "🚶",
+      "visual_prompt": "Clear silhouette icon of a person walking on a bright yellow diamond sign",
+      "audio_prompt": "Find the walking person sign",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "safety_pictograms",
+      "in_core": true
+    },
+    {
+      "id": "icon-restroom",
+      "label": "Restroom Icon",
+      "domain": "symbols_icons",
+      "category": "universal_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "🚻",
+      "visual_prompt": "Universal blue restroom pictogram showing two standing figure silhouettes",
+      "audio_prompt": "Find the restroom sign",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "universal_icons",
+      "in_core": true
+    },
+    {
+      "id": "icon-exit-arrow",
+      "label": "Green Exit Arrow",
+      "domain": "symbols_icons",
+      "category": "safety_pictograms",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": null,
+      "visual_prompt": "Green square safety sign with white running figure and arrow pointing to a door",
+      "audio_prompt": "Find the exit sign",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "safety_pictograms",
+      "in_core": true
+    },
+    {
+      "id": "icon-recycle",
+      "label": "Recycling Symbol",
+      "domain": "symbols_icons",
+      "category": "universal_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "♻️",
+      "visual_prompt": "Three green chasing arrows forming a recycling triangle",
+      "audio_prompt": "Find the recycling symbol",
+      "standard_refs": [
+        "NGSS.K-ESS3-3"
+      ],
+      "distractor_group": "universal_icons",
+      "in_core": true
+    },
+    {
+      "id": "icon-wheelchair",
+      "label": "Wheelchair Accessible Icon",
+      "domain": "symbols_icons",
+      "category": "universal_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "♿",
+      "visual_prompt": "Blue square accessibility sign with white wheelchair silhouette",
+      "audio_prompt": "Find the wheelchair accessible sign",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "universal_icons",
+      "in_core": true
+    },
+    {
+      "id": "icon-caution",
+      "label": "Caution Triangle",
+      "domain": "symbols_icons",
+      "category": "safety_pictograms",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "⚠️",
+      "visual_prompt": "Yellow warning triangle with black border and exclamation mark inside",
+      "audio_prompt": "Find the caution sign",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "safety_pictograms",
+      "in_core": true
+    },
+    {
+      "id": "icon-hazard",
+      "label": "Hazard Skull Icon",
+      "domain": "symbols_icons",
+      "category": "safety_pictograms",
+      "tier": 3,
+      "visual_type": "pictogram_sign",
+      "display_token": "☠️",
+      "visual_prompt": "Orange safety diamond with black skull and crossbones hazard warning",
+      "audio_prompt": "Find the danger keep-away symbol",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "safety_pictograms",
+      "in_core": true
+    },
+    {
+      "id": "icon-no-entry",
+      "label": "No-Entry Circle",
+      "domain": "symbols_icons",
+      "category": "safety_pictograms",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "🚫",
+      "visual_prompt": "Red circle with a diagonal slash meaning do not enter or not allowed",
+      "audio_prompt": "Find the no-entry symbol",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "safety_pictograms",
+      "in_core": true
+    },
+    {
+      "id": "icon-arrow-up",
+      "label": "Up Arrow",
+      "domain": "symbols_icons",
+      "category": "directional_icons",
+      "tier": 1,
+      "visual_type": "pictogram_sign",
+      "display_token": "⬆️",
+      "visual_prompt": "Bold bright-blue arrow pointing straight up",
+      "audio_prompt": "Find the arrow pointing up",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1"
+      ],
+      "distractor_group": "directional_icons",
+      "in_core": true
+    },
+    {
+      "id": "icon-arrow-down",
+      "label": "Down Arrow",
+      "domain": "symbols_icons",
+      "category": "directional_icons",
+      "tier": 1,
+      "visual_type": "pictogram_sign",
+      "display_token": "⬇️",
+      "visual_prompt": "Bold bright-blue arrow pointing straight down",
+      "audio_prompt": "Find the arrow pointing down",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1"
+      ],
+      "distractor_group": "directional_icons",
+      "in_core": true
+    },
+    {
+      "id": "icon-arrow-left",
+      "label": "Left Arrow",
+      "domain": "symbols_icons",
+      "category": "directional_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "⬅️",
+      "visual_prompt": "Bold bright-blue arrow pointing to the left",
+      "audio_prompt": "Find the arrow pointing left",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1"
+      ],
+      "distractor_group": "directional_icons",
+      "in_core": true
+    },
+    {
+      "id": "icon-arrow-right",
+      "label": "Right Arrow",
+      "domain": "symbols_icons",
+      "category": "directional_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "➡️",
+      "visual_prompt": "Bold bright-blue arrow pointing to the right",
+      "audio_prompt": "Find the arrow pointing right",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1"
+      ],
+      "distractor_group": "directional_icons",
+      "in_core": true
+    },
+    {
+      "id": "icon-checkmark",
+      "label": "Checkmark",
+      "domain": "symbols_icons",
+      "category": "universal_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "✅",
+      "visual_prompt": "Bright green checkmark icon on a clean card",
+      "audio_prompt": "Find the checkmark",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "universal_icons",
+      "in_core": true
+    },
+    {
+      "id": "icon-cross-x",
+      "label": "Red X Mark",
+      "domain": "symbols_icons",
+      "category": "universal_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "❌",
+      "visual_prompt": "Bright red X cross mark on a clean card",
+      "audio_prompt": "Find the X mark",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "universal_icons",
+      "in_core": true
+    },
+    {
+      "id": "icon-star",
+      "label": "Gold Star Icon",
+      "domain": "symbols_icons",
+      "category": "universal_icons",
+      "tier": 1,
+      "visual_type": "pictogram_sign",
+      "display_token": "⭐",
+      "visual_prompt": "Bright golden five-pointed star icon",
+      "audio_prompt": "Find the gold star",
+      "standard_refs": [
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "universal_icons",
+      "in_core": true
+    },
+    {
+      "id": "icon-heart",
+      "label": "Red Heart Icon",
+      "domain": "symbols_icons",
+      "category": "universal_icons",
+      "tier": 1,
+      "visual_type": "pictogram_sign",
+      "display_token": "❤️",
+      "visual_prompt": "Bright red heart icon centered on white",
+      "audio_prompt": "Find the red heart",
+      "standard_refs": [
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "universal_icons",
+      "in_core": true
+    },
+    {
+      "id": "icon-play",
+      "label": "Play Triangle",
+      "domain": "symbols_icons",
+      "category": "ui_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "▶️",
+      "visual_prompt": "Rounded green media play triangle pointing right",
+      "audio_prompt": "Find the play button",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "universal_icons",
+      "in_core": true
+    },
+    {
+      "id": "icon-pause",
+      "label": "Pause Bars",
+      "domain": "symbols_icons",
+      "category": "ui_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "⏸️",
+      "visual_prompt": "Two vertical blue bars forming a media pause icon",
+      "audio_prompt": "Find the pause button",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "universal_icons",
+      "in_core": true
+    },
+    {
+      "id": "icon-volume",
+      "label": "Speaker Volume Icon",
+      "domain": "symbols_icons",
+      "category": "ui_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "🔊",
+      "visual_prompt": "Black speaker cone with three curved sound waves",
+      "audio_prompt": "Find the sound volume icon",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "universal_icons",
+      "in_core": true
+    },
+    {
+      "id": "sym-not-equal",
+      "label": "Not Equal Sign",
+      "domain": "symbols_icons",
+      "category": "math_symbols",
+      "tier": 4,
+      "visual_type": "symbol_glyph",
+      "display_token": "≠",
+      "visual_prompt": "Bold purple not-equal sign ≠ centered on white",
+      "audio_prompt": "Find the not equal sign",
+      "standard_refs": [
+        "CCSS.MATH.K.CC.C.7"
+      ],
+      "distractor_group": "math_symbols",
+      "in_core": false
+    },
+    {
+      "id": "sym-percent",
+      "label": "Percent Sign",
+      "domain": "symbols_icons",
+      "category": "math_symbols",
+      "tier": 4,
+      "visual_type": "symbol_glyph",
+      "display_token": "%",
+      "visual_prompt": "Bold teal percent sign % centered on white",
+      "audio_prompt": "Find the percent sign",
+      "standard_refs": [
+        "CCSS.MATH.K.MD.A.1"
+      ],
+      "distractor_group": "math_symbols",
+      "in_core": false
+    },
+    {
+      "id": "sym-degree",
+      "label": "Degree Symbol",
+      "domain": "symbols_icons",
+      "category": "math_symbols",
+      "tier": 4,
+      "visual_type": "symbol_glyph",
+      "display_token": "°",
+      "visual_prompt": "Small raised circle degree symbol ° next to a thermometer icon",
+      "audio_prompt": "Find the degree symbol",
+      "standard_refs": [
+        "NGSS.K-ESS2-1"
+      ],
+      "distractor_group": "math_symbols",
+      "in_core": false
+    },
+    {
+      "id": "sym-hash",
+      "label": "Number Sign",
+      "domain": "symbols_icons",
+      "category": "math_symbols",
+      "tier": 4,
+      "visual_type": "symbol_glyph",
+      "display_token": "#",
+      "visual_prompt": "Bold dark-gray number hash symbol # on white",
+      "audio_prompt": "Find the number sign",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "math_symbols",
+      "in_core": false
+    },
+    {
+      "id": "sym-ampersand",
+      "label": "Ampersand",
+      "domain": "symbols_icons",
+      "category": "punctuation",
+      "tier": 4,
+      "visual_type": "symbol_glyph",
+      "display_token": "&",
+      "visual_prompt": "Bold indigo ampersand symbol & on white",
+      "audio_prompt": "Find the and symbol",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "punctuation",
+      "in_core": false
+    },
+    {
+      "id": "sym-colon",
+      "label": "Time Colon",
+      "domain": "symbols_icons",
+      "category": "punctuation",
+      "tier": 3,
+      "visual_type": "symbol_glyph",
+      "display_token": ":",
+      "visual_prompt": "Two stacked dots forming a digital clock colon :",
+      "audio_prompt": "Find the clock colon",
+      "standard_refs": [
+        "ELOF.P-MATH.8"
+      ],
+      "distractor_group": "punctuation",
+      "in_core": false
+    },
+    {
+      "id": "music-treble-clef",
+      "label": "Treble Clef",
+      "domain": "symbols_icons",
+      "category": "music_notation",
+      "tier": 4,
+      "visual_type": "symbol_glyph",
+      "display_token": "𝄞",
+      "visual_prompt": "Graceful black musical treble clef symbol on a white card",
+      "audio_prompt": "Find the treble clef",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "music_notation",
+      "in_core": false
+    },
+    {
+      "id": "music-quarter-note",
+      "label": "Quarter Note",
+      "domain": "symbols_icons",
+      "category": "music_notation",
+      "tier": 3,
+      "visual_type": "symbol_glyph",
+      "display_token": "♩",
+      "visual_prompt": "Solid black musical quarter note with stem",
+      "audio_prompt": "Find the quarter note",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "music_notation",
+      "in_core": false
+    },
+    {
+      "id": "music-eighth-note",
+      "label": "Eighth Note Pair",
+      "domain": "symbols_icons",
+      "category": "music_notation",
+      "tier": 3,
+      "visual_type": "symbol_glyph",
+      "display_token": "♫",
+      "visual_prompt": "Two beamed black musical eighth notes",
+      "audio_prompt": "Find the beamed music notes",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "music_notation",
+      "in_core": false
+    },
+    {
+      "id": "music-half-note",
+      "label": "Half Note",
+      "domain": "symbols_icons",
+      "category": "music_notation",
+      "tier": 4,
+      "visual_type": "symbol_glyph",
+      "display_token": null,
+      "visual_prompt": "Open oval musical half note with vertical stem",
+      "audio_prompt": "Find the hollow half note",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "music_notation",
+      "in_core": false
+    },
+    {
+      "id": "music-whole-note",
+      "label": "Whole Note",
+      "domain": "symbols_icons",
+      "category": "music_notation",
+      "tier": 4,
+      "visual_type": "symbol_glyph",
+      "display_token": null,
+      "visual_prompt": "Open oval musical whole note without a stem",
+      "audio_prompt": "Find the whole note",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "music_notation",
+      "in_core": false
+    },
+    {
+      "id": "music-rest",
+      "label": "Quarter Rest",
+      "domain": "symbols_icons",
+      "category": "music_notation",
+      "tier": 4,
+      "visual_type": "symbol_glyph",
+      "display_token": null,
+      "visual_prompt": "Squiggly black musical quarter rest symbol",
+      "audio_prompt": "Find the music rest symbol",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "music_notation",
+      "in_core": false
+    },
+    {
+      "id": "music-sharp",
+      "label": "Musical Sharp",
+      "domain": "symbols_icons",
+      "category": "music_notation",
+      "tier": 4,
+      "visual_type": "symbol_glyph",
+      "display_token": "♯",
+      "visual_prompt": "Black musical sharp symbol ♯ on white",
+      "audio_prompt": "Find the sharp music symbol",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "music_notation",
+      "in_core": false
+    },
+    {
+      "id": "music-flat",
+      "label": "Musical Flat",
+      "domain": "symbols_icons",
+      "category": "music_notation",
+      "tier": 4,
+      "visual_type": "symbol_glyph",
+      "display_token": "♭",
+      "visual_prompt": "Black musical flat symbol ♭ on white",
+      "audio_prompt": "Find the flat music symbol",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "music_notation",
+      "in_core": false
+    },
+    {
+      "id": "icon-first-aid",
+      "label": "First Aid Cross",
+      "domain": "symbols_icons",
+      "category": "safety_pictograms",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "➕",
+      "visual_prompt": "Bright red medical first-aid cross on a white square",
+      "audio_prompt": "Find the first aid medical sign",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "safety_pictograms",
+      "in_core": false
+    },
+    {
+      "id": "icon-fire-extinguisher",
+      "label": "Fire Extinguisher Icon",
+      "domain": "symbols_icons",
+      "category": "safety_pictograms",
+      "tier": 3,
+      "visual_type": "pictogram_sign",
+      "display_token": "🧯",
+      "visual_prompt": "Red safety sign showing a fire extinguisher silhouette",
+      "audio_prompt": "Find the fire extinguisher sign",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "safety_pictograms",
+      "in_core": false
+    },
+    {
+      "id": "icon-high-voltage",
+      "label": "High Voltage Lightning",
+      "domain": "symbols_icons",
+      "category": "safety_pictograms",
+      "tier": 3,
+      "visual_type": "pictogram_sign",
+      "display_token": "⚡",
+      "visual_prompt": "Yellow warning triangle with a black lightning bolt inside",
+      "audio_prompt": "Find the electricity warning sign",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "safety_pictograms",
+      "in_core": false
+    },
+    {
+      "id": "icon-biohazard",
+      "label": "Biohazard Warning",
+      "domain": "symbols_icons",
+      "category": "safety_pictograms",
+      "tier": 4,
+      "visual_type": "pictogram_sign",
+      "display_token": "☣️",
+      "visual_prompt": "Orange warning sign with black biohazard trefoil symbol",
+      "audio_prompt": "Find the biohazard safety sign",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "safety_pictograms",
+      "in_core": false
+    },
+    {
+      "id": "icon-wifi",
+      "label": "Wi-Fi Signal Icon",
+      "domain": "symbols_icons",
+      "category": "ui_icons",
+      "tier": 3,
+      "visual_type": "pictogram_sign",
+      "display_token": "📶",
+      "visual_prompt": "Three curved blue radio waves radiating upward from a dot",
+      "audio_prompt": "Find the Wi-Fi signal icon",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "ui_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-battery-full",
+      "label": "Full Battery Icon",
+      "domain": "symbols_icons",
+      "category": "ui_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "🔋",
+      "visual_prompt": "Green battery icon completely charged",
+      "audio_prompt": "Find the full battery",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "ui_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-battery-low",
+      "label": "Low Battery Icon",
+      "domain": "symbols_icons",
+      "category": "ui_icons",
+      "tier": 3,
+      "visual_type": "pictogram_sign",
+      "display_token": "🪫",
+      "visual_prompt": "Battery outline with one tiny red bar at the bottom",
+      "audio_prompt": "Find the low battery",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "ui_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-magnifier",
+      "label": "Magnifying Glass Icon",
+      "domain": "symbols_icons",
+      "category": "ui_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "🔍",
+      "visual_prompt": "Round magnifying glass icon tilted to the right",
+      "audio_prompt": "Find the search magnifying glass",
+      "standard_refs": [
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "ui_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-lock",
+      "label": "Locked Padlock",
+      "domain": "symbols_icons",
+      "category": "ui_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "🔒",
+      "visual_prompt": "Golden closed padlock icon",
+      "audio_prompt": "Find the locked padlock",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "ui_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-unlock",
+      "label": "Unlocked Padlock",
+      "domain": "symbols_icons",
+      "category": "ui_icons",
+      "tier": 3,
+      "visual_type": "pictogram_sign",
+      "display_token": "🔓",
+      "visual_prompt": "Golden open padlock icon with raised shackle",
+      "audio_prompt": "Find the unlocked padlock",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "ui_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-trash",
+      "label": "Trash Bin Icon",
+      "domain": "symbols_icons",
+      "category": "universal_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "🗑️",
+      "visual_prompt": "Simple gray trash can icon for litter",
+      "audio_prompt": "Find the trash bin icon",
+      "standard_refs": [
+        "NGSS.K-ESS3-3"
+      ],
+      "distractor_group": "universal_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-compost",
+      "label": "Compost Leaf Icon",
+      "domain": "symbols_icons",
+      "category": "universal_icons",
+      "tier": 3,
+      "visual_type": "pictogram_sign",
+      "display_token": "🌱",
+      "visual_prompt": "Green leaf inside a circular compost arrow icon",
+      "audio_prompt": "Find the compost icon",
+      "standard_refs": [
+        "NGSS.K-ESS3-3"
+      ],
+      "distractor_group": "universal_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-phone",
+      "label": "Telephone Icon",
+      "domain": "symbols_icons",
+      "category": "ui_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "📞",
+      "visual_prompt": "Classic curved telephone handset icon",
+      "audio_prompt": "Find the phone icon",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "ui_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-mail",
+      "label": "Envelope Mail Icon",
+      "domain": "symbols_icons",
+      "category": "ui_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "✉️",
+      "visual_prompt": "White closed envelope icon with triangular flap",
+      "audio_prompt": "Find the mail envelope icon",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "ui_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-calendar-ui",
+      "label": "Calendar Page Icon",
+      "domain": "symbols_icons",
+      "category": "ui_icons",
+      "tier": 3,
+      "visual_type": "pictogram_sign",
+      "display_token": "📅",
+      "visual_prompt": "Simple desk calendar icon with red top bar",
+      "audio_prompt": "Find the calendar icon",
+      "standard_refs": [
+        "C3.D2.His.2.K-2"
+      ],
+      "distractor_group": "ui_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-globe-ui",
+      "label": "Globe Icon",
+      "domain": "symbols_icons",
+      "category": "universal_icons",
+      "tier": 3,
+      "visual_type": "pictogram_sign",
+      "display_token": "🌐",
+      "visual_prompt": "Blue circle globe icon with latitude and longitude lines",
+      "audio_prompt": "Find the globe icon",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "universal_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-compass-n",
+      "label": "North Compass Arrow",
+      "domain": "symbols_icons",
+      "category": "directional_icons",
+      "tier": 4,
+      "visual_type": "pictogram_sign",
+      "display_token": "N",
+      "visual_prompt": "Compass arrow pointing straight up labeled N for North",
+      "audio_prompt": "Find the North compass arrow",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "directional_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-compass-s",
+      "label": "South Compass Arrow",
+      "domain": "symbols_icons",
+      "category": "directional_icons",
+      "tier": 4,
+      "visual_type": "pictogram_sign",
+      "display_token": "S",
+      "visual_prompt": "Compass arrow pointing straight down labeled S for South",
+      "audio_prompt": "Find the South compass arrow",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "directional_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-compass-e",
+      "label": "East Compass Arrow",
+      "domain": "symbols_icons",
+      "category": "directional_icons",
+      "tier": 4,
+      "visual_type": "pictogram_sign",
+      "display_token": "E",
+      "visual_prompt": "Compass arrow pointing right labeled E for East",
+      "audio_prompt": "Find the East compass arrow",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "directional_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-compass-w",
+      "label": "West Compass Arrow",
+      "domain": "symbols_icons",
+      "category": "directional_icons",
+      "tier": 4,
+      "visual_type": "pictogram_sign",
+      "display_token": "W",
+      "visual_prompt": "Compass arrow pointing left labeled W for West",
+      "audio_prompt": "Find the West compass arrow",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "directional_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-camera",
+      "label": "Camera Icon",
+      "domain": "symbols_icons",
+      "category": "ui_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "📷",
+      "visual_prompt": "Simple dark-gray camera icon with round lens",
+      "audio_prompt": "Find the camera icon",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "ui_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-bell",
+      "label": "Bell Notification Icon",
+      "domain": "symbols_icons",
+      "category": "ui_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "🔔",
+      "visual_prompt": "Golden ringing bell icon",
+      "audio_prompt": "Find the bell icon",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "ui_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-home",
+      "label": "Home House Icon",
+      "domain": "symbols_icons",
+      "category": "ui_icons",
+      "tier": 1,
+      "visual_type": "pictogram_sign",
+      "display_token": "🏠",
+      "visual_prompt": "Simple house silhouette icon with triangular roof",
+      "audio_prompt": "Find the home icon",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "ui_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-gear",
+      "label": "Settings Gear Icon",
+      "domain": "symbols_icons",
+      "category": "ui_icons",
+      "tier": 3,
+      "visual_type": "pictogram_sign",
+      "display_token": "⚙️",
+      "visual_prompt": "Gray toothed mechanical gear icon",
+      "audio_prompt": "Find the gear icon",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "ui_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-sun-weather",
+      "label": "Sun Weather Icon",
+      "domain": "symbols_icons",
+      "category": "weather_icons",
+      "tier": 1,
+      "visual_type": "pictogram_sign",
+      "display_token": "☀️",
+      "visual_prompt": "Flat yellow sun circle with eight short rays",
+      "audio_prompt": "Find the sun weather icon",
+      "standard_refs": [
+        "NGSS.K-ESS2-1"
+      ],
+      "distractor_group": "weather_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-moon-weather",
+      "label": "Crescent Moon Icon",
+      "domain": "symbols_icons",
+      "category": "weather_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "🌙",
+      "visual_prompt": "Flat golden crescent moon icon",
+      "audio_prompt": "Find the moon icon",
+      "standard_refs": [
+        "NGSS.K-ESS2-1"
+      ],
+      "distractor_group": "weather_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-cloud-weather",
+      "label": "Cloud Weather Icon",
+      "domain": "symbols_icons",
+      "category": "weather_icons",
+      "tier": 1,
+      "visual_type": "pictogram_sign",
+      "display_token": "☁️",
+      "visual_prompt": "Flat fluffy sky-blue cloud icon",
+      "audio_prompt": "Find the cloud icon",
+      "standard_refs": [
+        "NGSS.K-ESS2-1"
+      ],
+      "distractor_group": "weather_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-raindrop",
+      "label": "Raindrop Icon",
+      "domain": "symbols_icons",
+      "category": "weather_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "💧",
+      "visual_prompt": "Single bright-blue teardrop raindrop icon",
+      "audio_prompt": "Find the raindrop icon",
+      "standard_refs": [
+        "NGSS.K-ESS2-1"
+      ],
+      "distractor_group": "weather_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-snowflake",
+      "label": "Snowflake Icon",
+      "domain": "symbols_icons",
+      "category": "weather_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "❄️",
+      "visual_prompt": "Symmetrical six-pointed ice-blue snowflake icon",
+      "audio_prompt": "Find the snowflake icon",
+      "standard_refs": [
+        "NGSS.K-ESS2-1"
+      ],
+      "distractor_group": "weather_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-lightning-ui",
+      "label": "Lightning Bolt Icon",
+      "domain": "symbols_icons",
+      "category": "weather_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "⚡",
+      "visual_prompt": "Jagged yellow lightning bolt icon",
+      "audio_prompt": "Find the lightning bolt",
+      "standard_refs": [
+        "NGSS.K-ESS2-1"
+      ],
+      "distractor_group": "weather_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-airplane-sign",
+      "label": "Airport Airplane Icon",
+      "domain": "symbols_icons",
+      "category": "universal_icons",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "✈️",
+      "visual_prompt": "Flat blue airplane silhouette pointing upward",
+      "audio_prompt": "Find the airport airplane sign",
+      "standard_refs": [
+        "C3.D2.Geo.1.K-2"
+      ],
+      "distractor_group": "universal_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-bicycle-sign",
+      "label": "Bike Lane Icon",
+      "domain": "symbols_icons",
+      "category": "safety_pictograms",
+      "tier": 2,
+      "visual_type": "pictogram_sign",
+      "display_token": "🚲",
+      "visual_prompt": "Green bike-lane sign with white bicycle silhouette",
+      "audio_prompt": "Find the bicycle lane sign",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "safety_pictograms",
+      "in_core": false
+    },
+    {
+      "id": "icon-mute",
+      "label": "Muted Speaker Icon",
+      "domain": "symbols_icons",
+      "category": "ui_icons",
+      "tier": 3,
+      "visual_type": "pictogram_sign",
+      "display_token": "🔇",
+      "visual_prompt": "Speaker cone with a diagonal slash meaning quiet or mute",
+      "audio_prompt": "Find the mute quiet icon",
+      "standard_refs": [
+        "ELOF.P-LIT.2"
+      ],
+      "distractor_group": "ui_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-water-faucet",
+      "label": "Drinking Water Icon",
+      "domain": "symbols_icons",
+      "category": "universal_icons",
+      "tier": 3,
+      "visual_type": "pictogram_sign",
+      "display_token": "🚰",
+      "visual_prompt": "Blue square sign showing a faucet pouring water into a cup",
+      "audio_prompt": "Find the drinking water sign",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "universal_icons",
+      "in_core": false
+    },
+    {
+      "id": "icon-stairs",
+      "label": "Stairs Icon",
+      "domain": "symbols_icons",
+      "category": "universal_icons",
+      "tier": 3,
+      "visual_type": "pictogram_sign",
+      "display_token": null,
+      "visual_prompt": "Simple step-by-step staircase pictogram pointing up",
+      "audio_prompt": "Find the stairs sign",
+      "standard_refs": [
+        "C3.D2.Civ.2.K-2"
+      ],
+      "distractor_group": "universal_icons",
+      "in_core": false
+    }
+  ]
+}

@@ -1,0 +1,1557 @@
+{
+  "set": "comprehensive",
+  "domain": "shapes_spatial",
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "shape-2d-circle",
+      "label": "Circle",
+      "domain": "shapes_spatial",
+      "category": "2d_shapes",
+      "tier": 1,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Solid bright-red circle with smooth round edge centered on a clean white card",
+      "audio_prompt": "Find the circle",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "2d_shapes",
+      "in_core": true
+    },
+    {
+      "id": "shape-2d-square",
+      "label": "Square",
+      "domain": "shapes_spatial",
+      "category": "2d_shapes",
+      "tier": 1,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Solid bright-blue square with four equal sides and four square corners centered on a clean white card",
+      "audio_prompt": "Find the square",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "2d_shapes",
+      "in_core": true
+    },
+    {
+      "id": "shape-2d-triangle",
+      "label": "Triangle",
+      "domain": "shapes_spatial",
+      "category": "2d_shapes",
+      "tier": 1,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Solid bright-yellow equilateral triangle with three sides and three corners centered on a clean white card",
+      "audio_prompt": "Find the triangle",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "2d_shapes",
+      "in_core": true
+    },
+    {
+      "id": "shape-2d-rectangle",
+      "label": "Rectangle",
+      "domain": "shapes_spatial",
+      "category": "2d_shapes",
+      "tier": 2,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Solid green horizontal rectangle with two long sides and two short sides centered on a clean white card",
+      "audio_prompt": "Find the rectangle",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "2d_shapes",
+      "in_core": true
+    },
+    {
+      "id": "shape-2d-oval",
+      "label": "Oval",
+      "domain": "shapes_spatial",
+      "category": "2d_shapes",
+      "tier": 2,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Solid orange vertical oval egg-like curve centered on a clean white card",
+      "audio_prompt": "Find the oval",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "2d_shapes",
+      "in_core": true
+    },
+    {
+      "id": "shape-2d-diamond",
+      "label": "Diamond Rhombus",
+      "domain": "shapes_spatial",
+      "category": "2d_shapes",
+      "tier": 2,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Solid purple diamond rhombus standing on one point centered on a clean white card",
+      "audio_prompt": "Find the diamond rhombus",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "2d_shapes",
+      "in_core": true
+    },
+    {
+      "id": "shape-2d-star",
+      "label": "Star",
+      "domain": "shapes_spatial",
+      "category": "2d_shapes",
+      "tier": 1,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Solid golden five-pointed star centered on a clean white card",
+      "audio_prompt": "Find the star",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "2d_shapes",
+      "in_core": true
+    },
+    {
+      "id": "shape-2d-heart",
+      "label": "Heart",
+      "domain": "shapes_spatial",
+      "category": "2d_shapes",
+      "tier": 1,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Solid bright-pink symmetrical heart shape centered on a clean white card",
+      "audio_prompt": "Find the heart",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "2d_shapes",
+      "in_core": true
+    },
+    {
+      "id": "shape-2d-pentagon",
+      "label": "Pentagon",
+      "domain": "shapes_spatial",
+      "category": "2d_shapes",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Solid teal five-sided pentagon centered on a clean white card",
+      "audio_prompt": "Find the pentagon",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "2d_shapes",
+      "in_core": true
+    },
+    {
+      "id": "shape-2d-hexagon",
+      "label": "Hexagon",
+      "domain": "shapes_spatial",
+      "category": "2d_shapes",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Solid coral six-sided hexagon centered on a clean white card",
+      "audio_prompt": "Find the hexagon",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "2d_shapes",
+      "in_core": true
+    },
+    {
+      "id": "shape-2d-octagon",
+      "label": "Octagon",
+      "domain": "shapes_spatial",
+      "category": "2d_shapes",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Solid crimson eight-sided octagon centered on a clean white card",
+      "audio_prompt": "Find the octagon",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "2d_shapes",
+      "in_core": true
+    },
+    {
+      "id": "shape-2d-trapezoid",
+      "label": "Trapezoid",
+      "domain": "shapes_spatial",
+      "category": "2d_shapes",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Solid sky-blue trapezoid with one pair of parallel sides centered on a clean white card",
+      "audio_prompt": "Find the trapezoid",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "2d_shapes",
+      "in_core": true
+    },
+    {
+      "id": "shape-2d-crescent",
+      "label": "Crescent",
+      "domain": "shapes_spatial",
+      "category": "2d_shapes",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Solid golden crescent moon shape centered on a clean white card",
+      "audio_prompt": "Find the crescent",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "2d_shapes",
+      "in_core": true
+    },
+    {
+      "id": "shape-2d-semicircle",
+      "label": "Semicircle",
+      "domain": "shapes_spatial",
+      "category": "2d_shapes",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Solid mint-green half-circle flat on the bottom centered on a clean white card",
+      "audio_prompt": "Find the semicircle",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "2d_shapes",
+      "in_core": true
+    },
+    {
+      "id": "shape-3d-sphere",
+      "label": "Sphere",
+      "domain": "shapes_spatial",
+      "category": "3d_solids",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Shaded 3D blue sphere showing smooth curved surface on a clean white background",
+      "audio_prompt": "Find the 3D sphere",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.3",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "3d_solids",
+      "in_core": true
+    },
+    {
+      "id": "shape-3d-cube",
+      "label": "Cube",
+      "domain": "shapes_spatial",
+      "category": "3d_solids",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Shaded 3D red cube showing three visible square faces on a clean white background",
+      "audio_prompt": "Find the 3D cube",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.3",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "3d_solids",
+      "in_core": true
+    },
+    {
+      "id": "shape-3d-cone",
+      "label": "Cone",
+      "domain": "shapes_spatial",
+      "category": "3d_solids",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Shaded 3D yellow cone with circular base and pointed top on a clean white background",
+      "audio_prompt": "Find the 3D cone",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.3",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "3d_solids",
+      "in_core": true
+    },
+    {
+      "id": "shape-3d-cylinder",
+      "label": "Cylinder",
+      "domain": "shapes_spatial",
+      "category": "3d_solids",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Shaded 3D green cylinder with flat circular top and bottom on a clean white background",
+      "audio_prompt": "Find the 3D cylinder",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.3",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "3d_solids",
+      "in_core": true
+    },
+    {
+      "id": "shape-3d-pyramid",
+      "label": "Pyramid",
+      "domain": "shapes_spatial",
+      "category": "3d_solids",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Shaded 3D orange square pyramid with triangular sides meeting at a point on a clean white background",
+      "audio_prompt": "Find the 3D pyramid",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.3",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "3d_solids",
+      "in_core": true
+    },
+    {
+      "id": "shape-3d-rectangular-prism",
+      "label": "Rectangular Prism",
+      "domain": "shapes_spatial",
+      "category": "3d_solids",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Shaded 3D purple rectangular prism box on a clean white background",
+      "audio_prompt": "Find the 3D rectangular prism",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.3",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "3d_solids",
+      "in_core": true
+    },
+    {
+      "id": "spatial-above",
+      "label": "Spatial: Above",
+      "domain": "shapes_spatial",
+      "category": "spatial_prepositions",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear preschool diagram showing red ball floating above a wooden box",
+      "audio_prompt": "Find the picture showing above",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "spatial_prepositions",
+      "in_core": true
+    },
+    {
+      "id": "spatial-below",
+      "label": "Spatial: Below",
+      "domain": "shapes_spatial",
+      "category": "spatial_prepositions",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear preschool diagram showing blue ball resting directly below a wooden shelf",
+      "audio_prompt": "Find the picture showing below",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "spatial_prepositions",
+      "in_core": true
+    },
+    {
+      "id": "spatial-beside",
+      "label": "Spatial: Beside",
+      "domain": "shapes_spatial",
+      "category": "spatial_prepositions",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear preschool diagram showing orange cat sitting right beside a green flowerpot",
+      "audio_prompt": "Find the picture showing beside",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "spatial_prepositions",
+      "in_core": true
+    },
+    {
+      "id": "spatial-in-front",
+      "label": "Spatial: In Front Of",
+      "domain": "shapes_spatial",
+      "category": "spatial_prepositions",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear preschool diagram showing yellow duck standing in front of a red barn",
+      "audio_prompt": "Find the picture showing in front of",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "spatial_prepositions",
+      "in_core": true
+    },
+    {
+      "id": "spatial-behind",
+      "label": "Spatial: Behind",
+      "domain": "shapes_spatial",
+      "category": "spatial_prepositions",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear preschool diagram showing playful puppy peeking from behind a tree trunk",
+      "audio_prompt": "Find the picture showing behind",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "spatial_prepositions",
+      "in_core": true
+    },
+    {
+      "id": "spatial-inside",
+      "label": "Spatial: Inside",
+      "domain": "shapes_spatial",
+      "category": "spatial_prepositions",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear preschool diagram showing teddy bear sitting inside an open cardboard box",
+      "audio_prompt": "Find the picture showing inside",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "spatial_prepositions",
+      "in_core": true
+    },
+    {
+      "id": "spatial-outside",
+      "label": "Spatial: Outside",
+      "domain": "shapes_spatial",
+      "category": "spatial_prepositions",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear preschool diagram showing teddy bear sitting outside next to a closed box",
+      "audio_prompt": "Find the picture showing outside",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "spatial_prepositions",
+      "in_core": true
+    },
+    {
+      "id": "spatial-between",
+      "label": "Spatial: Between",
+      "domain": "shapes_spatial",
+      "category": "spatial_prepositions",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear preschool diagram showing green apple sitting right between two red apples",
+      "audio_prompt": "Find the picture showing between",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "spatial_prepositions",
+      "in_core": true
+    },
+    {
+      "id": "spatial-on-top",
+      "label": "Spatial: On Top",
+      "domain": "shapes_spatial",
+      "category": "spatial_prepositions",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear preschool diagram showing blue bird perched right on top of a birdhouse",
+      "audio_prompt": "Find the picture showing on top",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "spatial_prepositions",
+      "in_core": true
+    },
+    {
+      "id": "spatial-under",
+      "label": "Spatial: Under",
+      "domain": "shapes_spatial",
+      "category": "spatial_prepositions",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear preschool diagram showing striped ball tucked under a wooden table",
+      "audio_prompt": "Find the picture showing under",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "spatial_prepositions",
+      "in_core": true
+    },
+    {
+      "id": "spatial-left",
+      "label": "Spatial: On the Left",
+      "domain": "shapes_spatial",
+      "category": "spatial_prepositions",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear preschool diagram showing red star positioned on the far left side of a fence",
+      "audio_prompt": "Find the picture showing on the left",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "spatial_prepositions",
+      "in_core": true
+    },
+    {
+      "id": "spatial-right",
+      "label": "Spatial: On the Right",
+      "domain": "shapes_spatial",
+      "category": "spatial_prepositions",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear preschool diagram showing red star positioned on the far right side of a fence",
+      "audio_prompt": "Find the picture showing on the right",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "spatial_prepositions",
+      "in_core": true
+    },
+    {
+      "id": "pat-ab-color",
+      "label": "AB Color Pattern",
+      "domain": "shapes_spatial",
+      "category": "visual_patterns",
+      "tier": 2,
+      "visual_type": "pattern_sequence",
+      "display_token": null,
+      "visual_prompt": "Row of circles alternating red, blue, red, blue, red, followed by a blank slot",
+      "audio_prompt": "Look at the ab color pattern and find what comes next",
+      "standard_refs": [
+        "ELOF.P-MATH.7"
+      ],
+      "distractor_group": "visual_patterns",
+      "in_core": true
+    },
+    {
+      "id": "pat-ab-shape",
+      "label": "AB Shape Pattern",
+      "domain": "shapes_spatial",
+      "category": "visual_patterns",
+      "tier": 2,
+      "visual_type": "pattern_sequence",
+      "display_token": null,
+      "visual_prompt": "Row alternating circle, square, circle, square, circle, followed by a blank slot",
+      "audio_prompt": "Look at the ab shape pattern and find what comes next",
+      "standard_refs": [
+        "ELOF.P-MATH.7"
+      ],
+      "distractor_group": "visual_patterns",
+      "in_core": true
+    },
+    {
+      "id": "pat-aabb",
+      "label": "AABB Pattern",
+      "domain": "shapes_spatial",
+      "category": "visual_patterns",
+      "tier": 3,
+      "visual_type": "pattern_sequence",
+      "display_token": null,
+      "visual_prompt": "Row showing red, red, blue, blue, red, red, followed by a blank slot",
+      "audio_prompt": "Look at the aabb pattern and find what comes next",
+      "standard_refs": [
+        "ELOF.P-MATH.7"
+      ],
+      "distractor_group": "visual_patterns",
+      "in_core": true
+    },
+    {
+      "id": "pat-abb",
+      "label": "ABB Pattern",
+      "domain": "shapes_spatial",
+      "category": "visual_patterns",
+      "tier": 3,
+      "visual_type": "pattern_sequence",
+      "display_token": null,
+      "visual_prompt": "Row showing triangle, circle, circle, triangle, circle, circle, followed by a blank slot",
+      "audio_prompt": "Look at the abb pattern and find what comes next",
+      "standard_refs": [
+        "ELOF.P-MATH.7"
+      ],
+      "distractor_group": "visual_patterns",
+      "in_core": true
+    },
+    {
+      "id": "pat-aab",
+      "label": "AAB Pattern",
+      "domain": "shapes_spatial",
+      "category": "visual_patterns",
+      "tier": 3,
+      "visual_type": "pattern_sequence",
+      "display_token": null,
+      "visual_prompt": "Row showing star, star, heart, star, star, heart, followed by a blank slot",
+      "audio_prompt": "Look at the aab pattern and find what comes next",
+      "standard_refs": [
+        "ELOF.P-MATH.7"
+      ],
+      "distractor_group": "visual_patterns",
+      "in_core": true
+    },
+    {
+      "id": "pat-abc",
+      "label": "ABC Pattern",
+      "domain": "shapes_spatial",
+      "category": "visual_patterns",
+      "tier": 3,
+      "visual_type": "pattern_sequence",
+      "display_token": null,
+      "visual_prompt": "Row showing circle, square, triangle, circle, square, followed by a blank slot",
+      "audio_prompt": "Look at the abc pattern and find what comes next",
+      "standard_refs": [
+        "ELOF.P-MATH.7"
+      ],
+      "distractor_group": "visual_patterns",
+      "in_core": true
+    },
+    {
+      "id": "shape-rot-triangle-upside",
+      "label": "Inverted Triangle",
+      "domain": "shapes_spatial",
+      "category": "rotated_2d_shapes",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Yellow triangle pointing straight down instead of up on a clean white card",
+      "audio_prompt": "Find the inverted triangle",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "rotated_2d_shapes",
+      "in_core": false
+    },
+    {
+      "id": "shape-rot-triangle-scalene",
+      "label": "Long Tilted Triangle",
+      "domain": "shapes_spatial",
+      "category": "rotated_2d_shapes",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Slanted green triangle rotated 45 degrees on a clean white card",
+      "audio_prompt": "Find the long tilted triangle",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "rotated_2d_shapes",
+      "in_core": false
+    },
+    {
+      "id": "shape-rot-square-tilted",
+      "label": "Tilted Square",
+      "domain": "shapes_spatial",
+      "category": "rotated_2d_shapes",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Blue square rotated 45 degrees resting on a corner on a clean white card",
+      "audio_prompt": "Find the tilted square",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "rotated_2d_shapes",
+      "in_core": false
+    },
+    {
+      "id": "shape-rot-rectangle-tall",
+      "label": "Tall Vertical Rectangle",
+      "domain": "shapes_spatial",
+      "category": "rotated_2d_shapes",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Tall skinny purple rectangle standing upright on a clean white card",
+      "audio_prompt": "Find the tall vertical rectangle",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "rotated_2d_shapes",
+      "in_core": false
+    },
+    {
+      "id": "shape-rot-rectangle-tilted",
+      "label": "Tilted Rectangle",
+      "domain": "shapes_spatial",
+      "category": "rotated_2d_shapes",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Orange rectangle tilted diagonally on a clean white card",
+      "audio_prompt": "Find the tilted rectangle",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "rotated_2d_shapes",
+      "in_core": false
+    },
+    {
+      "id": "shape-rot-hexagon-tilted",
+      "label": "Rotated Hexagon",
+      "domain": "shapes_spatial",
+      "category": "rotated_2d_shapes",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Coral hexagon rotated onto a point on a clean white card",
+      "audio_prompt": "Find the rotated hexagon",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "rotated_2d_shapes",
+      "in_core": false
+    },
+    {
+      "id": "shape-rot-pentagon-tilted",
+      "label": "Inverted Pentagon",
+      "domain": "shapes_spatial",
+      "category": "rotated_2d_shapes",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Teal pentagon pointing downward on a clean white card",
+      "audio_prompt": "Find the inverted pentagon",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "rotated_2d_shapes",
+      "in_core": false
+    },
+    {
+      "id": "shape-rot-trapezoid-tall",
+      "label": "Sideways Trapezoid",
+      "domain": "shapes_spatial",
+      "category": "rotated_2d_shapes",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Sky-blue trapezoid rotated 90 degrees on a clean white card",
+      "audio_prompt": "Find the sideways trapezoid",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.2",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "rotated_2d_shapes",
+      "in_core": false
+    },
+    {
+      "id": "shape-real3d-ball-sphere",
+      "label": "Basketball (Sphere)",
+      "domain": "shapes_spatial",
+      "category": "real_world_3d",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Friendly illustration of a round orange basketball illustrating a 3d sphere",
+      "audio_prompt": "Find the real-world object shaped like a sphere",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.3",
+        "CCSS.MATH.K.G.B.4"
+      ],
+      "distractor_group": "real_world_3d",
+      "in_core": false
+    },
+    {
+      "id": "shape-real3d-can-cylinder",
+      "label": "Soup Can (Cylinder)",
+      "domain": "shapes_spatial",
+      "category": "real_world_3d",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Friendly illustration of a red-and-white cylindrical soup can illustrating a 3d cylinder",
+      "audio_prompt": "Find the real-world object shaped like a cylinder",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.3",
+        "CCSS.MATH.K.G.B.4"
+      ],
+      "distractor_group": "real_world_3d",
+      "in_core": false
+    },
+    {
+      "id": "shape-real3d-dice-cube",
+      "label": "Game Die (Cube)",
+      "domain": "shapes_spatial",
+      "category": "real_world_3d",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Friendly illustration of a white six-sided game die illustrating a 3d cube",
+      "audio_prompt": "Find the real-world object shaped like a cube",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.3",
+        "CCSS.MATH.K.G.B.4"
+      ],
+      "distractor_group": "real_world_3d",
+      "in_core": false
+    },
+    {
+      "id": "shape-real3d-cone-icecream",
+      "label": "Ice Cream Cone (Cone)",
+      "domain": "shapes_spatial",
+      "category": "real_world_3d",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Friendly illustration of a pointed waffle cone illustrating a 3d cone",
+      "audio_prompt": "Find the real-world object shaped like a cone",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.3",
+        "CCSS.MATH.K.G.B.4"
+      ],
+      "distractor_group": "real_world_3d",
+      "in_core": false
+    },
+    {
+      "id": "shape-real3d-tent-pyramid",
+      "label": "Camping Tent (Pyramid)",
+      "domain": "shapes_spatial",
+      "category": "real_world_3d",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Friendly illustration of a triangular-sided pyramid camping tent",
+      "audio_prompt": "Find the real-world object shaped like a pyramid",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.3",
+        "CCSS.MATH.K.G.B.4"
+      ],
+      "distractor_group": "real_world_3d",
+      "in_core": false
+    },
+    {
+      "id": "shape-real3d-box-prism",
+      "label": "Cereal Box (Rectangular Prism)",
+      "domain": "shapes_spatial",
+      "category": "real_world_3d",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Friendly illustration of a colorful rectangular prism cereal box",
+      "audio_prompt": "Find the real-world object shaped like a rectangular prism",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.3",
+        "CCSS.MATH.K.G.B.4"
+      ],
+      "distractor_group": "real_world_3d",
+      "in_core": false
+    },
+    {
+      "id": "shape-real3d-orange-sphere",
+      "label": "Orange Fruit (Sphere)",
+      "domain": "shapes_spatial",
+      "category": "real_world_3d",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Friendly illustration of a whole round orange illustrating a 3d sphere",
+      "audio_prompt": "Find the real-world object shaped like a sphere",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.3",
+        "CCSS.MATH.K.G.B.4"
+      ],
+      "distractor_group": "real_world_3d",
+      "in_core": false
+    },
+    {
+      "id": "shape-real3d-drum-cylinder",
+      "label": "Toy Drum (Cylinder)",
+      "domain": "shapes_spatial",
+      "category": "real_world_3d",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Friendly illustration of a cylindrical red-and-gold toy drum",
+      "audio_prompt": "Find the real-world object shaped like a cylinder",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.3",
+        "CCSS.MATH.K.G.B.4"
+      ],
+      "distractor_group": "real_world_3d",
+      "in_core": false
+    },
+    {
+      "id": "shape-attr-three-sides",
+      "label": "Attribute: 3 Sides & 3 Corners",
+      "domain": "shapes_spatial",
+      "category": "shape_attributes",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Triangle with its 3 sides and 3 corner dots highlighted in red",
+      "audio_prompt": "Find the shape with 3 sides & 3 corners",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.4",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "shape_attributes",
+      "in_core": false
+    },
+    {
+      "id": "shape-attr-four-equal-sides",
+      "label": "Attribute: 4 Equal Sides",
+      "domain": "shapes_spatial",
+      "category": "shape_attributes",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Square with tick marks on all 4 equal sides",
+      "audio_prompt": "Find the shape with 4 equal sides",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.4",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "shape_attributes",
+      "in_core": false
+    },
+    {
+      "id": "shape-attr-curved-zero-corners",
+      "label": "Attribute: Curved with 0 Corners",
+      "domain": "shapes_spatial",
+      "category": "shape_attributes",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Circle with glowing curved arrow around its edge showing no corners",
+      "audio_prompt": "Find the shape with curved with 0 corners",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.4",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "shape_attributes",
+      "in_core": false
+    },
+    {
+      "id": "shape-attr-four-corners",
+      "label": "Attribute: 4 Square Corners",
+      "domain": "shapes_spatial",
+      "category": "shape_attributes",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Rectangle with glowing dots on its 4 square corners",
+      "audio_prompt": "Find the shape with 4 square corners",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.4",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "shape_attributes",
+      "in_core": false
+    },
+    {
+      "id": "shape-attr-straight-lines",
+      "label": "Attribute: Straight Sides",
+      "domain": "shapes_spatial",
+      "category": "shape_attributes",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Pentagon with straight-line highlights along each edge",
+      "audio_prompt": "Find the shape with straight sides",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.4",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "shape_attributes",
+      "in_core": false
+    },
+    {
+      "id": "shape-attr-curved-edge",
+      "label": "Attribute: Curved Edge",
+      "domain": "shapes_spatial",
+      "category": "shape_attributes",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Oval with smooth curved path highlighted",
+      "audio_prompt": "Find the shape with curved edge",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.4",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "shape_attributes",
+      "in_core": false
+    },
+    {
+      "id": "shape-attr-flat-vs-solid-2d",
+      "label": "Attribute: Flat 2D Shape",
+      "domain": "shapes_spatial",
+      "category": "shape_attributes",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Flat paper square lying flat on a table",
+      "audio_prompt": "Find the shape with flat 2d shape",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.4",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "shape_attributes",
+      "in_core": false
+    },
+    {
+      "id": "shape-attr-flat-vs-solid-3d",
+      "label": "Attribute: Solid 3D Shape",
+      "domain": "shapes_spatial",
+      "category": "shape_attributes",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Solid wooden cube standing tall with depth and shadow",
+      "audio_prompt": "Find the shape with solid 3d shape",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.4",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "shape_attributes",
+      "in_core": false
+    },
+    {
+      "id": "shape-sym-butterfly",
+      "label": "Symmetry: butterfly",
+      "domain": "shapes_spatial",
+      "category": "symmetry",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Colorful butterfly with a dashed vertical line of symmetry down the exact middle",
+      "audio_prompt": "Find the butterfly showing a line of symmetry",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.4",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "symmetry",
+      "in_core": false
+    },
+    {
+      "id": "shape-sym-heart",
+      "label": "Symmetry: heart",
+      "domain": "shapes_spatial",
+      "category": "symmetry",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Colorful heart with a dashed vertical line of symmetry down the exact middle",
+      "audio_prompt": "Find the heart showing a line of symmetry",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.4",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "symmetry",
+      "in_core": false
+    },
+    {
+      "id": "shape-sym-square",
+      "label": "Symmetry: square",
+      "domain": "shapes_spatial",
+      "category": "symmetry",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Colorful square with a dashed vertical line of symmetry down the exact middle",
+      "audio_prompt": "Find the square showing a line of symmetry",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.4",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "symmetry",
+      "in_core": false
+    },
+    {
+      "id": "shape-sym-circle",
+      "label": "Symmetry: circle",
+      "domain": "shapes_spatial",
+      "category": "symmetry",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Colorful circle with a dashed vertical line of symmetry down the exact middle",
+      "audio_prompt": "Find the circle showing a line of symmetry",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.4",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "symmetry",
+      "in_core": false
+    },
+    {
+      "id": "shape-sym-leaf",
+      "label": "Symmetry: leaf",
+      "domain": "shapes_spatial",
+      "category": "symmetry",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Colorful leaf with a dashed vertical line of symmetry down the exact middle",
+      "audio_prompt": "Find the leaf showing a line of symmetry",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.4",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "symmetry",
+      "in_core": false
+    },
+    {
+      "id": "shape-sym-star",
+      "label": "Symmetry: star",
+      "domain": "shapes_spatial",
+      "category": "symmetry",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Colorful star with a dashed vertical line of symmetry down the exact middle",
+      "audio_prompt": "Find the star showing a line of symmetry",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.4",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "symmetry",
+      "in_core": false
+    },
+    {
+      "id": "shape-comp-2tri-square",
+      "label": "2 Triangles Make a Square",
+      "domain": "shapes_spatial",
+      "category": "composite_shapes",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Two colored right triangles joining along the diagonal to form a square",
+      "audio_prompt": "Find the picture where 2 triangles make a square",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.6",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "composite_shapes",
+      "in_core": false
+    },
+    {
+      "id": "shape-comp-2sq-rect",
+      "label": "2 Squares Make a Rectangle",
+      "domain": "shapes_spatial",
+      "category": "composite_shapes",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Two equal squares placed side by side forming a rectangle",
+      "audio_prompt": "Find the picture where 2 squares make a rectangle",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.6",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "composite_shapes",
+      "in_core": false
+    },
+    {
+      "id": "shape-comp-2semi-circle",
+      "label": "2 Semicircles Make a Circle",
+      "domain": "shapes_spatial",
+      "category": "composite_shapes",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Two half-circles joining together to form a full circle",
+      "audio_prompt": "Find the picture where 2 semicircles make a circle",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.6",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "composite_shapes",
+      "in_core": false
+    },
+    {
+      "id": "shape-comp-6tri-hex",
+      "label": "6 Triangles Make a Hexagon",
+      "domain": "shapes_spatial",
+      "category": "composite_shapes",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Six pattern-block triangles arranged into a regular hexagon",
+      "audio_prompt": "Find the picture where 6 triangles make a hexagon",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.6",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "composite_shapes",
+      "in_core": false
+    },
+    {
+      "id": "shape-comp-2trap-hex",
+      "label": "2 Trapezoids Make a Hexagon",
+      "domain": "shapes_spatial",
+      "category": "composite_shapes",
+      "tier": 4,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Two red trapezoids joined along their long edges to form a hexagon",
+      "audio_prompt": "Find the picture where 2 trapezoids make a hexagon",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.6",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "composite_shapes",
+      "in_core": false
+    },
+    {
+      "id": "shape-comp-tri-sq-house",
+      "label": "Triangle + Square House",
+      "domain": "shapes_spatial",
+      "category": "composite_shapes",
+      "tier": 3,
+      "visual_type": "shape_geometry",
+      "display_token": null,
+      "visual_prompt": "Triangle roof placed on top of a square base forming a house shape",
+      "audio_prompt": "Find the picture where triangle + square house",
+      "standard_refs": [
+        "CCSS.MATH.K.G.B.6",
+        "ELOF.P-MATH.9"
+      ],
+      "distractor_group": "composite_shapes",
+      "in_core": false
+    },
+    {
+      "id": "spatial-ext-near",
+      "label": "Spatial: Near",
+      "domain": "shapes_spatial",
+      "category": "extended_spatial",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear illustration showing girl standing right next to a park bench",
+      "audio_prompt": "Find the picture showing near",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "extended_spatial",
+      "in_core": false
+    },
+    {
+      "id": "spatial-ext-far",
+      "label": "Spatial: Far",
+      "domain": "shapes_spatial",
+      "category": "extended_spatial",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear illustration showing tiny mountain peak far away on the horizon",
+      "audio_prompt": "Find the picture showing far",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "extended_spatial",
+      "in_core": false
+    },
+    {
+      "id": "spatial-ext-around",
+      "label": "Spatial: Around",
+      "domain": "shapes_spatial",
+      "category": "extended_spatial",
+      "tier": 4,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear illustration showing track path curving all the way around a pond",
+      "audio_prompt": "Find the picture showing around",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "extended_spatial",
+      "in_core": false
+    },
+    {
+      "id": "spatial-ext-through",
+      "label": "Spatial: Through",
+      "domain": "shapes_spatial",
+      "category": "extended_spatial",
+      "tier": 4,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear illustration showing train driving straight through a tunnel",
+      "audio_prompt": "Find the picture showing through",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "extended_spatial",
+      "in_core": false
+    },
+    {
+      "id": "spatial-ext-diagonal",
+      "label": "Spatial: Diagonal",
+      "domain": "shapes_spatial",
+      "category": "extended_spatial",
+      "tier": 4,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear illustration showing arrow pointing diagonally from bottom-left to top-right",
+      "audio_prompt": "Find the picture showing diagonal",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "extended_spatial",
+      "in_core": false
+    },
+    {
+      "id": "spatial-ext-corner",
+      "label": "Spatial: In the Corner",
+      "domain": "shapes_spatial",
+      "category": "extended_spatial",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear illustration showing toy chest tucked neatly into the corner of a room",
+      "audio_prompt": "Find the picture showing in the corner",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "extended_spatial",
+      "in_core": false
+    },
+    {
+      "id": "spatial-ext-middle",
+      "label": "Spatial: In the Middle",
+      "domain": "shapes_spatial",
+      "category": "extended_spatial",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear illustration showing yellow flower standing in the middle of a flowerbed",
+      "audio_prompt": "Find the picture showing in the middle",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "extended_spatial",
+      "in_core": false
+    },
+    {
+      "id": "spatial-ext-edge",
+      "label": "Spatial: On the Edge",
+      "domain": "shapes_spatial",
+      "category": "extended_spatial",
+      "tier": 4,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear illustration showing ladybug resting right on the edge of a leaf",
+      "audio_prompt": "Find the picture showing on the edge",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "extended_spatial",
+      "in_core": false
+    },
+    {
+      "id": "spatial-ext-next-to",
+      "label": "Spatial: Next To",
+      "domain": "shapes_spatial",
+      "category": "extended_spatial",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear illustration showing blue cup sitting next to a red plate",
+      "audio_prompt": "Find the picture showing next to",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "extended_spatial",
+      "in_core": false
+    },
+    {
+      "id": "spatial-ext-across",
+      "label": "Spatial: Across",
+      "domain": "shapes_spatial",
+      "category": "extended_spatial",
+      "tier": 4,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear illustration showing wooden bridge stretching across a stream",
+      "audio_prompt": "Find the picture showing across",
+      "standard_refs": [
+        "CCSS.MATH.K.G.A.1",
+        "ELOF.P-MATH.10"
+      ],
+      "distractor_group": "extended_spatial",
+      "in_core": false
+    },
+    {
+      "id": "pat-grow-1",
+      "label": "Growing Pattern 1",
+      "domain": "shapes_spatial",
+      "category": "growing_patterns",
+      "tier": 3,
+      "visual_type": "pattern_sequence",
+      "display_token": null,
+      "visual_prompt": "Visual pattern sequence #1 with 2 repeating or growing block towers showing the next step",
+      "audio_prompt": "Look at the growing block pattern and find what comes next",
+      "standard_refs": [
+        "ELOF.P-MATH.7"
+      ],
+      "distractor_group": "growing_patterns",
+      "in_core": false
+    },
+    {
+      "id": "pat-grow-2",
+      "label": "Growing Pattern 2",
+      "domain": "shapes_spatial",
+      "category": "growing_patterns",
+      "tier": 3,
+      "visual_type": "pattern_sequence",
+      "display_token": null,
+      "visual_prompt": "Visual pattern sequence #2 with 3 repeating or growing block towers showing the next step",
+      "audio_prompt": "Look at the growing block pattern and find what comes next",
+      "standard_refs": [
+        "ELOF.P-MATH.7"
+      ],
+      "distractor_group": "growing_patterns",
+      "in_core": false
+    },
+    {
+      "id": "pat-grow-3",
+      "label": "Growing Pattern 3",
+      "domain": "shapes_spatial",
+      "category": "growing_patterns",
+      "tier": 3,
+      "visual_type": "pattern_sequence",
+      "display_token": null,
+      "visual_prompt": "Visual pattern sequence #3 with 4 repeating or growing block towers showing the next step",
+      "audio_prompt": "Look at the growing block pattern and find what comes next",
+      "standard_refs": [
+        "ELOF.P-MATH.7"
+      ],
+      "distractor_group": "growing_patterns",
+      "in_core": false
+    },
+    {
+      "id": "pat-grow-4",
+      "label": "Growing Pattern 4",
+      "domain": "shapes_spatial",
+      "category": "growing_patterns",
+      "tier": 3,
+      "visual_type": "pattern_sequence",
+      "display_token": null,
+      "visual_prompt": "Visual pattern sequence #4 with 5 repeating or growing block towers showing the next step",
+      "audio_prompt": "Look at the growing block pattern and find what comes next",
+      "standard_refs": [
+        "ELOF.P-MATH.7"
+      ],
+      "distractor_group": "growing_patterns",
+      "in_core": false
+    },
+    {
+      "id": "pat-grow-5",
+      "label": "Growing Pattern 5",
+      "domain": "shapes_spatial",
+      "category": "growing_patterns",
+      "tier": 4,
+      "visual_type": "pattern_sequence",
+      "display_token": null,
+      "visual_prompt": "Visual pattern sequence #5 with 6 repeating or growing block towers showing the next step",
+      "audio_prompt": "Look at the growing block pattern and find what comes next",
+      "standard_refs": [
+        "ELOF.P-MATH.7"
+      ],
+      "distractor_group": "growing_patterns",
+      "in_core": false
+    },
+    {
+      "id": "pat-grow-6",
+      "label": "Growing Pattern 6",
+      "domain": "shapes_spatial",
+      "category": "growing_patterns",
+      "tier": 4,
+      "visual_type": "pattern_sequence",
+      "display_token": null,
+      "visual_prompt": "Visual pattern sequence #6 with 7 repeating or growing block towers showing the next step",
+      "audio_prompt": "Look at the growing block pattern and find what comes next",
+      "standard_refs": [
+        "ELOF.P-MATH.7"
+      ],
+      "distractor_group": "growing_patterns",
+      "in_core": false
+    },
+    {
+      "id": "pat-grow-7",
+      "label": "Growing Pattern 7",
+      "domain": "shapes_spatial",
+      "category": "growing_patterns",
+      "tier": 4,
+      "visual_type": "pattern_sequence",
+      "display_token": null,
+      "visual_prompt": "Visual pattern sequence #7 with 8 repeating or growing block towers showing the next step",
+      "audio_prompt": "Look at the growing block pattern and find what comes next",
+      "standard_refs": [
+        "ELOF.P-MATH.7"
+      ],
+      "distractor_group": "growing_patterns",
+      "in_core": false
+    },
+    {
+      "id": "pat-grow-8",
+      "label": "Growing Pattern 8",
+      "domain": "shapes_spatial",
+      "category": "growing_patterns",
+      "tier": 4,
+      "visual_type": "pattern_sequence",
+      "display_token": null,
+      "visual_prompt": "Visual pattern sequence #8 with 9 repeating or growing block towers showing the next step",
+      "audio_prompt": "Look at the growing block pattern and find what comes next",
+      "standard_refs": [
+        "ELOF.P-MATH.7"
+      ],
+      "distractor_group": "growing_patterns",
+      "in_core": false
+    }
+  ]
+}

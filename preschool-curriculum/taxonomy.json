@@ -1,0 +1,180 @@
+{
+  "version": "1.0.0",
+  "standards_frameworks": [
+    {
+      "id": "ELOF",
+      "name": "Head Start Early Learning Outcomes Framework (48-60 months)"
+    },
+    {
+      "id": "CCSS",
+      "name": "Common Core State Standards (Kindergarten Math & ELA)"
+    },
+    {
+      "id": "NGSS",
+      "name": "Next Generation Science Standards (Grade K)"
+    },
+    {
+      "id": "C3",
+      "name": "C3 Framework for Social Studies (Grade K)"
+    }
+  ],
+  "domains": [
+    {
+      "slug": "letters",
+      "file": "01_letters.json",
+      "display_name": "Letters & Alphabet Recognition",
+      "description": "Uppercase and lowercase letter glyphs, case-match pairs, confusable letter pairs, and visual vowel/typography recognition (strictly visual, no spelling).",
+      "primary_standards": ["CCSS.ELA.RF.K.1.D", "ELOF.P-LIT.3"],
+      "core_target": { "min": 52, "max": 58 },
+      "comprehensive_min": 80
+    },
+    {
+      "slug": "numbers_quantities",
+      "file": "02_numbers_quantities.json",
+      "display_name": "Numbers & Quantities",
+      "description": "Numerals 0-100 milestones, dice/dot subitizing, finger counting, five-frames, ten-frames, tally marks, ordinals, base-10 visuals, fractions, and visual operations.",
+      "primary_standards": ["CCSS.MATH.K.CC.A.1", "CCSS.MATH.K.CC.B.4", "CCSS.MATH.K.OA.A.1", "ELOF.P-MATH.1", "ELOF.P-MATH.3"],
+      "core_target": { "min": 55, "max": 70 },
+      "comprehensive_min": 140
+    },
+    {
+      "slug": "symbols_icons",
+      "file": "03_symbols_icons.json",
+      "display_name": "Symbols & Universal Icons",
+      "description": "Math operators, currency signs, punctuation marks, traffic/safety pictograms, accessibility/UI icons, and musical notation symbols.",
+      "primary_standards": ["ELOF.P-LIT.2", "CCSS.MATH.K.OA.A.1", "CCSS.MATH.K.CC.C.7", "C3.D2.Civ.2.K-2"],
+      "core_target": { "min": 32, "max": 45 },
+      "comprehensive_min": 80
+    },
+    {
+      "slug": "shapes_spatial",
+      "file": "04_shapes_spatial.json",
+      "display_name": "Shapes & Spatial Relations",
+      "description": "2D plane shapes, 3D geometric solids, real-world 3D matches, spatial prepositions, symmetry, composite shapes, and visual patterns.",
+      "primary_standards": ["CCSS.MATH.K.G.A.1", "CCSS.MATH.K.G.A.2", "CCSS.MATH.K.G.B.4", "ELOF.P-MATH.7", "ELOF.P-MATH.9", "ELOF.P-MATH.10"],
+      "core_target": { "min": 36, "max": 48 },
+      "comprehensive_min": 90
+    },
+    {
+      "slug": "colors_measurement",
+      "file": "05_colors_measurement.json",
+      "display_name": "Colors, Attributes & Measurement",
+      "description": "Core and extended color swatches, color mixing, visual attribute/measurement comparison pairs, seriation, measurement tools, and textures/materials.",
+      "primary_standards": ["CCSS.MATH.K.MD.A.1", "CCSS.MATH.K.MD.A.2", "CCSS.ELA.L.K.5", "ELOF.P-MATH.8"],
+      "core_target": { "min": 32, "max": 45 },
+      "comprehensive_min": 80
+    },
+    {
+      "slug": "time_money",
+      "file": "06_time_money.json",
+      "display_name": "Time & US Money",
+      "description": "US coins and bills, coin equivalencies, analog clocks (hour, half-hour, quarter-hour), times of day, calendar tools, and daily routine sequences.",
+      "primary_standards": ["C3.D2.Eco.1.K-2", "C3.D2.His.2.K-2", "ELOF.P-MATH.8"],
+      "core_target": { "min": 22, "max": 32 },
+      "comprehensive_min": 60
+    },
+    {
+      "slug": "science_nature",
+      "file": "07_science_nature.json",
+      "display_name": "Science & Nature",
+      "description": "Weather, seasons, sky and solar system, plant parts, animal kingdom and habitats, life cycles, five senses, body parts, landforms, and physical science.",
+      "primary_standards": ["NGSS.K-LS1-1", "NGSS.K-ESS2-1", "NGSS.K-ESS3-1", "NGSS.K-ESS3-3", "NGSS.K-PS2-1", "NGSS.K-PS3-1", "ELOF.P-SCI.1"],
+      "core_target": { "min": 70, "max": 90 },
+      "comprehensive_min": 230
+    },
+    {
+      "slug": "social_community",
+      "file": "08_social_community.json",
+      "display_name": "Social Studies & Community",
+      "description": "Community helpers and tools, vehicles and transportation, community places, maps/geography, civic concepts, and US national symbols.",
+      "primary_standards": ["C3.D2.Civ.2.K-2", "C3.D2.Geo.1.K-2", "C3.D2.His.2.K-2"],
+      "core_target": { "min": 40, "max": 55 },
+      "comprehensive_min": 120
+    },
+    {
+      "slug": "emotions_everyday",
+      "file": "09_emotions_everyday.json",
+      "display_name": "Emotions, SEL & Everyday Academic Concepts",
+      "description": "Facial expressions and nuanced SEL cues, classroom/STEM tools, musical instruments, healthy food groups, weather clothing, and everyday sorting objects.",
+      "primary_standards": ["ELOF.P-SE.6", "CCSS.ELA.L.K.5", "CCSS.MATH.K.MD.B.3"],
+      "core_target": { "min": 30, "max": 42 },
+      "comprehensive_min": 100
+    }
+  ],
+  "tiers": [
+    {
+      "tier": 1,
+      "slug": "foundational",
+      "target_age": "3.5-4.0 yrs",
+      "criteria": "High-salience everyday visuals: primary colors, basic 2D shapes, numerals 0-5, high-frequency uppercase letters, common animals, basic emotions, sunny/rainy."
+    },
+    {
+      "tier": 2,
+      "slug": "developing",
+      "target_age": "4.0-4.5 yrs",
+      "criteria": "Full uppercase A-Z, numerals 0-10, perceptual subitizing 1-5, 11 core colors, 8+ 2D shapes, 5 senses & body parts, 4 seasons, core community helpers, basic traffic/safety pictograms, AB patterns."
+    },
+    {
+      "tier": 3,
+      "slug": "k_ready",
+      "target_age": "4.5-5.0 yrs",
+      "criteria": "Full lowercase a-z & confusable pairs, numerals 11-20, conceptual subitizing 6-10, 3D solids, math operators, US coins, on-the-hour analog clocks, spatial prepositions, NGSS life cycles/habitats/forces, US national symbols, AAB/ABB/ABC patterns."
+    },
+    {
+      "tier": 4,
+      "slug": "stretch",
+      "target_age": "5.0-5.5 yrs",
+      "criteria": "Numerals 21-100 milestones & skip-counting visuals, visual fractions, half-hour/quarter-hour clocks, US bills & coin combos, comparison symbols, extended polygons, symmetry, solar system, detailed animal classes, nuanced emotions, map compass directions."
+    }
+  ],
+  "visual_types": [
+    {
+      "type": "letter_glyph",
+      "description": "Single uppercase/lowercase letter or visual letter pair rendered as a clean typographic glyph."
+    },
+    {
+      "type": "numeral_glyph",
+      "description": "Single numeral or multi-digit number milestone rendered as a clear digit glyph."
+    },
+    {
+      "type": "quantity_visual",
+      "description": "Countable visual representation such as dots, fingers, five-frames, ten-frames, dominoes, tally marks, base-10 blocks, or visual fractions."
+    },
+    {
+      "type": "symbol_glyph",
+      "description": "Mathematical, punctuation, currency, or musical notation symbol."
+    },
+    {
+      "type": "shape_geometry",
+      "description": "2D plane figure, 3D geometric solid, rotated shape, composite shape, or symmetry diagram."
+    },
+    {
+      "type": "color_swatch",
+      "description": "Solid color swatch, shade comparison, or visual color-mixing diagram."
+    },
+    {
+      "type": "pattern_sequence",
+      "description": "Repeating or growing visual sequence using shapes, colors, or icons."
+    },
+    {
+      "type": "clock_visual",
+      "description": "Analog or digital clock face showing a specific time or time-telling tool."
+    },
+    {
+      "type": "currency_visual",
+      "description": "US coin, paper bill, or visual coin equivalency diagram."
+    },
+    {
+      "type": "diagram_illustration",
+      "description": "Child-friendly illustration of a science, social studies, emotion, spatial, or everyday object concept."
+    },
+    {
+      "type": "pictogram_sign",
+      "description": "Universal icon, traffic/safety sign, or UI/accessibility pictogram without English text."
+    },
+    {
+      "type": "comparison_pair",
+      "description": "Side-by-side visual contrast illustrating opposites, measurable attributes, or relative quantities."
+    }
+  ]
+}

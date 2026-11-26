@@ -1,0 +1,1363 @@
+{
+  "set": "core",
+  "domain": "science_nature",
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "sci-weather-sunny",
+      "label": "Weather: Sunny",
+      "domain": "science_nature",
+      "category": "weather",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Bright golden sun shining in a clear blue sky",
+      "audio_prompt": "Find the sunny weather",
+      "standard_refs": [
+        "NGSS.K-ESS2-1",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "weather",
+      "in_core": true
+    },
+    {
+      "id": "sci-weather-cloudy",
+      "label": "Weather: Cloudy",
+      "domain": "science_nature",
+      "category": "weather",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Soft gray and white clouds covering the sky",
+      "audio_prompt": "Find the cloudy weather",
+      "standard_refs": [
+        "NGSS.K-ESS2-1",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "weather",
+      "in_core": true
+    },
+    {
+      "id": "sci-weather-partly-cloudy",
+      "label": "Weather: Partly Cloudy",
+      "domain": "science_nature",
+      "category": "weather",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Bright yellow sun peeking out behind a white fluffy cloud",
+      "audio_prompt": "Find the partly cloudy weather",
+      "standard_refs": [
+        "NGSS.K-ESS2-1",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "weather",
+      "in_core": true
+    },
+    {
+      "id": "sci-weather-rainy",
+      "label": "Weather: Rainy",
+      "domain": "science_nature",
+      "category": "weather",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Dark rain cloud dropping blue raindrops onto green grass",
+      "audio_prompt": "Find the rainy weather",
+      "standard_refs": [
+        "NGSS.K-ESS2-1",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "weather",
+      "in_core": true
+    },
+    {
+      "id": "sci-weather-snowy",
+      "label": "Weather: Snowy",
+      "domain": "science_nature",
+      "category": "weather",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "White winter cloud dropping gentle snowflakes onto snowy ground",
+      "audio_prompt": "Find the snowy weather",
+      "standard_refs": [
+        "NGSS.K-ESS2-1",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "weather",
+      "in_core": true
+    },
+    {
+      "id": "sci-weather-windy",
+      "label": "Weather: Windy",
+      "domain": "science_nature",
+      "category": "weather",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Curving blue wind gusts bending tall green trees and blowing leaves",
+      "audio_prompt": "Find the windy weather",
+      "standard_refs": [
+        "NGSS.K-ESS2-1",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "weather",
+      "in_core": true
+    },
+    {
+      "id": "sci-weather-stormy",
+      "label": "Weather: Stormy Lightning",
+      "domain": "science_nature",
+      "category": "weather",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Dark storm cloud with bright yellow lightning bolt and heavy rain",
+      "audio_prompt": "Find the stormy lightning weather",
+      "standard_refs": [
+        "NGSS.K-ESS2-1",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "weather",
+      "in_core": true
+    },
+    {
+      "id": "sci-weather-rainbow",
+      "label": "Weather: Rainbow",
+      "domain": "science_nature",
+      "category": "weather",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Colorful seven-band rainbow arching across a bright sky",
+      "audio_prompt": "Find the rainbow weather",
+      "standard_refs": [
+        "NGSS.K-ESS2-1",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "weather",
+      "in_core": true
+    },
+    {
+      "id": "sci-weather-foggy",
+      "label": "Weather: Foggy",
+      "domain": "science_nature",
+      "category": "weather",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Soft misty white fog blanketing trees and hills",
+      "audio_prompt": "Find the foggy weather",
+      "standard_refs": [
+        "NGSS.K-ESS2-1",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "weather",
+      "in_core": true
+    },
+    {
+      "id": "sci-weather-tornado",
+      "label": "Weather: Tornado",
+      "domain": "science_nature",
+      "category": "weather",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Spinning gray funnel cloud touching down over open fields",
+      "audio_prompt": "Find the tornado weather",
+      "standard_refs": [
+        "NGSS.K-ESS2-1",
+        "ELOF.P-SCI.1"
+      ],
+      "distractor_group": "weather",
+      "in_core": true
+    },
+    {
+      "id": "sci-season-spring",
+      "label": "Season: Spring",
+      "domain": "science_nature",
+      "category": "seasons",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Blooming pink cherry blossoms, green sprouts, and gentle rain",
+      "audio_prompt": "Find the season spring",
+      "standard_refs": [
+        "NGSS.K-ESS2-1"
+      ],
+      "distractor_group": "seasons",
+      "in_core": true
+    },
+    {
+      "id": "sci-season-summer",
+      "label": "Season: Summer",
+      "domain": "science_nature",
+      "category": "seasons",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Lush green trees, bright sunshine, and warm beach day",
+      "audio_prompt": "Find the season summer",
+      "standard_refs": [
+        "NGSS.K-ESS2-1"
+      ],
+      "distractor_group": "seasons",
+      "in_core": true
+    },
+    {
+      "id": "sci-season-fall",
+      "label": "Season: Fall / Autumn",
+      "domain": "science_nature",
+      "category": "seasons",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Orange, red, and yellow leaves falling from maple trees",
+      "audio_prompt": "Find the season fall",
+      "standard_refs": [
+        "NGSS.K-ESS2-1"
+      ],
+      "distractor_group": "seasons",
+      "in_core": true
+    },
+    {
+      "id": "sci-season-winter",
+      "label": "Season: Winter",
+      "domain": "science_nature",
+      "category": "seasons",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Snow-covered pine trees, snowman, and falling snowflakes",
+      "audio_prompt": "Find the season winter",
+      "standard_refs": [
+        "NGSS.K-ESS2-1"
+      ],
+      "distractor_group": "seasons",
+      "in_core": true
+    },
+    {
+      "id": "sci-sky-sun",
+      "label": "Sun",
+      "domain": "science_nature",
+      "category": "sky_space",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Glowing golden sun in space",
+      "audio_prompt": "Find the sun",
+      "standard_refs": [
+        "NGSS.K-ESS2-1",
+        "NGSS.K-PS3-1"
+      ],
+      "distractor_group": "sky_space",
+      "in_core": true
+    },
+    {
+      "id": "sci-sky-moon",
+      "label": "Moon",
+      "domain": "science_nature",
+      "category": "sky_space",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Cratered silver full moon in a starry night sky",
+      "audio_prompt": "Find the moon",
+      "standard_refs": [
+        "NGSS.K-ESS2-1",
+        "NGSS.K-PS3-1"
+      ],
+      "distractor_group": "sky_space",
+      "in_core": true
+    },
+    {
+      "id": "sci-sky-star",
+      "label": "Star",
+      "domain": "science_nature",
+      "category": "sky_space",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Twinkling bright star in deep night sky",
+      "audio_prompt": "Find the star",
+      "standard_refs": [
+        "NGSS.K-ESS2-1",
+        "NGSS.K-PS3-1"
+      ],
+      "distractor_group": "sky_space",
+      "in_core": true
+    },
+    {
+      "id": "sci-sky-earth",
+      "label": "Planet Earth",
+      "domain": "science_nature",
+      "category": "sky_space",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Blue and green planet Earth seen from space",
+      "audio_prompt": "Find the planet earth",
+      "standard_refs": [
+        "NGSS.K-ESS2-1",
+        "NGSS.K-PS3-1"
+      ],
+      "distractor_group": "sky_space",
+      "in_core": true
+    },
+    {
+      "id": "sci-sky-cloud",
+      "label": "Fluffy Cloud",
+      "domain": "science_nature",
+      "category": "sky_space",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Puffy white cumulus cloud floating in blue sky",
+      "audio_prompt": "Find the fluffy cloud",
+      "standard_refs": [
+        "NGSS.K-ESS2-1",
+        "NGSS.K-PS3-1"
+      ],
+      "distractor_group": "sky_space",
+      "in_core": true
+    },
+    {
+      "id": "sci-plant-seed",
+      "label": "Plant Part: Seed",
+      "domain": "science_nature",
+      "category": "plant_parts",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Small brown acorn/bean seed resting on dark soil",
+      "audio_prompt": "Find the seed",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "plant_parts",
+      "in_core": true
+    },
+    {
+      "id": "sci-plant-root",
+      "label": "Plant Part: Roots",
+      "domain": "science_nature",
+      "category": "plant_parts",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Cross-section showing branching plant roots underground",
+      "audio_prompt": "Find the roots",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "plant_parts",
+      "in_core": true
+    },
+    {
+      "id": "sci-plant-stem",
+      "label": "Plant Part: Stem",
+      "domain": "science_nature",
+      "category": "plant_parts",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Sturdy green plant stem holding up leaves",
+      "audio_prompt": "Find the stem",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "plant_parts",
+      "in_core": true
+    },
+    {
+      "id": "sci-plant-leaf",
+      "label": "Plant Part: Leaf",
+      "domain": "science_nature",
+      "category": "plant_parts",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Fresh green leaf with visible veins",
+      "audio_prompt": "Find the leaf",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "plant_parts",
+      "in_core": true
+    },
+    {
+      "id": "sci-plant-flower",
+      "label": "Plant Part: Flower",
+      "domain": "science_nature",
+      "category": "plant_parts",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Colorful blooming daisy flower with yellow center",
+      "audio_prompt": "Find the flower",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "plant_parts",
+      "in_core": true
+    },
+    {
+      "id": "sci-plant-tree",
+      "label": "Plant Part: Tree",
+      "domain": "science_nature",
+      "category": "plant_parts",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Tall leafy oak tree with brown trunk",
+      "audio_prompt": "Find the tree",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "plant_parts",
+      "in_core": true
+    },
+    {
+      "id": "sci-plant-fruit",
+      "label": "Plant Part: Fruit (Apple)",
+      "domain": "science_nature",
+      "category": "plant_parts",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Ripe red apple hanging from a leafy branch",
+      "audio_prompt": "Find the fruit",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "plant_parts",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-dog",
+      "label": "Dog",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a dog",
+      "audio_prompt": "Find the dog",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-cat",
+      "label": "Cat",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a cat",
+      "audio_prompt": "Find the cat",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-cow",
+      "label": "Cow",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a cow",
+      "audio_prompt": "Find the cow",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-pig",
+      "label": "Pig",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a pig",
+      "audio_prompt": "Find the pig",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-horse",
+      "label": "Horse",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a horse",
+      "audio_prompt": "Find the horse",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-sheep",
+      "label": "Sheep",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a sheep",
+      "audio_prompt": "Find the sheep",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-chicken",
+      "label": "Chicken",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a chicken",
+      "audio_prompt": "Find the chicken",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-duck",
+      "label": "Duck",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a duck",
+      "audio_prompt": "Find the duck",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-lion",
+      "label": "Lion",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a lion",
+      "audio_prompt": "Find the lion",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-elephant",
+      "label": "Elephant",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a elephant",
+      "audio_prompt": "Find the elephant",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-giraffe",
+      "label": "Giraffe",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a giraffe",
+      "audio_prompt": "Find the giraffe",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-monkey",
+      "label": "Monkey",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a monkey",
+      "audio_prompt": "Find the monkey",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-bear",
+      "label": "Bear",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a bear",
+      "audio_prompt": "Find the bear",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-frog",
+      "label": "Frog",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a frog",
+      "audio_prompt": "Find the frog",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-fish",
+      "label": "Fish",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a fish",
+      "audio_prompt": "Find the fish",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-bird",
+      "label": "Bird",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a bird",
+      "audio_prompt": "Find the bird",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-butterfly",
+      "label": "Butterfly",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a butterfly",
+      "audio_prompt": "Find the butterfly",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-bee",
+      "label": "Bee",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a bee",
+      "audio_prompt": "Find the bee",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-ant",
+      "label": "Ant",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a ant",
+      "audio_prompt": "Find the ant",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-spider",
+      "label": "Spider",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a spider",
+      "audio_prompt": "Find the spider",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-turtle",
+      "label": "Turtle",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a turtle",
+      "audio_prompt": "Find the turtle",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-snake",
+      "label": "Snake",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a snake",
+      "audio_prompt": "Find the snake",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-whale",
+      "label": "Whale",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a whale",
+      "audio_prompt": "Find the whale",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-dolphin",
+      "label": "Dolphin",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a dolphin",
+      "audio_prompt": "Find the dolphin",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-animal-dinosaur",
+      "label": "Dinosaur",
+      "domain": "science_nature",
+      "category": "core_animals",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly, realistic preschool illustration of a dinosaur",
+      "audio_prompt": "Find the dinosaur",
+      "standard_refs": [
+        "NGSS.K-LS1-1",
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "core_animals",
+      "in_core": true
+    },
+    {
+      "id": "sci-hab-forest",
+      "label": "Forest Habitat",
+      "domain": "science_nature",
+      "category": "habitats",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Woodland forest with tall pines, ferns, and deer",
+      "audio_prompt": "Find the forest habitat",
+      "standard_refs": [
+        "NGSS.K-ESS3-1"
+      ],
+      "distractor_group": "habitats",
+      "in_core": true
+    },
+    {
+      "id": "sci-hab-ocean",
+      "label": "Ocean Habitat",
+      "domain": "science_nature",
+      "category": "habitats",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Deep blue underwater coral reef with swimming fish",
+      "audio_prompt": "Find the ocean habitat",
+      "standard_refs": [
+        "NGSS.K-ESS3-1"
+      ],
+      "distractor_group": "habitats",
+      "in_core": true
+    },
+    {
+      "id": "sci-hab-desert",
+      "label": "Desert Habitat",
+      "domain": "science_nature",
+      "category": "habitats",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Sunny sandy desert with tall saguaro cacti",
+      "audio_prompt": "Find the desert habitat",
+      "standard_refs": [
+        "NGSS.K-ESS3-1"
+      ],
+      "distractor_group": "habitats",
+      "in_core": true
+    },
+    {
+      "id": "sci-hab-farm",
+      "label": "Farm Habitat",
+      "domain": "science_nature",
+      "category": "habitats",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Red barn and green fenced pasture",
+      "audio_prompt": "Find the farm habitat",
+      "standard_refs": [
+        "NGSS.K-ESS3-1"
+      ],
+      "distractor_group": "habitats",
+      "in_core": true
+    },
+    {
+      "id": "sci-hab-arctic",
+      "label": "Arctic Polar Habitat",
+      "domain": "science_nature",
+      "category": "habitats",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Icy snowy landscape with floating icebergs",
+      "audio_prompt": "Find the arctic polar habitat",
+      "standard_refs": [
+        "NGSS.K-ESS3-1"
+      ],
+      "distractor_group": "habitats",
+      "in_core": true
+    },
+    {
+      "id": "sci-sense-sight",
+      "label": "Sense: Sight (Eye)",
+      "domain": "science_nature",
+      "category": "five_senses",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Friendly eye looking through a magnifying glass",
+      "audio_prompt": "Find the sense of sight",
+      "standard_refs": [
+        "ELOF.P-SCI.1",
+        "NGSS.K-LS1-1"
+      ],
+      "distractor_group": "five_senses",
+      "in_core": true
+    },
+    {
+      "id": "sci-sense-hearing",
+      "label": "Sense: Hearing (Ear)",
+      "domain": "science_nature",
+      "category": "five_senses",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Ear listening to gentle musical notes",
+      "audio_prompt": "Find the sense of hearing",
+      "standard_refs": [
+        "ELOF.P-SCI.1",
+        "NGSS.K-LS1-1"
+      ],
+      "distractor_group": "five_senses",
+      "in_core": true
+    },
+    {
+      "id": "sci-sense-smell",
+      "label": "Sense: Smell (Nose)",
+      "domain": "science_nature",
+      "category": "five_senses",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Nose smelling a fragrant red rose",
+      "audio_prompt": "Find the sense of smell",
+      "standard_refs": [
+        "ELOF.P-SCI.1",
+        "NGSS.K-LS1-1"
+      ],
+      "distractor_group": "five_senses",
+      "in_core": true
+    },
+    {
+      "id": "sci-sense-taste",
+      "label": "Sense: Taste (Tongue)",
+      "domain": "science_nature",
+      "category": "five_senses",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Smiling mouth tasting a sweet strawberry",
+      "audio_prompt": "Find the sense of taste",
+      "standard_refs": [
+        "ELOF.P-SCI.1",
+        "NGSS.K-LS1-1"
+      ],
+      "distractor_group": "five_senses",
+      "in_core": true
+    },
+    {
+      "id": "sci-sense-touch",
+      "label": "Sense: Touch (Hand)",
+      "domain": "science_nature",
+      "category": "five_senses",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Hand gently touching soft puppy fur",
+      "audio_prompt": "Find the sense of touch",
+      "standard_refs": [
+        "ELOF.P-SCI.1",
+        "NGSS.K-LS1-1"
+      ],
+      "distractor_group": "five_senses",
+      "in_core": true
+    },
+    {
+      "id": "sci-body-head",
+      "label": "Body: Head",
+      "domain": "science_nature",
+      "category": "body_parts",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear child-friendly diagram highlighting the human head",
+      "audio_prompt": "Find the head",
+      "standard_refs": [
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "body_parts",
+      "in_core": true
+    },
+    {
+      "id": "sci-body-hair",
+      "label": "Body: Hair",
+      "domain": "science_nature",
+      "category": "body_parts",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear child-friendly diagram highlighting the human hair",
+      "audio_prompt": "Find the hair",
+      "standard_refs": [
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "body_parts",
+      "in_core": true
+    },
+    {
+      "id": "sci-body-face",
+      "label": "Body: Face",
+      "domain": "science_nature",
+      "category": "body_parts",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear child-friendly diagram highlighting the human face",
+      "audio_prompt": "Find the face",
+      "standard_refs": [
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "body_parts",
+      "in_core": true
+    },
+    {
+      "id": "sci-body-mouth",
+      "label": "Body: Mouth",
+      "domain": "science_nature",
+      "category": "body_parts",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear child-friendly diagram highlighting the human mouth",
+      "audio_prompt": "Find the mouth",
+      "standard_refs": [
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "body_parts",
+      "in_core": true
+    },
+    {
+      "id": "sci-body-teeth",
+      "label": "Body: Teeth",
+      "domain": "science_nature",
+      "category": "body_parts",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear child-friendly diagram highlighting the human teeth",
+      "audio_prompt": "Find the teeth",
+      "standard_refs": [
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "body_parts",
+      "in_core": true
+    },
+    {
+      "id": "sci-body-arm",
+      "label": "Body: Arm",
+      "domain": "science_nature",
+      "category": "body_parts",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear child-friendly diagram highlighting the human arm",
+      "audio_prompt": "Find the arm",
+      "standard_refs": [
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "body_parts",
+      "in_core": true
+    },
+    {
+      "id": "sci-body-hand",
+      "label": "Body: Hand",
+      "domain": "science_nature",
+      "category": "body_parts",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear child-friendly diagram highlighting the human hand",
+      "audio_prompt": "Find the hand",
+      "standard_refs": [
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "body_parts",
+      "in_core": true
+    },
+    {
+      "id": "sci-body-finger",
+      "label": "Body: Finger",
+      "domain": "science_nature",
+      "category": "body_parts",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear child-friendly diagram highlighting the human finger",
+      "audio_prompt": "Find the finger",
+      "standard_refs": [
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "body_parts",
+      "in_core": true
+    },
+    {
+      "id": "sci-body-leg",
+      "label": "Body: Leg",
+      "domain": "science_nature",
+      "category": "body_parts",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear child-friendly diagram highlighting the human leg",
+      "audio_prompt": "Find the leg",
+      "standard_refs": [
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "body_parts",
+      "in_core": true
+    },
+    {
+      "id": "sci-body-foot",
+      "label": "Body: Foot",
+      "domain": "science_nature",
+      "category": "body_parts",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear child-friendly diagram highlighting the human foot",
+      "audio_prompt": "Find the foot",
+      "standard_refs": [
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "body_parts",
+      "in_core": true
+    },
+    {
+      "id": "sci-body-heart",
+      "label": "Body: Heart (Organ)",
+      "domain": "science_nature",
+      "category": "body_parts",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear child-friendly diagram highlighting the human heart (organ)",
+      "audio_prompt": "Find the heart",
+      "standard_refs": [
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "body_parts",
+      "in_core": true
+    },
+    {
+      "id": "sci-body-skeleton",
+      "label": "Body: Skeleton Bones",
+      "domain": "science_nature",
+      "category": "body_parts",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear child-friendly diagram highlighting the human skeleton bones",
+      "audio_prompt": "Find the skeleton bones",
+      "standard_refs": [
+        "ELOF.P-SCI.2"
+      ],
+      "distractor_group": "body_parts",
+      "in_core": true
+    },
+    {
+      "id": "sci-phys-magnet",
+      "label": "Magnet",
+      "domain": "science_nature",
+      "category": "physical_science",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Red-and-silver horseshoe magnet attracting paperclips",
+      "audio_prompt": "Find the picture showing magnet",
+      "standard_refs": [
+        "NGSS.K-PS2-1",
+        "NGSS.K-PS3-1"
+      ],
+      "distractor_group": "physical_science",
+      "in_core": true
+    },
+    {
+      "id": "sci-phys-push",
+      "label": "Push Force",
+      "domain": "science_nature",
+      "category": "physical_science",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Child pushing a heavy toy wagon forward",
+      "audio_prompt": "Find the picture showing push force",
+      "standard_refs": [
+        "NGSS.K-PS2-1",
+        "NGSS.K-PS3-1"
+      ],
+      "distractor_group": "physical_science",
+      "in_core": true
+    },
+    {
+      "id": "sci-phys-pull",
+      "label": "Pull Force",
+      "domain": "science_nature",
+      "category": "physical_science",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Child pulling a red wagon by its handle",
+      "audio_prompt": "Find the picture showing pull force",
+      "standard_refs": [
+        "NGSS.K-PS2-1",
+        "NGSS.K-PS3-1"
+      ],
+      "distractor_group": "physical_science",
+      "in_core": true
+    },
+    {
+      "id": "sci-phys-ice",
+      "label": "Solid Ice",
+      "domain": "science_nature",
+      "category": "physical_science",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear frozen ice cubes stacked in a dish",
+      "audio_prompt": "Find the picture showing solid ice",
+      "standard_refs": [
+        "NGSS.K-PS2-1",
+        "NGSS.K-PS3-1"
+      ],
+      "distractor_group": "physical_science",
+      "in_core": true
+    },
+    {
+      "id": "sci-phys-water",
+      "label": "Liquid Water",
+      "domain": "science_nature",
+      "category": "physical_science",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Clear liquid water pouring from a pitcher",
+      "audio_prompt": "Find the picture showing liquid water",
+      "standard_refs": [
+        "NGSS.K-PS2-1",
+        "NGSS.K-PS3-1"
+      ],
+      "distractor_group": "physical_science",
+      "in_core": true
+    },
+    {
+      "id": "sci-phys-steam",
+      "label": "Gas Steam",
+      "domain": "science_nature",
+      "category": "physical_science",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Swirling white steam rising from a warm kettle",
+      "audio_prompt": "Find the picture showing gas steam",
+      "standard_refs": [
+        "NGSS.K-PS2-1",
+        "NGSS.K-PS3-1"
+      ],
+      "distractor_group": "physical_science",
+      "in_core": true
+    },
+    {
+      "id": "sci-phys-shadow",
+      "label": "Shadow",
+      "domain": "science_nature",
+      "category": "physical_science",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Dark shadow cast on the sidewalk behind a sunny tree",
+      "audio_prompt": "Find the picture showing shadow",
+      "standard_refs": [
+        "NGSS.K-PS2-1",
+        "NGSS.K-PS3-1"
+      ],
+      "distractor_group": "physical_science",
+      "in_core": true
+    },
+    {
+      "id": "sci-phys-sunlight",
+      "label": "Warm Sunlight",
+      "domain": "science_nature",
+      "category": "physical_science",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Warm golden sunbeams shining onto a garden",
+      "audio_prompt": "Find the picture showing warm sunlight",
+      "standard_refs": [
+        "NGSS.K-PS2-1",
+        "NGSS.K-PS3-1"
+      ],
+      "distractor_group": "physical_science",
+      "in_core": true
+    }
+  ]
+}

@@ -1,0 +1,515 @@
+{
+  "set": "core",
+  "domain": "emotions_everyday",
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "emo-happy",
+      "label": "Emotion: Happy",
+      "domain": "emotions_everyday",
+      "category": "core_emotions",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Expressive friendly child face showing a happy expression",
+      "audio_prompt": "Find the happy face",
+      "standard_refs": [
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "core_emotions",
+      "in_core": true
+    },
+    {
+      "id": "emo-sad",
+      "label": "Emotion: Sad",
+      "domain": "emotions_everyday",
+      "category": "core_emotions",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Expressive friendly child face showing a sad expression",
+      "audio_prompt": "Find the sad face",
+      "standard_refs": [
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "core_emotions",
+      "in_core": true
+    },
+    {
+      "id": "emo-angry",
+      "label": "Emotion: Angry",
+      "domain": "emotions_everyday",
+      "category": "core_emotions",
+      "tier": 1,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Expressive friendly child face showing a angry expression",
+      "audio_prompt": "Find the angry face",
+      "standard_refs": [
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "core_emotions",
+      "in_core": true
+    },
+    {
+      "id": "emo-scared",
+      "label": "Emotion: Scared",
+      "domain": "emotions_everyday",
+      "category": "core_emotions",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Expressive friendly child face showing a scared expression",
+      "audio_prompt": "Find the scared face",
+      "standard_refs": [
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "core_emotions",
+      "in_core": true
+    },
+    {
+      "id": "emo-surprised",
+      "label": "Emotion: Surprised",
+      "domain": "emotions_everyday",
+      "category": "core_emotions",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Expressive friendly child face showing a surprised expression",
+      "audio_prompt": "Find the surprised face",
+      "standard_refs": [
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "core_emotions",
+      "in_core": true
+    },
+    {
+      "id": "emo-excited",
+      "label": "Emotion: Excited",
+      "domain": "emotions_everyday",
+      "category": "core_emotions",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Expressive friendly child face showing a excited expression",
+      "audio_prompt": "Find the excited face",
+      "standard_refs": [
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "core_emotions",
+      "in_core": true
+    },
+    {
+      "id": "emo-tired",
+      "label": "Emotion: Tired",
+      "domain": "emotions_everyday",
+      "category": "core_emotions",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Expressive friendly child face showing a tired expression",
+      "audio_prompt": "Find the tired face",
+      "standard_refs": [
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "core_emotions",
+      "in_core": true
+    },
+    {
+      "id": "emo-calm",
+      "label": "Emotion: Calm",
+      "domain": "emotions_everyday",
+      "category": "core_emotions",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Expressive friendly child face showing a calm expression",
+      "audio_prompt": "Find the calm face",
+      "standard_refs": [
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "core_emotions",
+      "in_core": true
+    },
+    {
+      "id": "emo-proud",
+      "label": "Emotion: Proud",
+      "domain": "emotions_everyday",
+      "category": "core_emotions",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Expressive friendly child face showing a proud expression",
+      "audio_prompt": "Find the proud face",
+      "standard_refs": [
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "core_emotions",
+      "in_core": true
+    },
+    {
+      "id": "emo-shy",
+      "label": "Emotion: Shy",
+      "domain": "emotions_everyday",
+      "category": "core_emotions",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Expressive friendly child face showing a shy expression",
+      "audio_prompt": "Find the shy face",
+      "standard_refs": [
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "core_emotions",
+      "in_core": true
+    },
+    {
+      "id": "emo-confused",
+      "label": "Emotion: Confused",
+      "domain": "emotions_everyday",
+      "category": "core_emotions",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Expressive friendly child face showing a confused expression",
+      "audio_prompt": "Find the confused face",
+      "standard_refs": [
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "core_emotions",
+      "in_core": true
+    },
+    {
+      "id": "emo-worried",
+      "label": "Emotion: Worried",
+      "domain": "emotions_everyday",
+      "category": "core_emotions",
+      "tier": 3,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Expressive friendly child face showing a worried expression",
+      "audio_prompt": "Find the worried face",
+      "standard_refs": [
+        "ELOF.P-SE.6"
+      ],
+      "distractor_group": "core_emotions",
+      "in_core": true
+    },
+    {
+      "id": "day-tool-pencil",
+      "label": "Pencil",
+      "domain": "emotions_everyday",
+      "category": "classroom_tools",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Bright, clean preschool illustration of a pencil",
+      "audio_prompt": "Find the pencil",
+      "standard_refs": [
+        "CCSS.ELA.L.K.5",
+        "CCSS.MATH.K.MD.B.3"
+      ],
+      "distractor_group": "classroom_tools",
+      "in_core": true
+    },
+    {
+      "id": "day-tool-crayon",
+      "label": "Crayon",
+      "domain": "emotions_everyday",
+      "category": "classroom_tools",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Bright, clean preschool illustration of a crayon",
+      "audio_prompt": "Find the crayon",
+      "standard_refs": [
+        "CCSS.ELA.L.K.5",
+        "CCSS.MATH.K.MD.B.3"
+      ],
+      "distractor_group": "classroom_tools",
+      "in_core": true
+    },
+    {
+      "id": "day-tool-scissors",
+      "label": "Scissors",
+      "domain": "emotions_everyday",
+      "category": "classroom_tools",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Bright, clean preschool illustration of a scissors",
+      "audio_prompt": "Find the scissors",
+      "standard_refs": [
+        "CCSS.ELA.L.K.5",
+        "CCSS.MATH.K.MD.B.3"
+      ],
+      "distractor_group": "classroom_tools",
+      "in_core": true
+    },
+    {
+      "id": "day-tool-glue-stick",
+      "label": "Glue Stick",
+      "domain": "emotions_everyday",
+      "category": "classroom_tools",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Bright, clean preschool illustration of a glue stick",
+      "audio_prompt": "Find the glue stick",
+      "standard_refs": [
+        "CCSS.ELA.L.K.5",
+        "CCSS.MATH.K.MD.B.3"
+      ],
+      "distractor_group": "classroom_tools",
+      "in_core": true
+    },
+    {
+      "id": "day-tool-book",
+      "label": "Book",
+      "domain": "emotions_everyday",
+      "category": "classroom_tools",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Bright, clean preschool illustration of a book",
+      "audio_prompt": "Find the book",
+      "standard_refs": [
+        "CCSS.ELA.L.K.5",
+        "CCSS.MATH.K.MD.B.3"
+      ],
+      "distractor_group": "classroom_tools",
+      "in_core": true
+    },
+    {
+      "id": "day-tool-backpack",
+      "label": "Backpack",
+      "domain": "emotions_everyday",
+      "category": "classroom_tools",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Bright, clean preschool illustration of a backpack",
+      "audio_prompt": "Find the backpack",
+      "standard_refs": [
+        "CCSS.ELA.L.K.5",
+        "CCSS.MATH.K.MD.B.3"
+      ],
+      "distractor_group": "classroom_tools",
+      "in_core": true
+    },
+    {
+      "id": "day-tool-wooden-ruler",
+      "label": "Wooden Ruler",
+      "domain": "emotions_everyday",
+      "category": "classroom_tools",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Bright, clean preschool illustration of a wooden ruler",
+      "audio_prompt": "Find the wooden ruler",
+      "standard_refs": [
+        "CCSS.ELA.L.K.5",
+        "CCSS.MATH.K.MD.B.3"
+      ],
+      "distractor_group": "classroom_tools",
+      "in_core": true
+    },
+    {
+      "id": "day-tool-magnifying-glass",
+      "label": "Magnifying Glass",
+      "domain": "emotions_everyday",
+      "category": "classroom_tools",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Bright, clean preschool illustration of a magnifying glass",
+      "audio_prompt": "Find the magnifying glass",
+      "standard_refs": [
+        "CCSS.ELA.L.K.5",
+        "CCSS.MATH.K.MD.B.3"
+      ],
+      "distractor_group": "classroom_tools",
+      "in_core": true
+    },
+    {
+      "id": "day-tool-paintbrush",
+      "label": "Paintbrush",
+      "domain": "emotions_everyday",
+      "category": "classroom_tools",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Bright, clean preschool illustration of a paintbrush",
+      "audio_prompt": "Find the paintbrush",
+      "standard_refs": [
+        "CCSS.ELA.L.K.5",
+        "CCSS.MATH.K.MD.B.3"
+      ],
+      "distractor_group": "classroom_tools",
+      "in_core": true
+    },
+    {
+      "id": "day-tool-classroom-globe",
+      "label": "Classroom Globe",
+      "domain": "emotions_everyday",
+      "category": "classroom_tools",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Bright, clean preschool illustration of a classroom globe",
+      "audio_prompt": "Find the classroom globe",
+      "standard_refs": [
+        "CCSS.ELA.L.K.5",
+        "CCSS.MATH.K.MD.B.3"
+      ],
+      "distractor_group": "classroom_tools",
+      "in_core": true
+    },
+    {
+      "id": "day-tool-wooden-blocks",
+      "label": "Wooden Blocks",
+      "domain": "emotions_everyday",
+      "category": "classroom_tools",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Bright, clean preschool illustration of a wooden blocks",
+      "audio_prompt": "Find the wooden blocks",
+      "standard_refs": [
+        "CCSS.ELA.L.K.5",
+        "CCSS.MATH.K.MD.B.3"
+      ],
+      "distractor_group": "classroom_tools",
+      "in_core": true
+    },
+    {
+      "id": "day-tool-jigsaw-puzzle",
+      "label": "Jigsaw Puzzle",
+      "domain": "emotions_everyday",
+      "category": "classroom_tools",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Bright, clean preschool illustration of a jigsaw puzzle",
+      "audio_prompt": "Find the jigsaw puzzle",
+      "standard_refs": [
+        "CCSS.ELA.L.K.5",
+        "CCSS.MATH.K.MD.B.3"
+      ],
+      "distractor_group": "classroom_tools",
+      "in_core": true
+    },
+    {
+      "id": "day-music-drum",
+      "label": "Drum",
+      "domain": "emotions_everyday",
+      "category": "musical_instruments",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Colorful illustration of a drum",
+      "audio_prompt": "Find the drum",
+      "standard_refs": [
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "musical_instruments",
+      "in_core": true
+    },
+    {
+      "id": "day-music-piano",
+      "label": "Piano",
+      "domain": "emotions_everyday",
+      "category": "musical_instruments",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Colorful illustration of a piano",
+      "audio_prompt": "Find the piano",
+      "standard_refs": [
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "musical_instruments",
+      "in_core": true
+    },
+    {
+      "id": "day-music-guitar",
+      "label": "Guitar",
+      "domain": "emotions_everyday",
+      "category": "musical_instruments",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Colorful illustration of a guitar",
+      "audio_prompt": "Find the guitar",
+      "standard_refs": [
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "musical_instruments",
+      "in_core": true
+    },
+    {
+      "id": "day-music-trumpet",
+      "label": "Trumpet",
+      "domain": "emotions_everyday",
+      "category": "musical_instruments",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Colorful illustration of a trumpet",
+      "audio_prompt": "Find the trumpet",
+      "standard_refs": [
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "musical_instruments",
+      "in_core": true
+    },
+    {
+      "id": "day-music-violin",
+      "label": "Violin",
+      "domain": "emotions_everyday",
+      "category": "musical_instruments",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Colorful illustration of a violin",
+      "audio_prompt": "Find the violin",
+      "standard_refs": [
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "musical_instruments",
+      "in_core": true
+    },
+    {
+      "id": "day-music-xylophone",
+      "label": "Xylophone",
+      "domain": "emotions_everyday",
+      "category": "musical_instruments",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Colorful illustration of a xylophone",
+      "audio_prompt": "Find the xylophone",
+      "standard_refs": [
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "musical_instruments",
+      "in_core": true
+    },
+    {
+      "id": "day-music-musical-note",
+      "label": "Musical Note",
+      "domain": "emotions_everyday",
+      "category": "musical_instruments",
+      "tier": 2,
+      "visual_type": "diagram_illustration",
+      "display_token": null,
+      "visual_prompt": "Colorful illustration of a musical note",
+      "audio_prompt": "Find the musical note",
+      "standard_refs": [
+        "CCSS.ELA.L.K.5"
+      ],
+      "distractor_group": "musical_instruments",
+      "in_core": true
+    }
+  ]
+}
