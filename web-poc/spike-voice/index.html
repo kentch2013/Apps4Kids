@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; connect-src 'self'; worker-src 'self' blob:;" />
+  <title>Apps4Kids — Gate 0 Offline Voice Spike</title>
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Gate 0: Offline Voice &amp; Mic Calibration Spike</h1>
+      <p id="swStatus" class="meta">Checking Service Worker...</p>
+      <div id="statusBadge" class="badge">Idle — Tap Start Calibration</div>
+    </header>
+
+    <section class="card prompt-card">
+      <div id="stagePrompt" class="prompt">Tap "Start Calibration" once to unlock iOS Safari AudioContext &amp; mic.</div>
+      <div class="meter-track" aria-label="Microphone level">
+        <div id="rmsMeter" class="meter-fill"></div>
+      </div>
+      <div class="controls">
+        <button id="startBtn" class="btn primary" type="button">Start Calibration</button>
+        <button id="stopBtn" class="btn" type="button" disabled>Stop</button>
+        <button id="exportBtn" class="btn" type="button">Export JSON Metrics</button>
+      </div>
+      <div id="dryRunBar" class="dry-run" hidden>
+        <span>Dry-run simulator:</span>
+        <button type="button" data-sim-word="red">red</button>
+        <button type="button" data-sim-word="two">two</button>
+        <button type="button" data-sim-word="blue">blue</button>
+        <button type="button" data-sim-word="seven">seven</button>
+        <button type="button" data-sim-word="stop">stop</button>
+      </div>
+    </section>
+
+    <section class="card metrics-grid">
+      <div><strong>VAD Threshold:</strong> <span id="vadThresholdVal">—</span></div>
+      <div><strong>Cold-Start Load:</strong> <span id="loadTimeVal">—</span></div>
+      <div><strong>Model Cache:</strong> <span id="modelSizeVal">—</span></div>
+      <div><strong>3-Min Stability:</strong> <span id="stabilityVal">0s / 180s</span></div>
+      <div><strong>Last Latency:</strong> <span id="latencyVal">—</span></div>
+      <div><strong>False Positives:</strong> <span id="fpVal">0</span></div>
+    </section>
+
+    <section class="card">
+      <h2>Event Log</h2>
+      <pre id="logBox" class="log"></pre>
+    </section>
+  </main>
+
+  <script src="./calibration.js"></script>
+  <script src="./resampler.js"></script>
+  <script src="./vocab-matcher.js"></script>
+  <script src="./vosk-adapter.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
