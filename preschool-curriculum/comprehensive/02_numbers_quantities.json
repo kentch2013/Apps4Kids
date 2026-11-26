@@ -18,7 +18,16 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "zero",
+        "0",
+        "oh"
+      ],
+      "confusable_with": [
+        "qty-fingers-0"
+      ]
     },
     {
       "id": "num-digit-1",
@@ -35,7 +44,19 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "one",
+        "1",
+        "won"
+      ],
+      "confusable_with": [
+        "qty-dice-1",
+        "qty-fingers-1",
+        "qty-fiveframe-1",
+        "qty-tally-1"
+      ]
     },
     {
       "id": "num-digit-2",
@@ -52,7 +73,20 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "two",
+        "2",
+        "to",
+        "too"
+      ],
+      "confusable_with": [
+        "qty-dice-2",
+        "qty-fingers-2",
+        "qty-fiveframe-2",
+        "qty-tally-2"
+      ]
     },
     {
       "id": "num-digit-3",
@@ -69,7 +103,19 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "three",
+        "3",
+        "tree"
+      ],
+      "confusable_with": [
+        "qty-dice-3",
+        "qty-fingers-3",
+        "qty-fiveframe-3",
+        "qty-tally-3"
+      ]
     },
     {
       "id": "num-digit-4",
@@ -86,7 +132,20 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "four",
+        "4",
+        "for",
+        "fore"
+      ],
+      "confusable_with": [
+        "qty-dice-4",
+        "qty-fingers-4",
+        "qty-fiveframe-4",
+        "qty-tally-4"
+      ]
     },
     {
       "id": "num-digit-5",
@@ -103,7 +162,19 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "five",
+        "5"
+      ],
+      "confusable_with": [
+        "num-digit-9",
+        "qty-dice-5",
+        "qty-fingers-5",
+        "qty-fiveframe-5",
+        "qty-tally-5"
+      ]
     },
     {
       "id": "num-digit-6",
@@ -120,7 +191,20 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "six",
+        "6",
+        "sicks"
+      ],
+      "confusable_with": [
+        "num-digit-16",
+        "qty-dice-6",
+        "qty-fingers-6",
+        "qty-tally-6",
+        "qty-tenframe-6"
+      ]
     },
     {
       "id": "num-digit-7",
@@ -137,7 +221,19 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "seven",
+        "7"
+      ],
+      "confusable_with": [
+        "num-digit-11",
+        "num-digit-17",
+        "qty-fingers-7",
+        "qty-tally-7",
+        "qty-tenframe-7"
+      ]
     },
     {
       "id": "num-digit-8",
@@ -154,7 +250,19 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "eight",
+        "8",
+        "ate"
+      ],
+      "confusable_with": [
+        "num-digit-18",
+        "qty-fingers-8",
+        "qty-tally-8",
+        "qty-tenframe-8"
+      ]
     },
     {
       "id": "num-digit-9",
@@ -171,7 +279,19 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "nine",
+        "9"
+      ],
+      "confusable_with": [
+        "num-digit-19",
+        "num-digit-5",
+        "qty-fingers-9",
+        "qty-tally-9",
+        "qty-tenframe-9"
+      ]
     },
     {
       "id": "num-digit-10",
@@ -188,7 +308,17 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "ten",
+        "10"
+      ],
+      "confusable_with": [
+        "qty-fingers-10",
+        "qty-tally-10",
+        "qty-tenframe-10"
+      ]
     },
     {
       "id": "num-digit-11",
@@ -205,7 +335,15 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "eleven",
+        "11"
+      ],
+      "confusable_with": [
+        "num-digit-7"
+      ]
     },
     {
       "id": "num-digit-12",
@@ -222,7 +360,12 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "twelve",
+        "12"
+      ]
     },
     {
       "id": "num-digit-13",
@@ -239,7 +382,15 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "thirteen",
+        "13"
+      ],
+      "confusable_with": [
+        "num-digit-14"
+      ]
     },
     {
       "id": "num-digit-14",
@@ -256,7 +407,16 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "fourteen",
+        "14"
+      ],
+      "confusable_with": [
+        "num-digit-13",
+        "num-digit-15"
+      ]
     },
     {
       "id": "num-digit-15",
@@ -273,7 +433,15 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "fifteen",
+        "15"
+      ],
+      "confusable_with": [
+        "num-digit-14"
+      ]
     },
     {
       "id": "num-digit-16",
@@ -290,7 +458,15 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "sixteen",
+        "16"
+      ],
+      "confusable_with": [
+        "num-digit-6"
+      ]
     },
     {
       "id": "num-digit-17",
@@ -307,7 +483,15 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "seventeen",
+        "17"
+      ],
+      "confusable_with": [
+        "num-digit-7"
+      ]
     },
     {
       "id": "num-digit-18",
@@ -324,7 +508,15 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "eighteen",
+        "18"
+      ],
+      "confusable_with": [
+        "num-digit-8"
+      ]
     },
     {
       "id": "num-digit-19",
@@ -341,7 +533,15 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "nineteen",
+        "19"
+      ],
+      "confusable_with": [
+        "num-digit-9"
+      ]
     },
     {
       "id": "num-digit-20",
@@ -358,7 +558,12 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "twenty",
+        "20"
+      ]
     },
     {
       "id": "qty-dice-1",
@@ -375,7 +580,19 @@
         "ELOF.P-MATH.2"
       ],
       "distractor_group": "dice_subitizing",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "one",
+        "1",
+        "won"
+      ],
+      "confusable_with": [
+        "num-digit-1",
+        "qty-fingers-1",
+        "qty-fiveframe-1",
+        "qty-tally-1"
+      ]
     },
     {
       "id": "qty-dice-2",
@@ -392,7 +609,20 @@
         "ELOF.P-MATH.2"
       ],
       "distractor_group": "dice_subitizing",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "two",
+        "2",
+        "to",
+        "too"
+      ],
+      "confusable_with": [
+        "num-digit-2",
+        "qty-fingers-2",
+        "qty-fiveframe-2",
+        "qty-tally-2"
+      ]
     },
     {
       "id": "qty-dice-3",
@@ -409,7 +639,19 @@
         "ELOF.P-MATH.2"
       ],
       "distractor_group": "dice_subitizing",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "three",
+        "3",
+        "tree"
+      ],
+      "confusable_with": [
+        "num-digit-3",
+        "qty-fingers-3",
+        "qty-fiveframe-3",
+        "qty-tally-3"
+      ]
     },
     {
       "id": "qty-dice-4",
@@ -426,7 +668,20 @@
         "ELOF.P-MATH.2"
       ],
       "distractor_group": "dice_subitizing",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "four",
+        "4",
+        "for",
+        "fore"
+      ],
+      "confusable_with": [
+        "num-digit-4",
+        "qty-fingers-4",
+        "qty-fiveframe-4",
+        "qty-tally-4"
+      ]
     },
     {
       "id": "qty-dice-5",
@@ -443,7 +698,18 @@
         "ELOF.P-MATH.2"
       ],
       "distractor_group": "dice_subitizing",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "five",
+        "5"
+      ],
+      "confusable_with": [
+        "num-digit-5",
+        "qty-fingers-5",
+        "qty-fiveframe-5",
+        "qty-tally-5"
+      ]
     },
     {
       "id": "qty-dice-6",
@@ -460,7 +726,19 @@
         "ELOF.P-MATH.2"
       ],
       "distractor_group": "dice_subitizing",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "six",
+        "6",
+        "sicks"
+      ],
+      "confusable_with": [
+        "num-digit-6",
+        "qty-fingers-6",
+        "qty-tally-6",
+        "qty-tenframe-6"
+      ]
     },
     {
       "id": "qty-fingers-0",
@@ -477,7 +755,16 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "finger_counting",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "zero",
+        "0",
+        "oh"
+      ],
+      "confusable_with": [
+        "num-digit-0"
+      ]
     },
     {
       "id": "qty-fingers-1",
@@ -494,7 +781,19 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "finger_counting",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "one",
+        "1",
+        "won"
+      ],
+      "confusable_with": [
+        "num-digit-1",
+        "qty-dice-1",
+        "qty-fiveframe-1",
+        "qty-tally-1"
+      ]
     },
     {
       "id": "qty-fingers-2",
@@ -511,7 +810,20 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "finger_counting",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "two",
+        "2",
+        "to",
+        "too"
+      ],
+      "confusable_with": [
+        "num-digit-2",
+        "qty-dice-2",
+        "qty-fiveframe-2",
+        "qty-tally-2"
+      ]
     },
     {
       "id": "qty-fingers-3",
@@ -528,7 +840,19 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "finger_counting",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "three",
+        "3",
+        "tree"
+      ],
+      "confusable_with": [
+        "num-digit-3",
+        "qty-dice-3",
+        "qty-fiveframe-3",
+        "qty-tally-3"
+      ]
     },
     {
       "id": "qty-fingers-4",
@@ -545,7 +869,20 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "finger_counting",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "four",
+        "4",
+        "for",
+        "fore"
+      ],
+      "confusable_with": [
+        "num-digit-4",
+        "qty-dice-4",
+        "qty-fiveframe-4",
+        "qty-tally-4"
+      ]
     },
     {
       "id": "qty-fingers-5",
@@ -562,7 +899,18 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "finger_counting",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "five",
+        "5"
+      ],
+      "confusable_with": [
+        "num-digit-5",
+        "qty-dice-5",
+        "qty-fiveframe-5",
+        "qty-tally-5"
+      ]
     },
     {
       "id": "qty-fingers-6",
@@ -579,7 +927,19 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "finger_counting",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "six",
+        "6",
+        "sicks"
+      ],
+      "confusable_with": [
+        "num-digit-6",
+        "qty-dice-6",
+        "qty-tally-6",
+        "qty-tenframe-6"
+      ]
     },
     {
       "id": "qty-fingers-7",
@@ -596,7 +956,17 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "finger_counting",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "seven",
+        "7"
+      ],
+      "confusable_with": [
+        "num-digit-7",
+        "qty-tally-7",
+        "qty-tenframe-7"
+      ]
     },
     {
       "id": "qty-fingers-8",
@@ -613,7 +983,18 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "finger_counting",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "eight",
+        "8",
+        "ate"
+      ],
+      "confusable_with": [
+        "num-digit-8",
+        "qty-tally-8",
+        "qty-tenframe-8"
+      ]
     },
     {
       "id": "qty-fingers-9",
@@ -630,7 +1011,17 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "finger_counting",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "nine",
+        "9"
+      ],
+      "confusable_with": [
+        "num-digit-9",
+        "qty-tally-9",
+        "qty-tenframe-9"
+      ]
     },
     {
       "id": "qty-fingers-10",
@@ -647,7 +1038,17 @@
         "ELOF.P-MATH.1"
       ],
       "distractor_group": "finger_counting",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "ten",
+        "10"
+      ],
+      "confusable_with": [
+        "num-digit-10",
+        "qty-tally-10",
+        "qty-tenframe-10"
+      ]
     },
     {
       "id": "qty-fiveframe-1",
@@ -664,7 +1065,19 @@
         "ELOF.P-MATH.2"
       ],
       "distractor_group": "five_frames",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "one",
+        "1",
+        "won"
+      ],
+      "confusable_with": [
+        "num-digit-1",
+        "qty-dice-1",
+        "qty-fingers-1",
+        "qty-tally-1"
+      ]
     },
     {
       "id": "qty-fiveframe-2",
@@ -681,7 +1094,20 @@
         "ELOF.P-MATH.2"
       ],
       "distractor_group": "five_frames",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "two",
+        "2",
+        "to",
+        "too"
+      ],
+      "confusable_with": [
+        "num-digit-2",
+        "qty-dice-2",
+        "qty-fingers-2",
+        "qty-tally-2"
+      ]
     },
     {
       "id": "qty-fiveframe-3",
@@ -698,7 +1124,19 @@
         "ELOF.P-MATH.2"
       ],
       "distractor_group": "five_frames",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "three",
+        "3",
+        "tree"
+      ],
+      "confusable_with": [
+        "num-digit-3",
+        "qty-dice-3",
+        "qty-fingers-3",
+        "qty-tally-3"
+      ]
     },
     {
       "id": "qty-fiveframe-4",
@@ -715,7 +1153,20 @@
         "ELOF.P-MATH.2"
       ],
       "distractor_group": "five_frames",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "four",
+        "4",
+        "for",
+        "fore"
+      ],
+      "confusable_with": [
+        "num-digit-4",
+        "qty-dice-4",
+        "qty-fingers-4",
+        "qty-tally-4"
+      ]
     },
     {
       "id": "qty-fiveframe-5",
@@ -732,7 +1183,18 @@
         "ELOF.P-MATH.2"
       ],
       "distractor_group": "five_frames",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "five",
+        "5"
+      ],
+      "confusable_with": [
+        "num-digit-5",
+        "qty-dice-5",
+        "qty-fingers-5",
+        "qty-tally-5"
+      ]
     },
     {
       "id": "qty-tenframe-6",
@@ -749,7 +1211,19 @@
         "ELOF.P-MATH.2"
       ],
       "distractor_group": "ten_frames",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "six",
+        "6",
+        "sicks"
+      ],
+      "confusable_with": [
+        "num-digit-6",
+        "qty-dice-6",
+        "qty-fingers-6",
+        "qty-tally-6"
+      ]
     },
     {
       "id": "qty-tenframe-7",
@@ -766,7 +1240,17 @@
         "ELOF.P-MATH.2"
       ],
       "distractor_group": "ten_frames",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "seven",
+        "7"
+      ],
+      "confusable_with": [
+        "num-digit-7",
+        "qty-fingers-7",
+        "qty-tally-7"
+      ]
     },
     {
       "id": "qty-tenframe-8",
@@ -783,7 +1267,18 @@
         "ELOF.P-MATH.2"
       ],
       "distractor_group": "ten_frames",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "eight",
+        "8",
+        "ate"
+      ],
+      "confusable_with": [
+        "num-digit-8",
+        "qty-fingers-8",
+        "qty-tally-8"
+      ]
     },
     {
       "id": "qty-tenframe-9",
@@ -800,7 +1295,17 @@
         "ELOF.P-MATH.2"
       ],
       "distractor_group": "ten_frames",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "nine",
+        "9"
+      ],
+      "confusable_with": [
+        "num-digit-9",
+        "qty-fingers-9",
+        "qty-tally-9"
+      ]
     },
     {
       "id": "qty-tenframe-10",
@@ -817,7 +1322,17 @@
         "ELOF.P-MATH.2"
       ],
       "distractor_group": "ten_frames",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "ten",
+        "10"
+      ],
+      "confusable_with": [
+        "num-digit-10",
+        "qty-fingers-10",
+        "qty-tally-10"
+      ]
     },
     {
       "id": "qty-tally-1",
@@ -834,7 +1349,19 @@
         "ELOF.P-MATH.3"
       ],
       "distractor_group": "tally_marks",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "one",
+        "1",
+        "won"
+      ],
+      "confusable_with": [
+        "num-digit-1",
+        "qty-dice-1",
+        "qty-fingers-1",
+        "qty-fiveframe-1"
+      ]
     },
     {
       "id": "qty-tally-2",
@@ -851,7 +1378,20 @@
         "ELOF.P-MATH.3"
       ],
       "distractor_group": "tally_marks",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "two",
+        "2",
+        "to",
+        "too"
+      ],
+      "confusable_with": [
+        "num-digit-2",
+        "qty-dice-2",
+        "qty-fingers-2",
+        "qty-fiveframe-2"
+      ]
     },
     {
       "id": "qty-tally-3",
@@ -868,7 +1408,19 @@
         "ELOF.P-MATH.3"
       ],
       "distractor_group": "tally_marks",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "three",
+        "3",
+        "tree"
+      ],
+      "confusable_with": [
+        "num-digit-3",
+        "qty-dice-3",
+        "qty-fingers-3",
+        "qty-fiveframe-3"
+      ]
     },
     {
       "id": "qty-tally-4",
@@ -885,7 +1437,20 @@
         "ELOF.P-MATH.3"
       ],
       "distractor_group": "tally_marks",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "four",
+        "4",
+        "for",
+        "fore"
+      ],
+      "confusable_with": [
+        "num-digit-4",
+        "qty-dice-4",
+        "qty-fingers-4",
+        "qty-fiveframe-4"
+      ]
     },
     {
       "id": "qty-tally-5",
@@ -902,7 +1467,18 @@
         "ELOF.P-MATH.3"
       ],
       "distractor_group": "tally_marks",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "five",
+        "5"
+      ],
+      "confusable_with": [
+        "num-digit-5",
+        "qty-dice-5",
+        "qty-fingers-5",
+        "qty-fiveframe-5"
+      ]
     },
     {
       "id": "qty-tally-6",
@@ -919,7 +1495,19 @@
         "ELOF.P-MATH.3"
       ],
       "distractor_group": "tally_marks",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "six",
+        "6",
+        "sicks"
+      ],
+      "confusable_with": [
+        "num-digit-6",
+        "qty-dice-6",
+        "qty-fingers-6",
+        "qty-tenframe-6"
+      ]
     },
     {
       "id": "qty-tally-7",
@@ -936,7 +1524,17 @@
         "ELOF.P-MATH.3"
       ],
       "distractor_group": "tally_marks",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "seven",
+        "7"
+      ],
+      "confusable_with": [
+        "num-digit-7",
+        "qty-fingers-7",
+        "qty-tenframe-7"
+      ]
     },
     {
       "id": "qty-tally-8",
@@ -953,7 +1551,18 @@
         "ELOF.P-MATH.3"
       ],
       "distractor_group": "tally_marks",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "eight",
+        "8",
+        "ate"
+      ],
+      "confusable_with": [
+        "num-digit-8",
+        "qty-fingers-8",
+        "qty-tenframe-8"
+      ]
     },
     {
       "id": "qty-tally-9",
@@ -970,7 +1579,17 @@
         "ELOF.P-MATH.3"
       ],
       "distractor_group": "tally_marks",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "nine",
+        "9"
+      ],
+      "confusable_with": [
+        "num-digit-9",
+        "qty-fingers-9",
+        "qty-tenframe-9"
+      ]
     },
     {
       "id": "qty-tally-10",
@@ -987,7 +1606,17 @@
         "ELOF.P-MATH.3"
       ],
       "distractor_group": "tally_marks",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "ten",
+        "10"
+      ],
+      "confusable_with": [
+        "num-digit-10",
+        "qty-fingers-10",
+        "qty-tenframe-10"
+      ]
     },
     {
       "id": "num-ordinal-1st",
@@ -1004,7 +1633,14 @@
         "CCSS.MATH.K.CC.B.4"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "synonym_set",
+      "accepted_utterances": [
+        "first",
+        "1st",
+        "one",
+        "1"
+      ]
     },
     {
       "id": "num-ordinal-2nd",
@@ -1021,7 +1657,14 @@
         "CCSS.MATH.K.CC.B.4"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "synonym_set",
+      "accepted_utterances": [
+        "second",
+        "2nd",
+        "two",
+        "2"
+      ]
     },
     {
       "id": "num-ordinal-3rd",
@@ -1038,7 +1681,14 @@
         "CCSS.MATH.K.CC.B.4"
       ],
       "distractor_group": "numerals_0_20",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "synonym_set",
+      "accepted_utterances": [
+        "third",
+        "3rd",
+        "three",
+        "3"
+      ]
     },
     {
       "id": "num-milestone-25",

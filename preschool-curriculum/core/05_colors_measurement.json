@@ -18,7 +18,12 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "core_colors",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "red",
+        "read"
+      ]
     },
     {
       "id": "color-blue",
@@ -35,7 +40,12 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "core_colors",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "blue",
+        "blew"
+      ]
     },
     {
       "id": "color-yellow",
@@ -52,7 +62,11 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "core_colors",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "yellow"
+      ]
     },
     {
       "id": "color-green",
@@ -69,7 +83,11 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "core_colors",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "green"
+      ]
     },
     {
       "id": "color-orange",
@@ -86,7 +104,11 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "core_colors",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "orange"
+      ]
     },
     {
       "id": "color-purple",
@@ -103,7 +125,11 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "core_colors",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "purple"
+      ]
     },
     {
       "id": "color-pink",
@@ -120,7 +146,11 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "core_colors",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "pink"
+      ]
     },
     {
       "id": "color-brown",
@@ -137,7 +167,11 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "core_colors",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "brown"
+      ]
     },
     {
       "id": "color-black",
@@ -154,7 +188,11 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "core_colors",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "black"
+      ]
     },
     {
       "id": "color-white",
@@ -171,7 +209,11 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "core_colors",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "direct_word",
+      "accepted_utterances": [
+        "white"
+      ]
     },
     {
       "id": "color-gray",
@@ -188,7 +230,12 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "core_colors",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "synonym_set",
+      "accepted_utterances": [
+        "gray",
+        "grey"
+      ]
     },
     {
       "id": "meas-big-small",
@@ -206,7 +253,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-tall-short",
@@ -224,7 +273,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-long-short",
@@ -242,7 +293,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-heavy-light",
@@ -260,7 +313,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-full-empty",
@@ -278,7 +333,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-hot-cold",
@@ -296,7 +353,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-fast-slow",
@@ -314,7 +373,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-wide-narrow",
@@ -332,7 +393,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-thick-thin",
@@ -350,7 +413,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-loud-quiet",
@@ -368,7 +433,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-more-less",
@@ -386,7 +453,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-same-different",
@@ -404,7 +473,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-open-closed",
@@ -422,7 +493,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-wet-dry",
@@ -440,7 +513,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-clean-dirty",
@@ -458,7 +533,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-light-dark",
@@ -476,7 +553,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-hard-soft",
@@ -494,7 +573,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-rough-smooth",
@@ -512,7 +593,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-sink-float",
@@ -530,7 +613,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-straight-curved",
@@ -548,7 +633,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-whole-part",
@@ -566,7 +653,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-near-far",
@@ -584,7 +673,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     },
     {
       "id": "meas-high-low",
@@ -602,7 +693,9 @@
         "CCSS.ELA.L.K.5"
       ],
       "distractor_group": "attribute_pairs",
-      "in_core": true
+      "in_core": true,
+      "voice_recall_mode": "guided_only",
+      "accepted_utterances": []
     }
   ]
 }
