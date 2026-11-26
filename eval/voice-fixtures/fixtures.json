@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "sample_rate_hz": 16000,
+  "channels": 1,
+  "bits_per_sample": 16,
+  "fixtures": [
+    {
+      "id": "clean-num-3",
+      "wav_path": "eval/voice-fixtures/wav/clean-num-3.wav",
+      "category": "clean_hit",
+      "active_mole_ids": [
+        "num-digit-1",
+        "num-digit-3",
+        "color-blue"
+      ],
+      "expected_match_id": "num-digit-3",
+      "simulated_transcript": "three",
+      "simulated_confidence": 0.94,
+      "noise_floor_rms": 0.008
+    },
+    {
+      "id": "clean-num-7",
+      "wav_path": "eval/voice-fixtures/wav/clean-num-7.wav",
+      "category": "clean_hit",
+      "active_mole_ids": [
+        "num-digit-2",
+        "num-digit-7",
+        "num-digit-9"
+      ],
+      "expected_match_id": "num-digit-7",
+      "simulated_transcript": "seven",
+      "simulated_confidence": 0.92,
+      "noise_floor_rms": 0.008
+    },
+    {
+      "id": "clean-color-red",
+      "wav_path": "eval/voice-fixtures/wav/clean-color-red.wav",
+      "category": "clean_hit",
+      "active_mole_ids": [
+        "color-red",
+        "color-green",
+        "color-yellow"
+      ],
+      "expected_match_id": "color-red",
+      "simulated_transcript": "red",
+      "simulated_confidence": 0.95,
+      "noise_floor_rms": 0.008
+    },
+    {
+      "id": "clean-color-blue-self-correct",
+      "wav_path": "eval/voice-fixtures/wav/clean-color-blue-self-correct.wav",
+      "category": "clean_hit",
+      "active_mole_ids": [
+        "color-orange",
+        "color-blue",
+        "num-digit-4"
+      ],
+      "expected_match_id": "color-blue",
+      "simulated_transcript": "um blue",
+      "simulated_confidence": 0.89,
+      "noise_floor_rms": 0.008
+    },
+    {
+      "id": "clean-num-10",
+      "wav_path": "eval/voice-fixtures/wav/clean-num-10.wav",
+      "category": "clean_hit",
+      "active_mole_ids": [
+        "num-digit-5",
+        "num-digit-10",
+        "color-purple"
+      ],
+      "expected_match_id": "num-digit-10",
+      "simulated_transcript": "ten",
+      "simulated_confidence": 0.91,
+      "noise_floor_rms": 0.008
+    },
+    {
+      "id": "soft-color-yellow",
+      "wav_path": "eval/voice-fixtures/wav/soft-color-yellow.wav",
+      "category": "soft_voice",
+      "active_mole_ids": [
+        "color-yellow",
+        "color-red",
+        "num-digit-2"
+      ],
+      "expected_match_id": "color-yellow",
+      "simulated_transcript": "yellow",
+      "simulated_confidence": 0.72,
+      "noise_floor_rms": 0.008
+    },
+    {
+      "id": "soft-num-4-phonetic",
+      "wav_path": "eval/voice-fixtures/wav/soft-num-4-phonetic.wav",
+      "category": "soft_voice",
+      "active_mole_ids": [
+        "num-digit-4",
+        "num-digit-8",
+        "color-green"
+      ],
+      "expected_match_id": "num-digit-4",
+      "simulated_transcript": "fow",
+      "simulated_confidence": 0.68,
+      "noise_floor_rms": 0.008
+    },
+    {
+      "id": "soft-color-purple-fuzzy",
+      "wav_path": "eval/voice-fixtures/wav/soft-color-purple-fuzzy.wav",
+      "category": "soft_voice",
+      "active_mole_ids": [
+        "color-purple",
+        "color-blue",
+        "num-digit-1"
+      ],
+      "expected_match_id": "color-purple",
+      "simulated_transcript": "puwple",
+      "simulated_confidence": 0.66,
+      "noise_floor_rms": 0.008
+    },
+    {
+      "id": "synonym-color-grey",
+      "wav_path": "eval/voice-fixtures/wav/synonym-color-grey.wav",
+      "category": "synonym",
+      "active_mole_ids": [
+        "color-gray",
+        "color-red",
+        "color-blue"
+      ],
+      "expected_match_id": "color-gray",
+      "simulated_transcript": "grey",
+      "simulated_confidence": 0.88,
+      "noise_floor_rms": 0.008
+    },
+    {
+      "id": "synonym-num-2-too",
+      "wav_path": "eval/voice-fixtures/wav/synonym-num-2-too.wav",
+      "category": "synonym",
+      "active_mole_ids": [
+        "num-digit-2",
+        "num-digit-6",
+        "color-orange"
+      ],
+      "expected_match_id": "num-digit-2",
+      "simulated_transcript": "too",
+      "simulated_confidence": 0.85,
+      "noise_floor_rms": 0.008
+    },
+    {
+      "id": "synonym-num-3-fwee",
+      "wav_path": "eval/voice-fixtures/wav/synonym-num-3-fwee.wav",
+      "category": "synonym",
+      "active_mole_ids": [
+        "num-digit-3",
+        "num-digit-5",
+        "color-green"
+      ],
+      "expected_match_id": "num-digit-3",
+      "simulated_transcript": "fwee",
+      "simulated_confidence": 0.81,
+      "noise_floor_rms": 0.008
+    },
+    {
+      "id": "wrong-word-not-active",
+      "wav_path": "eval/voice-fixtures/wav/wrong-word-not-active.wav",
+      "category": "wrong_word",
+      "active_mole_ids": [
+        "color-red",
+        "color-blue",
+        "num-digit-3"
+      ],
+      "expected_match_id": null,
+      "simulated_transcript": "yellow",
+      "simulated_confidence": 0.91,
+      "noise_floor_rms": 0.008
+    },
+    {
+      "id": "wrong-word-unk",
+      "wav_path": "eval/voice-fixtures/wav/wrong-word-unk.wav",
+      "category": "wrong_word",
+      "active_mole_ids": [
+        "num-digit-1",
+        "num-digit-2",
+        "color-red"
+      ],
+      "expected_match_id": null,
+      "simulated_transcript": "[unk]",
+      "simulated_confidence": 0.77,
+      "noise_floor_rms": 0.008
+    },
+    {
+      "id": "ambient-room-noise",
+      "wav_path": "eval/voice-fixtures/wav/ambient-room-noise.wav",
+      "category": "ambient_noise",
+      "active_mole_ids": [
+        "num-digit-1",
+        "color-red",
+        "color-blue"
+      ],
+      "expected_match_id": null,
+      "simulated_transcript": "red",
+      "simulated_confidence": 0.82,
+      "noise_floor_rms": 0.01
+    },
+    {
+      "id": "ambient-silence",
+      "wav_path": "eval/voice-fixtures/wav/ambient-silence.wav",
+      "category": "ambient_noise",
+      "active_mole_ids": [
+        "num-digit-3",
+        "color-green",
+        "color-yellow"
+      ],
+      "expected_match_id": null,
+      "simulated_transcript": "three",
+      "simulated_confidence": 0.75,
+      "noise_floor_rms": 0.008
+    }
+  ]
+}
