@@ -1,0 +1,1309 @@
+{
+  "schema_version": 1,
+  "active_domains": [
+    "02_numbers_quantities",
+    "05_colors_measurement"
+  ],
+  "audio_budget": {
+    "ios_safari_formats": [
+      ".wav",
+      ".mp3",
+      ".m4a"
+    ],
+    "item_max_bytes": 262144,
+    "sfx_max_bytes": 131072
+  },
+  "domains": {
+    "01_letters_phonics": {
+      "status": "planned",
+      "audio_dir": "assets/audio/items/01_letters_phonics",
+      "visuals_dir": "assets/visuals/01_letters_phonics"
+    },
+    "02_numbers_quantities": {
+      "status": "populated",
+      "audio_dir": "assets/audio/items/02_numbers_quantities",
+      "visuals_dir": "assets/visuals/02_numbers_quantities"
+    },
+    "03_shapes_spatial": {
+      "status": "planned",
+      "audio_dir": "assets/audio/items/03_shapes_spatial",
+      "visuals_dir": "assets/visuals/03_shapes_spatial"
+    },
+    "04_patterns_logic": {
+      "status": "planned",
+      "audio_dir": "assets/audio/items/04_patterns_logic",
+      "visuals_dir": "assets/visuals/04_patterns_logic"
+    },
+    "05_colors_measurement": {
+      "status": "populated",
+      "audio_dir": "assets/audio/items/05_colors_measurement",
+      "visuals_dir": "assets/visuals/05_colors_measurement"
+    },
+    "06_animals_nature": {
+      "status": "planned",
+      "audio_dir": "assets/audio/items/06_animals_nature",
+      "visuals_dir": "assets/visuals/06_animals_nature"
+    },
+    "07_everyday_objects": {
+      "status": "planned",
+      "audio_dir": "assets/audio/items/07_everyday_objects",
+      "visuals_dir": "assets/visuals/07_everyday_objects"
+    },
+    "08_emotions_social": {
+      "status": "planned",
+      "audio_dir": "assets/audio/items/08_emotions_social",
+      "visuals_dir": "assets/visuals/08_emotions_social"
+    },
+    "09_time_weather_seasons": {
+      "status": "planned",
+      "audio_dir": "assets/audio/items/09_time_weather_seasons",
+      "visuals_dir": "assets/visuals/09_time_weather_seasons"
+    }
+  },
+  "sfx": {
+    "bop": {
+      "path": "assets/audio/sfx/bop.wav",
+      "format": "wav",
+      "duration_ms": 180,
+      "non_verbal": true,
+      "description": "Instant non-verbal mole-bop feedback"
+    },
+    "pop_up": {
+      "path": "assets/audio/sfx/pop_up.wav",
+      "format": "wav",
+      "duration_ms": 160,
+      "non_verbal": true,
+      "description": "Rising non-verbal mole spawn cue"
+    },
+    "duck_down": {
+      "path": "assets/audio/sfx/duck_down.wav",
+      "format": "wav",
+      "duration_ms": 180,
+      "non_verbal": true,
+      "description": "Gentle non-verbal mole retreat cue"
+    },
+    "round_win": {
+      "path": "assets/audio/sfx/round_win.wav",
+      "format": "wav",
+      "duration_ms": 720,
+      "non_verbal": true,
+      "description": "Cheerful non-verbal major-triad win chime"
+    }
+  },
+  "prompts": {
+    "hint_try_saying": {
+      "path": "assets/audio/prompts/hint_try_saying.wav",
+      "text": "Try saying",
+      "format": "wav",
+      "duration_ms": 895
+    },
+    "calib_say_hi": {
+      "path": "assets/audio/prompts/calib_say_hi.wav",
+      "text": "Say hi to test your microphone!",
+      "format": "wav",
+      "duration_ms": 2188
+    },
+    "calib_great_job": {
+      "path": "assets/audio/prompts/calib_great_job.wav",
+      "text": "Great job! Your microphone is ready.",
+      "format": "wav",
+      "duration_ms": 3155
+    },
+    "round_start": {
+      "path": "assets/audio/prompts/round_start.wav",
+      "text": "Let's play!",
+      "format": "wav",
+      "duration_ms": 798
+    },
+    "try_again_gentle": {
+      "path": "assets/audio/prompts/try_again_gentle.wav",
+      "text": "Almost! Let's try again.",
+      "format": "wav",
+      "duration_ms": 2833
+    }
+  },
+  "items": {
+    "num-digit-0": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "zero",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-0.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 0,
+          "color": "#2563EB"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-0.svg"
+      }
+    },
+    "num-digit-1": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "one",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-1.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 1,
+          "color": "#E63946"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-1.svg"
+      }
+    },
+    "num-digit-2": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "two",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-2.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 2,
+          "color": "#16A34A"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-2.svg"
+      }
+    },
+    "num-digit-3": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "three",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-3.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 3,
+          "color": "#F97316"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-3.svg"
+      }
+    },
+    "num-digit-4": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "four",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-4.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 4,
+          "color": "#9333EA"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-4.svg"
+      }
+    },
+    "num-digit-5": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "five",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-5.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 5,
+          "color": "#0D9488"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-5.svg"
+      }
+    },
+    "num-digit-6": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "six",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-6.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 6,
+          "color": "#DB2777"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-6.svg"
+      }
+    },
+    "num-digit-7": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "seven",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-7.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 7,
+          "color": "#2563EB"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-7.svg"
+      }
+    },
+    "num-digit-8": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "eight",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-8.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 8,
+          "color": "#E63946"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-8.svg"
+      }
+    },
+    "num-digit-9": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "nine",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-9.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 9,
+          "color": "#16A34A"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-9.svg"
+      }
+    },
+    "num-digit-10": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "ten",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-10.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 10,
+          "color": "#F97316"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-10.svg"
+      }
+    },
+    "num-digit-11": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "eleven",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-11.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 11,
+          "color": "#9333EA"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-11.svg"
+      }
+    },
+    "num-digit-12": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "twelve",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-12.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 12,
+          "color": "#0D9488"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-12.svg"
+      }
+    },
+    "num-digit-13": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "thirteen",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-13.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 13,
+          "color": "#DB2777"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-13.svg"
+      }
+    },
+    "num-digit-14": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "fourteen",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-14.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 14,
+          "color": "#2563EB"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-14.svg"
+      }
+    },
+    "num-digit-15": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "fifteen",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-15.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 15,
+          "color": "#E63946"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-15.svg"
+      }
+    },
+    "num-digit-16": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "sixteen",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-16.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 16,
+          "color": "#16A34A"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-16.svg"
+      }
+    },
+    "num-digit-17": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "seventeen",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-17.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 17,
+          "color": "#F97316"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-17.svg"
+      }
+    },
+    "num-digit-18": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "eighteen",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-18.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 18,
+          "color": "#9333EA"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-18.svg"
+      }
+    },
+    "num-digit-19": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "nineteen",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-19.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 19,
+          "color": "#0D9488"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-19.svg"
+      }
+    },
+    "num-digit-20": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "twenty",
+      "audio": "assets/audio/items/02_numbers_quantities/num-digit-20.wav",
+      "visual": {
+        "renderer": "programmatic_numeral",
+        "params": {
+          "value": 20,
+          "color": "#DB2777"
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-digit-20.svg"
+      }
+    },
+    "qty-dice-1": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "one",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-dice-1.wav",
+      "visual": {
+        "renderer": "programmatic_dice",
+        "params": {
+          "value": 1
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-dice-1.svg"
+      }
+    },
+    "qty-dice-2": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "two",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-dice-2.wav",
+      "visual": {
+        "renderer": "programmatic_dice",
+        "params": {
+          "value": 2
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-dice-2.svg"
+      }
+    },
+    "qty-dice-3": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "three",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-dice-3.wav",
+      "visual": {
+        "renderer": "programmatic_dice",
+        "params": {
+          "value": 3
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-dice-3.svg"
+      }
+    },
+    "qty-dice-4": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "four",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-dice-4.wav",
+      "visual": {
+        "renderer": "programmatic_dice",
+        "params": {
+          "value": 4
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-dice-4.svg"
+      }
+    },
+    "qty-dice-5": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "five",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-dice-5.wav",
+      "visual": {
+        "renderer": "programmatic_dice",
+        "params": {
+          "value": 5
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-dice-5.svg"
+      }
+    },
+    "qty-dice-6": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "six",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-dice-6.wav",
+      "visual": {
+        "renderer": "programmatic_dice",
+        "params": {
+          "value": 6
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-dice-6.svg"
+      }
+    },
+    "qty-fingers-0": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "zero",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-fingers-0.wav",
+      "visual": {
+        "renderer": "programmatic_fingers",
+        "params": {
+          "value": 0
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-fingers-0.svg"
+      }
+    },
+    "qty-fingers-1": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "one",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-fingers-1.wav",
+      "visual": {
+        "renderer": "programmatic_fingers",
+        "params": {
+          "value": 1
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-fingers-1.svg"
+      }
+    },
+    "qty-fingers-2": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "two",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-fingers-2.wav",
+      "visual": {
+        "renderer": "programmatic_fingers",
+        "params": {
+          "value": 2
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-fingers-2.svg"
+      }
+    },
+    "qty-fingers-3": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "three",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-fingers-3.wav",
+      "visual": {
+        "renderer": "programmatic_fingers",
+        "params": {
+          "value": 3
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-fingers-3.svg"
+      }
+    },
+    "qty-fingers-4": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "four",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-fingers-4.wav",
+      "visual": {
+        "renderer": "programmatic_fingers",
+        "params": {
+          "value": 4
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-fingers-4.svg"
+      }
+    },
+    "qty-fingers-5": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "five",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-fingers-5.wav",
+      "visual": {
+        "renderer": "programmatic_fingers",
+        "params": {
+          "value": 5
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-fingers-5.svg"
+      }
+    },
+    "qty-fingers-6": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "six",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-fingers-6.wav",
+      "visual": {
+        "renderer": "programmatic_fingers",
+        "params": {
+          "value": 6
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-fingers-6.svg"
+      }
+    },
+    "qty-fingers-7": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "seven",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-fingers-7.wav",
+      "visual": {
+        "renderer": "programmatic_fingers",
+        "params": {
+          "value": 7
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-fingers-7.svg"
+      }
+    },
+    "qty-fingers-8": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "eight",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-fingers-8.wav",
+      "visual": {
+        "renderer": "programmatic_fingers",
+        "params": {
+          "value": 8
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-fingers-8.svg"
+      }
+    },
+    "qty-fingers-9": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "nine",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-fingers-9.wav",
+      "visual": {
+        "renderer": "programmatic_fingers",
+        "params": {
+          "value": 9
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-fingers-9.svg"
+      }
+    },
+    "qty-fingers-10": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "ten",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-fingers-10.wav",
+      "visual": {
+        "renderer": "programmatic_fingers",
+        "params": {
+          "value": 10
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-fingers-10.svg"
+      }
+    },
+    "qty-fiveframe-1": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "one",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-fiveframe-1.wav",
+      "visual": {
+        "renderer": "programmatic_five_frame",
+        "params": {
+          "value": 1,
+          "slots": 5
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-fiveframe-1.svg"
+      }
+    },
+    "qty-fiveframe-2": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "two",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-fiveframe-2.wav",
+      "visual": {
+        "renderer": "programmatic_five_frame",
+        "params": {
+          "value": 2,
+          "slots": 5
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-fiveframe-2.svg"
+      }
+    },
+    "qty-fiveframe-3": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "three",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-fiveframe-3.wav",
+      "visual": {
+        "renderer": "programmatic_five_frame",
+        "params": {
+          "value": 3,
+          "slots": 5
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-fiveframe-3.svg"
+      }
+    },
+    "qty-fiveframe-4": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "four",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-fiveframe-4.wav",
+      "visual": {
+        "renderer": "programmatic_five_frame",
+        "params": {
+          "value": 4,
+          "slots": 5
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-fiveframe-4.svg"
+      }
+    },
+    "qty-fiveframe-5": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "five",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-fiveframe-5.wav",
+      "visual": {
+        "renderer": "programmatic_five_frame",
+        "params": {
+          "value": 5,
+          "slots": 5
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-fiveframe-5.svg"
+      }
+    },
+    "qty-tenframe-6": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "six",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-tenframe-6.wav",
+      "visual": {
+        "renderer": "programmatic_ten_frame",
+        "params": {
+          "value": 6,
+          "slots": 10
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-tenframe-6.svg"
+      }
+    },
+    "qty-tenframe-7": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "seven",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-tenframe-7.wav",
+      "visual": {
+        "renderer": "programmatic_ten_frame",
+        "params": {
+          "value": 7,
+          "slots": 10
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-tenframe-7.svg"
+      }
+    },
+    "qty-tenframe-8": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "eight",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-tenframe-8.wav",
+      "visual": {
+        "renderer": "programmatic_ten_frame",
+        "params": {
+          "value": 8,
+          "slots": 10
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-tenframe-8.svg"
+      }
+    },
+    "qty-tenframe-9": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "nine",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-tenframe-9.wav",
+      "visual": {
+        "renderer": "programmatic_ten_frame",
+        "params": {
+          "value": 9,
+          "slots": 10
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-tenframe-9.svg"
+      }
+    },
+    "qty-tenframe-10": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "ten",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-tenframe-10.wav",
+      "visual": {
+        "renderer": "programmatic_ten_frame",
+        "params": {
+          "value": 10,
+          "slots": 10
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-tenframe-10.svg"
+      }
+    },
+    "qty-tally-1": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "one",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-tally-1.wav",
+      "visual": {
+        "renderer": "programmatic_tally",
+        "params": {
+          "value": 1
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-tally-1.svg"
+      }
+    },
+    "qty-tally-2": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "two",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-tally-2.wav",
+      "visual": {
+        "renderer": "programmatic_tally",
+        "params": {
+          "value": 2
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-tally-2.svg"
+      }
+    },
+    "qty-tally-3": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "three",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-tally-3.wav",
+      "visual": {
+        "renderer": "programmatic_tally",
+        "params": {
+          "value": 3
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-tally-3.svg"
+      }
+    },
+    "qty-tally-4": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "four",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-tally-4.wav",
+      "visual": {
+        "renderer": "programmatic_tally",
+        "params": {
+          "value": 4
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-tally-4.svg"
+      }
+    },
+    "qty-tally-5": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "five",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-tally-5.wav",
+      "visual": {
+        "renderer": "programmatic_tally",
+        "params": {
+          "value": 5
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-tally-5.svg"
+      }
+    },
+    "qty-tally-6": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "six",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-tally-6.wav",
+      "visual": {
+        "renderer": "programmatic_tally",
+        "params": {
+          "value": 6
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-tally-6.svg"
+      }
+    },
+    "qty-tally-7": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "seven",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-tally-7.wav",
+      "visual": {
+        "renderer": "programmatic_tally",
+        "params": {
+          "value": 7
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-tally-7.svg"
+      }
+    },
+    "qty-tally-8": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "eight",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-tally-8.wav",
+      "visual": {
+        "renderer": "programmatic_tally",
+        "params": {
+          "value": 8
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-tally-8.svg"
+      }
+    },
+    "qty-tally-9": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "nine",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-tally-9.wav",
+      "visual": {
+        "renderer": "programmatic_tally",
+        "params": {
+          "value": 9
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-tally-9.svg"
+      }
+    },
+    "qty-tally-10": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "ten",
+      "audio": "assets/audio/items/02_numbers_quantities/qty-tally-10.wav",
+      "visual": {
+        "renderer": "programmatic_tally",
+        "params": {
+          "value": 10
+        },
+        "svg": "assets/visuals/02_numbers_quantities/qty-tally-10.svg"
+      }
+    },
+    "num-ordinal-1st": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "first",
+      "audio": "assets/audio/items/02_numbers_quantities/num-ordinal-1st.wav",
+      "visual": {
+        "renderer": "programmatic_ordinal",
+        "params": {
+          "position": 1
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-ordinal-1st.svg"
+      }
+    },
+    "num-ordinal-2nd": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "second",
+      "audio": "assets/audio/items/02_numbers_quantities/num-ordinal-2nd.wav",
+      "visual": {
+        "renderer": "programmatic_ordinal",
+        "params": {
+          "position": 2
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-ordinal-2nd.svg"
+      }
+    },
+    "num-ordinal-3rd": {
+      "domain": "02_numbers_quantities",
+      "spoken_text": "third",
+      "audio": "assets/audio/items/02_numbers_quantities/num-ordinal-3rd.wav",
+      "visual": {
+        "renderer": "programmatic_ordinal",
+        "params": {
+          "position": 3
+        },
+        "svg": "assets/visuals/02_numbers_quantities/num-ordinal-3rd.svg"
+      }
+    },
+    "color-red": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "red",
+      "audio": "assets/audio/items/05_colors_measurement/color-red.wav",
+      "visual": {
+        "renderer": "programmatic_color_swatch",
+        "params": {
+          "hex": "#E63946",
+          "stroke": "#9B1C26"
+        },
+        "svg": "assets/visuals/05_colors_measurement/color-red.svg"
+      }
+    },
+    "color-blue": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "blue",
+      "audio": "assets/audio/items/05_colors_measurement/color-blue.wav",
+      "visual": {
+        "renderer": "programmatic_color_swatch",
+        "params": {
+          "hex": "#2563EB",
+          "stroke": "#1E3A8A"
+        },
+        "svg": "assets/visuals/05_colors_measurement/color-blue.svg"
+      }
+    },
+    "color-yellow": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "yellow",
+      "audio": "assets/audio/items/05_colors_measurement/color-yellow.wav",
+      "visual": {
+        "renderer": "programmatic_color_swatch",
+        "params": {
+          "hex": "#FACC15",
+          "stroke": "#A16207"
+        },
+        "svg": "assets/visuals/05_colors_measurement/color-yellow.svg"
+      }
+    },
+    "color-green": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "green",
+      "audio": "assets/audio/items/05_colors_measurement/color-green.wav",
+      "visual": {
+        "renderer": "programmatic_color_swatch",
+        "params": {
+          "hex": "#16A34A",
+          "stroke": "#14532D"
+        },
+        "svg": "assets/visuals/05_colors_measurement/color-green.svg"
+      }
+    },
+    "color-orange": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "orange",
+      "audio": "assets/audio/items/05_colors_measurement/color-orange.wav",
+      "visual": {
+        "renderer": "programmatic_color_swatch",
+        "params": {
+          "hex": "#F97316",
+          "stroke": "#9A3412"
+        },
+        "svg": "assets/visuals/05_colors_measurement/color-orange.svg"
+      }
+    },
+    "color-purple": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "purple",
+      "audio": "assets/audio/items/05_colors_measurement/color-purple.wav",
+      "visual": {
+        "renderer": "programmatic_color_swatch",
+        "params": {
+          "hex": "#9333EA",
+          "stroke": "#581C87"
+        },
+        "svg": "assets/visuals/05_colors_measurement/color-purple.svg"
+      }
+    },
+    "color-pink": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "pink",
+      "audio": "assets/audio/items/05_colors_measurement/color-pink.wav",
+      "visual": {
+        "renderer": "programmatic_color_swatch",
+        "params": {
+          "hex": "#EC4899",
+          "stroke": "#9D174D"
+        },
+        "svg": "assets/visuals/05_colors_measurement/color-pink.svg"
+      }
+    },
+    "color-brown": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "brown",
+      "audio": "assets/audio/items/05_colors_measurement/color-brown.wav",
+      "visual": {
+        "renderer": "programmatic_color_swatch",
+        "params": {
+          "hex": "#8B5A2B",
+          "stroke": "#4A2C11"
+        },
+        "svg": "assets/visuals/05_colors_measurement/color-brown.svg"
+      }
+    },
+    "color-black": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "black",
+      "audio": "assets/audio/items/05_colors_measurement/color-black.wav",
+      "visual": {
+        "renderer": "programmatic_color_swatch",
+        "params": {
+          "hex": "#1F2937",
+          "stroke": "#030712"
+        },
+        "svg": "assets/visuals/05_colors_measurement/color-black.svg"
+      }
+    },
+    "color-white": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "white",
+      "audio": "assets/audio/items/05_colors_measurement/color-white.wav",
+      "visual": {
+        "renderer": "programmatic_color_swatch",
+        "params": {
+          "hex": "#FFFFFF",
+          "stroke": "#475569"
+        },
+        "svg": "assets/visuals/05_colors_measurement/color-white.svg"
+      }
+    },
+    "color-gray": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "gray",
+      "audio": "assets/audio/items/05_colors_measurement/color-gray.wav",
+      "visual": {
+        "renderer": "programmatic_color_swatch",
+        "params": {
+          "hex": "#94A3B8",
+          "stroke": "#475569"
+        },
+        "svg": "assets/visuals/05_colors_measurement/color-gray.svg"
+      }
+    },
+    "meas-big-small": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Big and Small",
+      "audio": "assets/audio/items/05_colors_measurement/meas-big-small.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-big-small"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-big-small.svg"
+      }
+    },
+    "meas-tall-short": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Tall and Short",
+      "audio": "assets/audio/items/05_colors_measurement/meas-tall-short.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-tall-short"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-tall-short.svg"
+      }
+    },
+    "meas-long-short": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Long and Short",
+      "audio": "assets/audio/items/05_colors_measurement/meas-long-short.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-long-short"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-long-short.svg"
+      }
+    },
+    "meas-heavy-light": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Heavy and Light",
+      "audio": "assets/audio/items/05_colors_measurement/meas-heavy-light.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-heavy-light"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-heavy-light.svg"
+      }
+    },
+    "meas-full-empty": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Full and Empty",
+      "audio": "assets/audio/items/05_colors_measurement/meas-full-empty.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-full-empty"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-full-empty.svg"
+      }
+    },
+    "meas-hot-cold": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Hot and Cold",
+      "audio": "assets/audio/items/05_colors_measurement/meas-hot-cold.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-hot-cold"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-hot-cold.svg"
+      }
+    },
+    "meas-fast-slow": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Fast and Slow",
+      "audio": "assets/audio/items/05_colors_measurement/meas-fast-slow.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-fast-slow"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-fast-slow.svg"
+      }
+    },
+    "meas-wide-narrow": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Wide and Narrow",
+      "audio": "assets/audio/items/05_colors_measurement/meas-wide-narrow.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-wide-narrow"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-wide-narrow.svg"
+      }
+    },
+    "meas-thick-thin": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Thick and Thin",
+      "audio": "assets/audio/items/05_colors_measurement/meas-thick-thin.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-thick-thin"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-thick-thin.svg"
+      }
+    },
+    "meas-loud-quiet": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Loud and Quiet",
+      "audio": "assets/audio/items/05_colors_measurement/meas-loud-quiet.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-loud-quiet"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-loud-quiet.svg"
+      }
+    },
+    "meas-more-less": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "More and Less",
+      "audio": "assets/audio/items/05_colors_measurement/meas-more-less.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-more-less"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-more-less.svg"
+      }
+    },
+    "meas-same-different": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Same and Different",
+      "audio": "assets/audio/items/05_colors_measurement/meas-same-different.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-same-different"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-same-different.svg"
+      }
+    },
+    "meas-open-closed": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Open and Closed",
+      "audio": "assets/audio/items/05_colors_measurement/meas-open-closed.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-open-closed"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-open-closed.svg"
+      }
+    },
+    "meas-wet-dry": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Wet and Dry",
+      "audio": "assets/audio/items/05_colors_measurement/meas-wet-dry.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-wet-dry"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-wet-dry.svg"
+      }
+    },
+    "meas-clean-dirty": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Clean and Dirty",
+      "audio": "assets/audio/items/05_colors_measurement/meas-clean-dirty.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-clean-dirty"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-clean-dirty.svg"
+      }
+    },
+    "meas-light-dark": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Light and Dark",
+      "audio": "assets/audio/items/05_colors_measurement/meas-light-dark.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-light-dark"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-light-dark.svg"
+      }
+    },
+    "meas-hard-soft": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Hard and Soft",
+      "audio": "assets/audio/items/05_colors_measurement/meas-hard-soft.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-hard-soft"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-hard-soft.svg"
+      }
+    },
+    "meas-rough-smooth": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Rough and Smooth",
+      "audio": "assets/audio/items/05_colors_measurement/meas-rough-smooth.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-rough-smooth"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-rough-smooth.svg"
+      }
+    },
+    "meas-sink-float": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Sink and Float",
+      "audio": "assets/audio/items/05_colors_measurement/meas-sink-float.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-sink-float"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-sink-float.svg"
+      }
+    },
+    "meas-straight-curved": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Straight and Curved",
+      "audio": "assets/audio/items/05_colors_measurement/meas-straight-curved.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-straight-curved"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-straight-curved.svg"
+      }
+    },
+    "meas-whole-part": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Whole and Part",
+      "audio": "assets/audio/items/05_colors_measurement/meas-whole-part.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-whole-part"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-whole-part.svg"
+      }
+    },
+    "meas-near-far": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "Near and Far",
+      "audio": "assets/audio/items/05_colors_measurement/meas-near-far.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-near-far"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-near-far.svg"
+      }
+    },
+    "meas-high-low": {
+      "domain": "05_colors_measurement",
+      "spoken_text": "High and Low",
+      "audio": "assets/audio/items/05_colors_measurement/meas-high-low.wav",
+      "visual": {
+        "renderer": "programmatic_measurement_pair",
+        "params": {
+          "pair_id": "meas-high-low"
+        },
+        "svg": "assets/visuals/05_colors_measurement/meas-high-low.svg"
+      }
+    }
+  }
+}
