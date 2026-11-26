@@ -11,7 +11,7 @@
       "tier": 2,
       "visual_type": "diagram_illustration",
       "display_token": null,
-      "visual_prompt": "Friendly illustrated firefighter in uniform with typical gear",
+      "visual_prompt": "Friendly illustrated firefighter wearing a red helmet, yellow-striped turnout coat, and holding a fire hose",
       "audio_prompt": "Find the firefighter",
       "standard_refs": [
         "C3.D2.Civ.2.K-2"
@@ -27,7 +27,7 @@
       "tier": 2,
       "visual_type": "diagram_illustration",
       "display_token": null,
-      "visual_prompt": "Friendly illustrated police officer in uniform with typical gear",
+      "visual_prompt": "Friendly illustrated police officer wearing a navy blue uniform, peaked cap, and shiny badge",
       "audio_prompt": "Find the police officer",
       "standard_refs": [
         "C3.D2.Civ.2.K-2"
@@ -43,7 +43,7 @@
       "tier": 2,
       "visual_type": "diagram_illustration",
       "display_token": null,
-      "visual_prompt": "Friendly illustrated doctor in uniform with typical gear",
+      "visual_prompt": "Friendly illustrated doctor wearing a white lab coat with a stethoscope around the neck",
       "audio_prompt": "Find the doctor",
       "standard_refs": [
         "C3.D2.Civ.2.K-2"
@@ -59,7 +59,7 @@
       "tier": 2,
       "visual_type": "diagram_illustration",
       "display_token": null,
-      "visual_prompt": "Friendly illustrated nurse in uniform with typical gear",
+      "visual_prompt": "Friendly illustrated nurse wearing teal medical scrubs and holding a clipboard",
       "audio_prompt": "Find the nurse",
       "standard_refs": [
         "C3.D2.Civ.2.K-2"
@@ -75,7 +75,7 @@
       "tier": 2,
       "visual_type": "diagram_illustration",
       "display_token": null,
-      "visual_prompt": "Friendly illustrated teacher in uniform with typical gear",
+      "visual_prompt": "Friendly illustrated teacher standing by a chalkboard holding a pointer and an open picture book",
       "audio_prompt": "Find the teacher",
       "standard_refs": [
         "C3.D2.Civ.2.K-2"
@@ -91,7 +91,7 @@
       "tier": 2,
       "visual_type": "diagram_illustration",
       "display_token": null,
-      "visual_prompt": "Friendly illustrated dentist in uniform with typical gear",
+      "visual_prompt": "Friendly illustrated dentist wearing a light blue mask, white coat, and holding a dental mirror",
       "audio_prompt": "Find the dentist",
       "standard_refs": [
         "C3.D2.Civ.2.K-2"
@@ -107,7 +107,7 @@
       "tier": 2,
       "visual_type": "diagram_illustration",
       "display_token": null,
-      "visual_prompt": "Friendly illustrated mail carrier in uniform with typical gear",
+      "visual_prompt": "Friendly illustrated mail carrier in a blue postal uniform carrying a satchel of envelopes",
       "audio_prompt": "Find the mail carrier",
       "standard_refs": [
         "C3.D2.Civ.2.K-2"
@@ -123,7 +123,7 @@
       "tier": 2,
       "visual_type": "diagram_illustration",
       "display_token": null,
-      "visual_prompt": "Friendly illustrated chef in uniform with typical gear",
+      "visual_prompt": "Friendly illustrated chef wearing a tall white toque hat, apron, and holding a wooden spoon",
       "audio_prompt": "Find the chef",
       "standard_refs": [
         "C3.D2.Civ.2.K-2"
@@ -139,7 +139,7 @@
       "tier": 2,
       "visual_type": "diagram_illustration",
       "display_token": null,
-      "visual_prompt": "Friendly illustrated farmer in uniform with typical gear",
+      "visual_prompt": "Friendly illustrated farmer wearing a straw hat, denim overalls, and holding a basket of vegetables",
       "audio_prompt": "Find the farmer",
       "standard_refs": [
         "C3.D2.Civ.2.K-2"
@@ -155,7 +155,7 @@
       "tier": 2,
       "visual_type": "diagram_illustration",
       "display_token": null,
-      "visual_prompt": "Friendly illustrated construction worker in uniform with typical gear",
+      "visual_prompt": "Friendly illustrated construction worker wearing a yellow hard hat, orange safety vest, and tool belt",
       "audio_prompt": "Find the construction worker",
       "standard_refs": [
         "C3.D2.Civ.2.K-2"
@@ -171,7 +171,7 @@
       "tier": 2,
       "visual_type": "diagram_illustration",
       "display_token": null,
-      "visual_prompt": "Friendly illustrated librarian in uniform with typical gear",
+      "visual_prompt": "Friendly illustrated librarian wearing a cardigan and glasses while holding a stack of colorful books",
       "audio_prompt": "Find the librarian",
       "standard_refs": [
         "C3.D2.Civ.2.K-2"
@@ -187,7 +187,7 @@
       "tier": 2,
       "visual_type": "diagram_illustration",
       "display_token": null,
-      "visual_prompt": "Friendly illustrated sanitation worker in uniform with typical gear",
+      "visual_prompt": "Friendly illustrated sanitation worker wearing a bright reflective vest and heavy work gloves beside a recycling bin",
       "audio_prompt": "Find the sanitation worker",
       "standard_refs": [
         "C3.D2.Civ.2.K-2"
@@ -203,7 +203,7 @@
       "tier": 2,
       "visual_type": "diagram_illustration",
       "display_token": null,
-      "visual_prompt": "Friendly illustrated pilot in uniform with typical gear",
+      "visual_prompt": "Friendly illustrated airline pilot wearing a dark navy uniform, gold-striped cap, and aviator wings pin",
       "audio_prompt": "Find the pilot",
       "standard_refs": [
         "C3.D2.Civ.2.K-2"
@@ -219,7 +219,7 @@
       "tier": 2,
       "visual_type": "diagram_illustration",
       "display_token": null,
-      "visual_prompt": "Friendly illustrated bus driver in uniform with typical gear",
+      "visual_prompt": "Friendly illustrated school bus driver wearing a collared uniform shirt and cap while holding a steering wheel",
       "audio_prompt": "Find the bus driver",
       "standard_refs": [
         "C3.D2.Civ.2.K-2"

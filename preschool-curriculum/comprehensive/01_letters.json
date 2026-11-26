@@ -1530,7 +1530,7 @@
         "CCSS.ELA.RF.K.1.D",
         "ELOF.P-LIT.2"
       ],
-      "distractor_group": "typography_variants",
+      "distractor_group": "lowercase_letters",
       "in_core": false
     },
     {
@@ -1547,7 +1547,7 @@
         "CCSS.ELA.RF.K.1.D",
         "ELOF.P-LIT.2"
       ],
-      "distractor_group": "typography_variants",
+      "distractor_group": "lowercase_letters",
       "in_core": false
     }
   ]

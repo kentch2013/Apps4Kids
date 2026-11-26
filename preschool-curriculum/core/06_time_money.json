@@ -11,7 +11,7 @@
       "tier": 3,
       "visual_type": "currency_visual",
       "display_token": "1¢",
-      "visual_prompt": "Detailed front-view illustration of a copper us penny coin showing abraham lincoln profile",
+      "visual_prompt": "Detailed front-view illustration of a copper US penny coin showing Abraham Lincoln profile",
       "audio_prompt": "Find the penny",
       "standard_refs": [
         "C3.D2.Eco.1.K-2",
@@ -28,7 +28,7 @@
       "tier": 3,
       "visual_type": "currency_visual",
       "display_token": "5¢",
-      "visual_prompt": "Detailed front-view illustration of a silver us nickel coin showing thomas jefferson",
+      "visual_prompt": "Detailed front-view illustration of a silver US nickel coin showing Thomas Jefferson",
       "audio_prompt": "Find the nickel",
       "standard_refs": [
         "C3.D2.Eco.1.K-2",
@@ -45,7 +45,7 @@
       "tier": 3,
       "visual_type": "currency_visual",
       "display_token": "10¢",
-      "visual_prompt": "Detailed front-view illustration of a small silver us dime coin showing franklin d. roosevelt",
+      "visual_prompt": "Detailed front-view illustration of a small silver US dime coin showing Franklin D. Roosevelt",
       "audio_prompt": "Find the dime",
       "standard_refs": [
         "C3.D2.Eco.1.K-2",
@@ -62,7 +62,7 @@
       "tier": 3,
       "visual_type": "currency_visual",
       "display_token": "25¢",
-      "visual_prompt": "Detailed front-view illustration of a large silver us quarter coin showing george washington",
+      "visual_prompt": "Detailed front-view illustration of a large silver US quarter coin showing George Washington",
       "audio_prompt": "Find the quarter",
       "standard_refs": [
         "C3.D2.Eco.1.K-2",
@@ -84,7 +84,7 @@
       "standard_refs": [
         "C3.D2.Eco.1.K-2"
       ],
-      "distractor_group": "us_bills",
+      "distractor_group": "us_coins",
       "in_core": true
     },
     {

@@ -62,7 +62,7 @@
       "visual_prompt": "Bold purple greater-than symbol > on a white card",
       "audio_prompt": "Find the greater than symbol",
       "standard_refs": [
-        "CCSS.MATH.K.CC.C.7"
+        "CCSS.MATH.1.NBT.B.3"
       ],
       "distractor_group": "math_symbols",
       "in_core": true
@@ -78,7 +78,7 @@
       "visual_prompt": "Bold orange less-than symbol < on a white card",
       "audio_prompt": "Find the less than symbol",
       "standard_refs": [
-        "CCSS.MATH.K.CC.C.7"
+        "CCSS.MATH.1.NBT.B.3"
       ],
       "distractor_group": "math_symbols",
       "in_core": true
@@ -112,7 +112,7 @@
       "standard_refs": [
         "C3.D2.Eco.1.K-2"
       ],
-      "distractor_group": "currency_symbols",
+      "distractor_group": "math_symbols",
       "in_core": true
     },
     {
@@ -128,7 +128,7 @@
       "standard_refs": [
         "C3.D2.Eco.1.K-2"
       ],
-      "distractor_group": "currency_symbols",
+      "distractor_group": "math_symbols",
       "in_core": true
     },
     {
@@ -208,7 +208,7 @@
       "standard_refs": [
         "C3.D2.Civ.2.K-2"
       ],
-      "distractor_group": "traffic_lights",
+      "distractor_group": "safety_pictograms",
       "in_core": true
     },
     {
@@ -224,7 +224,7 @@
       "standard_refs": [
         "C3.D2.Civ.2.K-2"
       ],
-      "distractor_group": "traffic_lights",
+      "distractor_group": "safety_pictograms",
       "in_core": true
     },
     {
@@ -240,7 +240,7 @@
       "standard_refs": [
         "C3.D2.Civ.2.K-2"
       ],
-      "distractor_group": "traffic_lights",
+      "distractor_group": "safety_pictograms",
       "in_core": true
     },
     {
@@ -544,7 +544,7 @@
       "standard_refs": [
         "ELOF.P-LIT.2"
       ],
-      "distractor_group": "ui_icons",
+      "distractor_group": "universal_icons",
       "in_core": true
     },
     {
@@ -560,7 +560,7 @@
       "standard_refs": [
         "ELOF.P-LIT.2"
       ],
-      "distractor_group": "ui_icons",
+      "distractor_group": "universal_icons",
       "in_core": true
     },
     {
@@ -576,7 +576,7 @@
       "standard_refs": [
         "ELOF.P-LIT.2"
       ],
-      "distractor_group": "ui_icons",
+      "distractor_group": "universal_icons",
       "in_core": true
     },
     {
