@@ -1,16 +1,15 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/kentch2013/Apps4Kids/preschool-curriculum/schema.json",
-  "title": "Apps4Kids Preschool Visual Curriculum Domain Dataset",
-  "description": "Schema for US Kindergarten-readiness visual-only curriculum domain files (core and comprehensive).",
+  "title": "Apps4Kids Preschool Visual Curriculum Domain File",
+  "description": "Strict visual-only preschool curriculum domain dataset with voice-recall metadata for offline voice games.",
   "type": "object",
   "required": ["set", "domain", "version", "items"],
   "additionalProperties": false,
   "properties": {
     "set": {
       "type": "string",
-      "enum": ["core", "comprehensive"],
-      "description": "Dataset tier: 'core' (~400 items) or 'comprehensive' (1,050+ items superset)."
+      "enum": ["core", "comprehensive"]
     },
     "domain": {
       "type": "string",
@@ -24,13 +23,11 @@
         "science_nature",
         "social_community",
         "emotions_everyday"
-      ],
-      "description": "Academic domain slug."
+      ]
     },
     "version": {
       "type": "string",
-      "pattern": "^\\d+\\.\\d+\\.\\d+$",
-      "description": "Semantic version of the dataset."
+      "minLength": 1
     },
     "items": {
       "type": "array",
@@ -61,13 +58,11 @@
       "properties": {
         "id": {
           "type": "string",
-          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)+$",
-          "description": "Unique kebab-case identifier with at least one hyphen."
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)+$"
         },
         "label": {
           "type": "string",
-          "minLength": 1,
-          "description": "Human-readable developer/TTS label (never rendered as text to the child)."
+          "minLength": 1
         },
         "domain": {
           "type": "string",
@@ -85,13 +80,11 @@
         },
         "category": {
           "type": "string",
-          "minLength": 2,
-          "description": "Sub-category within the domain."
+          "minLength": 2
         },
         "tier": {
           "type": "integer",
-          "enum": [1, 2, 3, 4],
-          "description": "Difficulty tier: 1=foundational, 2=developing, 3=k_ready, 4=stretch."
+          "enum": [1, 2, 3, 4]
         },
         "visual_type": {
           "type": "string",
@@ -111,18 +104,15 @@
           ]
         },
         "display_token": {
-          "type": ["string", "null"],
-          "description": "Optional non-word visual token (single letter, letter pair, numeral, hex color, symbol, emoji, clock time, fraction) or null. Must never contain multi-letter English words."
+          "type": ["string", "null"]
         },
         "visual_prompt": {
           "type": "string",
-          "minLength": 12,
-          "description": "Detailed visual description for illustration or SVG rendering."
+          "minLength": 12
         },
         "audio_prompt": {
           "type": "string",
-          "minLength": 5,
-          "description": "Spoken TTS prompt for the child."
+          "minLength": 5
         },
         "standard_refs": {
           "type": "array",
@@ -130,17 +120,42 @@
           "items": {
             "type": "string",
             "minLength": 3
-          },
-          "description": "Aligned US Kindergarten readiness standards (ELOF, CCSS, NGSS, C3)."
+          }
         },
         "distractor_group": {
           "type": "string",
-          "minLength": 2,
-          "description": "Grouping key for selecting plausible visual distractors."
+          "minLength": 2
         },
         "in_core": {
-          "type": "boolean",
-          "description": "True if this item is part of the core dataset."
+          "type": "boolean"
+        },
+        "accepted_utterances": {
+          "type": "array",
+          "description": "Normalized lowercase, punctuation-stripped spoken answers accepted as correct matches (aligned with web-poc/spike-voice/vocab-matcher.js).",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?: [a-z0-9]+)*$"
+          }
+        },
+        "voice_recall_mode": {
+          "type": "string",
+          "description": "Indicates how an item participates in offline voice-only gameplay.",
+          "enum": [
+            "direct_word",
+            "synonym_set",
+            "confusable_phoneme",
+            "guided_only"
+          ]
+        },
+        "confusable_with": {
+          "type": "array",
+          "description": "Optional list of curriculum item IDs that must not spawn simultaneously on screen with this item.",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)+$"
+          }
         }
       }
     }
