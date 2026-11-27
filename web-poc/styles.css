@@ -17,8 +17,9 @@ html, body {
   display: flex;
   flex-direction: column;
 }
+[hidden],
 .screen[hidden] {
-  display: none;
+  display: none !important;
 }
 .setup-header {
   display: flex;
@@ -274,7 +275,7 @@ html, body {
   background: #92400e;
   margin-top: 4px;
 }
-.sim-bar {
+.sim-bar:not([hidden]) {
   margin-top: 14px;
   display: flex;
   flex-wrap: wrap;
