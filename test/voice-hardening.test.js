@@ -195,8 +195,68 @@ const WEB_POC_DIR = path.join(ROOT, "web-poc");
     }
   }
 
+  // 7. CSS [hidden] attribute enforcement over dry-run simulator bars (.sim-bar / .dry-run)
+  {
+    const webPocCss = fs.readFileSync(path.join(WEB_POC_DIR, "styles.css"), "utf8");
+    const spikeCss = fs.readFileSync(path.join(SPIKE_DIR, "styles.css"), "utf8");
+
+    assert.ok(
+      /\[hidden\][^{]*\{[^}]*display\s*:\s*none\s*!important\s*;/s.test(webPocCss),
+      "web-poc/styles.css must enforce [hidden] { display: none !important; }"
+    );
+    assert.ok(
+      /\.sim-bar:not\(\[hidden\]\)\s*\{[^}]*display\s*:\s*flex\s*;/s.test(webPocCss),
+      "web-poc/styles.css must scope .sim-bar flex display with :not([hidden])"
+    );
+    assert.ok(
+      !/(^|\n)\s*\.sim-bar\s*\{/m.test(webPocCss),
+      "web-poc/styles.css must not define an unscoped .sim-bar rule that overrides [hidden]"
+    );
+
+    assert.ok(
+      /\[hidden\][^{]*\{[^}]*display\s*:\s*none\s*!important\s*;/s.test(spikeCss),
+      "web-poc/spike-voice/styles.css must enforce [hidden] { display: none !important; }"
+    );
+    assert.ok(
+      /\.dry-run:not\(\[hidden\]\)\s*\{[^}]*display\s*:\s*flex\s*;/s.test(spikeCss),
+      "web-poc/spike-voice/styles.css must scope .dry-run flex display with :not([hidden])"
+    );
+    assert.ok(
+      !/(^|\n)\s*\.dry-run\s*\{/m.test(spikeCss),
+      "web-poc/spike-voice/styles.css must not define an unscoped .dry-run rule that overrides [hidden]"
+    );
+
+    for (const [rel, css] of [
+      ["web-poc/styles.css", webPocCss],
+      ["web-poc/spike-voice/styles.css", spikeCss],
+    ]) {
+      const externalUrlMatch = css.match(/https?:\/\/[^\s"'`<>)]+/i);
+      assert.strictEqual(
+        externalUrlMatch,
+        null,
+        `Disallowed external runtime URL in ${rel}: ${externalUrlMatch ? externalUrlMatch[0] : ""}`
+      );
+    }
+
+    const pocHtml = fs.readFileSync(path.join(WEB_POC_DIR, "index.html"), "utf8");
+    assert.ok(
+      /<div[^>]*id="calibDryRunBar"[^>]*class="sim-bar"[^>]*\bhidden\b/i.test(pocHtml),
+      "web-poc/index.html must keep #calibDryRunBar hidden on initial load"
+    );
+    assert.ok(
+      /<div[^>]*id="gameDryRunBar"[^>]*class="sim-bar"[^>]*\bhidden\b/i.test(pocHtml),
+      "web-poc/index.html must keep #gameDryRunBar hidden on initial load"
+    );
+
+    const spikeHtml = fs.readFileSync(path.join(SPIKE_DIR, "index.html"), "utf8");
+    assert.ok(
+      /<div[^>]*id="dryRunBar"[^>]*class="dry-run"[^>]*\bhidden\b/i.test(spikeHtml),
+      "web-poc/spike-voice/index.html must keep #dryRunBar hidden on initial load"
+    );
+  }
+
   console.log(
-    "VOICE HARDENING TESTS PASSED | AudioWorkletNode, reusable 16kHz buffer, Web Audio SFX pre-decode, local HTTPS servers, quiet-window FP counter, CSP worker policy, createModel() fallback, and dev staging helper verified."
+    "VOICE HARDENING TESTS PASSED | AudioWorkletNode, reusable 16kHz buffer, Web Audio SFX pre-decode, local HTTPS servers, quiet-window FP counter, CSP worker policy, createModel() fallback, CSS [hidden] enforcement, and dev staging helper verified."
   );
 })().catch((err) => {
   console.error(err);
