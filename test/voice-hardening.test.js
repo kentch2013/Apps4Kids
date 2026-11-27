@@ -116,6 +116,89 @@ const WEB_POC_DIR = path.join(ROOT, "web-poc");
   assert.ok(gitignore.includes(".certs/"), ".gitignore must ignore local dev TLS certs");
 }
 
-console.log(
-  "VOICE HARDENING TESTS PASSED | AudioWorkletNode, reusable 16kHz buffer, Web Audio SFX pre-decode, local HTTPS servers, quiet-window FP counter, and dev staging helper verified."
-);
+// 6. Vosk blob: Web Worker CSP allowance (strictly offline) & graceful createModel() fallback
+(async () => {
+  for (const rel of ["web-poc/index.html", "web-poc/spike-voice/index.html"]) {
+    const html = fs.readFileSync(path.join(ROOT, rel), "utf8");
+    assert.ok(html.includes("default-src 'self'"), `${rel} CSP must lock default-src to 'self'`);
+    assert.ok(html.includes("connect-src 'self'"), `${rel} CSP must lock connect-src to 'self'`);
+    assert.ok(html.includes("worker-src 'self' blob:"), `${rel} CSP must allow same-origin and blob: workers`);
+    assert.ok(
+      html.includes("script-src 'self' 'wasm-unsafe-eval' 'unsafe-eval'"),
+      `${rel} CSP must include 'unsafe-eval' for local vosk-browser Emscripten blob: worker`
+    );
+    assert.ok(
+      /vosk-browser/i.test(html) && /WKWebView/i.test(html),
+      `${rel} must document the temporary web-PoC vosk-browser CSP exception`
+    );
+    const externalUrlMatch = html.match(/https?:\/\/[^\s"'`<>]+/i);
+    assert.strictEqual(
+      externalUrlMatch,
+      null,
+      `Disallowed external runtime URL in ${rel}: ${externalUrlMatch ? externalUrlMatch[0] : ""}`
+    );
+  }
+
+  const webPocHtml = fs.readFileSync(path.join(WEB_POC_DIR, "index.html"), "utf8");
+  assert.ok(
+    webPocHtml.includes('id="calibError"') && webPocHtml.includes('role="alert"'),
+    "web-poc/index.html must include #calibError alert banner for Mic Check fallback"
+  );
+
+  const whackApp = fs.readFileSync(path.join(WEB_POC_DIR, "games", "whack-a-mole", "app.js"), "utf8");
+  assert.ok(
+    whackApp.includes("calibError") && whackApp.includes("fallbackReason"),
+    "whack-a-mole/app.js must surface recognizer.fallbackReason in #calibError"
+  );
+
+  const voskAdapterSrc = fs.readFileSync(path.join(SPIKE_DIR, "vosk-adapter.js"), "utf8");
+  assert.ok(
+    !voskAdapterSrc.includes('method: "HEAD"'),
+    "vosk-adapter.js must not issue a HEAD cache-size probe that triggers net::ERR_ABORTED"
+  );
+
+  // Verify createOfflineRecognizer catches Vosk.createModel() rejections and activates dry-run fallback
+  delete require.cache[require.resolve(path.join(SPIKE_DIR, "vosk-adapter.js"))];
+  const prevVosk = globalThis.Vosk;
+  const statuses = [];
+  const heard = [];
+  try {
+    globalThis.Vosk = {
+      createModel: async () => {
+        throw new EvalError("Simulated CSP EvalError inside blob: worker");
+      },
+    };
+    require(path.join(SPIKE_DIR, "vosk-adapter.js"));
+    const adapter = globalThis.Apps4KidsVoskAdapter;
+    const rec = await adapter.createOfflineRecognizer({
+      grammar: ["red", "two", "blue", "[unk]"],
+      onStatus: (msg) => statuses.push(msg),
+      onResult: (payload) => heard.push(payload.text),
+    });
+    assert.strictEqual(rec.mode, "dry-run", "Failed createModel() must fall back to dry-run mode");
+    assert.ok(
+      typeof rec.fallbackReason === "string" && rec.fallbackReason.includes("Simulated CSP EvalError"),
+      "Dry-run fallback must expose fallbackReason"
+    );
+    assert.ok(
+      statuses.some((s) => /Dry-Run/i.test(s) && /Simulated CSP EvalError/.test(s)),
+      "onStatus must report the caught createModel() failure and dry-run fallback"
+    );
+    rec.simulateWord("red");
+    assert.deepStrictEqual(heard, ["red"], "Dry-run fallback simulateWord() must emit onResult");
+    rec.terminate();
+  } finally {
+    if (typeof prevVosk === "undefined") {
+      delete globalThis.Vosk;
+    } else {
+      globalThis.Vosk = prevVosk;
+    }
+  }
+
+  console.log(
+    "VOICE HARDENING TESTS PASSED | AudioWorkletNode, reusable 16kHz buffer, Web Audio SFX pre-decode, local HTTPS servers, quiet-window FP counter, CSP worker policy, createModel() fallback, and dev staging helper verified."
+  );
+})().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});
