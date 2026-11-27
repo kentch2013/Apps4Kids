@@ -55,7 +55,10 @@
   let tickTimer = null;
   let audioCtx = null;
   let mediaStream = null;
-  let processor = null;
+  let captureNode = null;
+  let silentGain = null;
+  let reusableBuf16 = null;
+  let sfxBuffers = {};
   let recognizer = null;
   let voicePhase = "idle"; // idle | stageA | stageB | playing
   let stageAFrames = [];
@@ -88,6 +91,29 @@
       });
   }
 
+  async function predecodeSfxBuffers() {
+    sfxBuffers = {};
+    if (!audioCtx || typeof audioCtx.decodeAudioData !== "function") return;
+    if (!assetsManifest || !assetsManifest.sfx) return;
+
+    const entries = Object.keys(assetsManifest.sfx);
+    await Promise.all(
+      entries.map(async function (key) {
+        const meta = assetsManifest.sfx[key];
+        if (!meta || !meta.path) return;
+        try {
+          const res = await fetch("../" + meta.path);
+          if (!res.ok) return;
+          const arrayBuf = await res.arrayBuffer();
+          const decoded = await audioCtx.decodeAudioData(arrayBuf.slice(0));
+          sfxBuffers[key] = decoded;
+        } catch (_err) {
+          // Graceful fallback to HTMLAudioElement in playSfx
+        }
+      })
+    );
+  }
+
   function playAudioRel(relPath) {
     return new Promise(function (resolve) {
       if (!relPath) {
@@ -113,6 +139,17 @@
   }
 
   function playSfx(key) {
+    if (audioCtx && sfxBuffers[key]) {
+      try {
+        const src = audioCtx.createBufferSource();
+        src.buffer = sfxBuffers[key];
+        src.connect(audioCtx.destination);
+        src.start(0);
+        return;
+      } catch (_err) {
+        // Fallback below
+      }
+    }
     if (!assetsManifest || !assetsManifest.sfx || !assetsManifest.sfx[key]) return;
     const audio = new Audio("../" + assetsManifest.sfx[key].path);
     const p = audio.play();
@@ -144,7 +181,6 @@
     els.flowGameBtn.classList.toggle("active", launcherFlow === "game_to_skill");
     els.setupError.textContent = "";
 
-    // Domains
     els.domainList.innerHTML = "";
     const eligibleSkills =
       launcherFlow === "game_to_skill"
@@ -182,7 +218,6 @@
       els.domainList.appendChild(btn);
     }
 
-    // Tiers
     els.tierList.innerHTML = "";
     const tiers = eligibleSkills ? eligibleSkills.tiers : [1, 2, 3, 4];
     for (const t of tiers) {
@@ -197,7 +232,6 @@
       els.tierList.appendChild(btn);
     }
 
-    // Games
     els.gameList.innerHTML = "";
     const gamesToShow =
       launcherFlow === "skill_to_game"
@@ -280,7 +314,6 @@
       }
     });
 
-    // Update dry-run simulator buttons for active moles when Vosk WASM is not staged
     if (recognizer && recognizer.mode === "dry-run") {
       els.gameDryRunBar.hidden = false;
       els.gameDryRunBar.innerHTML = "";
@@ -389,10 +422,16 @@
       activeAudioEl.pause();
       activeAudioEl = null;
     }
-    if (processor) {
-      processor.disconnect();
-      processor = null;
+    if (captureNode) {
+      captureNode.disconnect();
+      captureNode = null;
     }
+    if (silentGain) {
+      silentGain.disconnect();
+      silentGain = null;
+    }
+    reusableBuf16 = null;
+    sfxBuffers = {};
     if (mediaStream) {
       mediaStream.getTracks().forEach(function (t) {
         t.stop();
@@ -410,6 +449,75 @@
     els.calibStartBtn.disabled = false;
     els.calibDryRunBar.hidden = true;
     els.gameDryRunBar.hidden = true;
+  }
+
+  function processAudioFrame(input) {
+    const frameStats = Cal.analyzeFrame(input);
+    els.calibMeter.style.width = Math.min(100, Math.round(frameStats.rms * 400)) + "%";
+
+    if (voicePhase === "stageA") {
+      stageAFrames.push(new Float32Array(input));
+      if (performance.now() - stageAStart >= Cal.STAGE_A_DURATION_MS) {
+        const res = Cal.computeStageAResult(stageAFrames);
+        vadThreshold = res.vadThresholdRms;
+        stageBSession = Cal.createStageBSession();
+        voicePhase = "stageB";
+        els.calibPrompt.textContent = 'Say "' + stageBSession.currentWord() + '"';
+      }
+      return;
+    }
+
+    if (
+      recognizer &&
+      recognizer.mode === "vosk-wasm" &&
+      audioCtx &&
+      frameStats.rms >= vadThreshold &&
+      (!engine || !engine.getState().micGated)
+    ) {
+      const downsampled = Resampler.downsampleFloat32(input, audioCtx.sampleRate, 16000);
+      if (downsampled.length > 0) {
+        if (!reusableBuf16 || reusableBuf16.length !== downsampled.length) {
+          reusableBuf16 = audioCtx.createBuffer(1, downsampled.length, 16000);
+        }
+        reusableBuf16.copyToChannel(downsampled, 0);
+        recognizer.acceptWaveform(reusableBuf16);
+      }
+    }
+  }
+
+  async function attachAudioCapture(source) {
+    silentGain = audioCtx.createGain();
+    silentGain.gain.value = 0;
+
+    if (audioCtx.audioWorklet && typeof AudioWorkletNode === "function") {
+      try {
+        await audioCtx.audioWorklet.addModule("./spike-voice/pcm-worklet.js");
+        const workletNode = new AudioWorkletNode(audioCtx, "apps4kids-pcm-capture", {
+          processorOptions: { frameSize: 4096 },
+        });
+        workletNode.port.onmessage = function (ev) {
+          if (ev.data && ev.data.length) {
+            processAudioFrame(ev.data);
+          }
+        };
+        source.connect(workletNode);
+        workletNode.connect(silentGain);
+        silentGain.connect(audioCtx.destination);
+        captureNode = workletNode;
+        return;
+      } catch (_err) {
+        // Fall through to legacy ScriptProcessorNode
+      }
+    }
+
+    const legacyNode = audioCtx.createScriptProcessor(4096, 1, 1);
+    legacyNode.onaudioprocess = function (event) {
+      processAudioFrame(event.inputBuffer.getChannelData(0));
+    };
+    source.connect(legacyNode);
+    legacyNode.connect(silentGain);
+    silentGain.connect(audioCtx.destination);
+    captureNode = legacyNode;
   }
 
   async function startCalibration() {
@@ -438,6 +546,7 @@
       if (audioCtx.state === "suspended") {
         await audioCtx.resume();
       }
+      await predecodeSfxBuffers();
       mediaStream = await navigator.mediaDevices.getUserMedia({
         audio: {
           channelCount: 1,
@@ -447,7 +556,6 @@
         },
       });
     } catch (_err) {
-      // Allow dry-run testing even on headless/no-mic desktops
       audioCtx = null;
       mediaStream = null;
     }
@@ -455,6 +563,7 @@
     recognizer = await VoskAdapter.createOfflineRecognizer({
       grammar,
       modelUrl: "./spike-voice/vendor/vosk/vosk-model-small-en-us-0.15.tar.gz",
+      scriptUrl: "./spike-voice/vendor/vosk/vosk.js",
       onResult: handleRecognizedPayload,
       onStatus: function () {},
     });
@@ -465,44 +574,11 @@
 
     if (audioCtx && mediaStream) {
       const source = audioCtx.createMediaStreamSource(mediaStream);
-      processor = audioCtx.createScriptProcessor(4096, 1, 1);
       voicePhase = "stageA";
       stageAFrames = [];
       stageAStart = performance.now();
       els.calibPrompt.textContent = "Quiet room check (2 seconds)...";
-
-      processor.onaudioprocess = function (event) {
-        const input = event.inputBuffer.getChannelData(0);
-        const frameStats = Cal.analyzeFrame(input);
-        els.calibMeter.style.width = Math.min(100, Math.round(frameStats.rms * 400)) + "%";
-
-        if (voicePhase === "stageA") {
-          stageAFrames.push(new Float32Array(input));
-          if (performance.now() - stageAStart >= Cal.STAGE_A_DURATION_MS) {
-            const res = Cal.computeStageAResult(stageAFrames);
-            vadThreshold = res.vadThresholdRms;
-            stageBSession = Cal.createStageBSession();
-            voicePhase = "stageB";
-            els.calibPrompt.textContent = 'Say "' + stageBSession.currentWord() + '"';
-          }
-          return;
-        }
-
-        if (
-          recognizer &&
-          recognizer.mode === "vosk-wasm" &&
-          frameStats.rms >= vadThreshold &&
-          (!engine || !engine.getState().micGated)
-        ) {
-          const downsampled = Resampler.downsampleFloat32(input, audioCtx.sampleRate, 16000);
-          const buf16 = audioCtx.createBuffer(1, downsampled.length, 16000);
-          buf16.copyToChannel(downsampled, 0);
-          recognizer.acceptWaveform(buf16);
-        }
-      };
-
-      source.connect(processor);
-      processor.connect(audioCtx.destination);
+      await attachAudioCapture(source);
     } else {
       stageBSession = Cal.createStageBSession();
       voicePhase = "stageB";
@@ -513,7 +589,6 @@
   async function init() {
     registerServiceWorker();
 
-    // Build 6-hole portrait mole grid
     els.moleGrid.innerHTML = "";
     for (let i = 0; i < EngineMod.HOLE_COUNT; i++) {
       const hole = document.createElement("div");

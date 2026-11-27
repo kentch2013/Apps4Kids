@@ -14,6 +14,7 @@
   const VAD_MULTIPLIER = 2.5;
   const MIN_VAD_RMS = 0.015;
   const MAX_VAD_RMS = 0.25;
+  const DEFAULT_QUIET_WINDOW_MS = 2000;
 
   function clamp(val, min, max) {
     return Math.min(max, Math.max(min, val));
@@ -127,12 +128,23 @@
     };
   }
 
+  function isQuietWindowFalsePositive(inSpeech, lastSpeechEndMs, nowMs, quietWindowMs) {
+    if (inSpeech) return false;
+    const windowMs = typeof quietWindowMs === "number" && quietWindowMs > 0 ? quietWindowMs : DEFAULT_QUIET_WINDOW_MS;
+    if (!lastSpeechEndMs || lastSpeechEndMs <= 0) {
+      return true;
+    }
+    return nowMs - lastSpeechEndMs > windowMs;
+  }
+
   return {
     STAGE_A_DURATION_MS,
     STAGE_B_WORDS,
+    DEFAULT_QUIET_WINDOW_MS,
     analyzeFrame,
     rmsToDbfs,
     computeStageAResult,
     createStageBSession,
+    isQuietWindowFalsePositive,
   };
 });

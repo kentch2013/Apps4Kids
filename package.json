@@ -5,8 +5,10 @@
   "description": "100% offline preschool learning games with US Kindergarten-readiness curriculum and voice-only gameplay",
   "license": "MIT",
   "scripts": {
-    "test": "node scripts/validate-curriculum.js && node scripts/audit-quality.js && node scripts/validate-license-policy.js && node scripts/test-voice-spike.js && node test/curriculum-voice.test.js && node scripts/validate-assets.js && node test/assets-pipeline.test.js && node test/voice-matcher.test.js && node test/whack-a-mole.test.js",
+    "test": "node scripts/validate-curriculum.js && node scripts/audit-quality.js && node scripts/validate-license-policy.js && node scripts/test-voice-spike.js && node test/curriculum-voice.test.js && node scripts/validate-assets.js && node test/assets-pipeline.test.js && node test/voice-matcher.test.js && node test/whack-a-mole.test.js && node test/voice-hardening.test.js",
     "eval:voice": "node scripts/eval-voice.js",
-    "serve:poc": "node scripts/serve-web-poc.js"
+    "serve:poc": "node scripts/serve-web-poc.js",
+    "serve:spike": "node scripts/serve-voice-spike.js",
+    "stage:live": "node scripts/stage-live-test.js"
   }
 }

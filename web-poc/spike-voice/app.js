@@ -26,7 +26,9 @@
 
   let audioCtx = null;
   let mediaStream = null;
-  let processor = null;
+  let captureNode = null;
+  let silentGain = null;
+  let reusableBuf16 = null;
   let recognizer = null;
   let stabilityTimer = null;
   let phase = "idle"; // idle | stageA | stageB | listening
@@ -41,6 +43,7 @@
     userAgent: navigator.userAgent,
     onlineAtStart: navigator.onLine,
     engineMode: "uninitialized",
+    captureMode: "uninitialized",
     sampleRateHz: 0,
     modelSizeMb: 0,
     coldStartLoadMs: 0,
@@ -107,7 +110,7 @@
     }
 
     if (phase === "listening") {
-      if (!inSpeech && lastSpeechEndMs === 0) {
+      if (Cal.isQuietWindowFalsePositive(inSpeech, lastSpeechEndMs, now, Cal.DEFAULT_QUIET_WINDOW_MS)) {
         metrics.falsePositives++;
         els.fpVal.textContent = String(metrics.falsePositives);
       }
@@ -131,6 +134,84 @@
         log("3-minute continuous listening stability target reached!");
       }
     }, 1000);
+  }
+
+  function processAudioFrame(input) {
+    const frameStats = Cal.analyzeFrame(input);
+    const pct = Math.min(100, Math.round(frameStats.rms * 400));
+    els.rmsMeter.style.width = pct + "%";
+
+    if (phase === "stageA") {
+      stageAFrames.push(new Float32Array(input));
+      if (performance.now() - stageAStart >= Cal.STAGE_A_DURATION_MS) {
+        const stageARes = Cal.computeStageAResult(stageAFrames);
+        vadThreshold = stageARes.vadThresholdRms;
+        metrics.noiseFloorDbfs = Number(stageARes.noiseFloorDbfs.toFixed(1));
+        metrics.vadThresholdRms = Number(vadThreshold.toFixed(4));
+        els.vadThresholdVal.textContent = `${metrics.vadThresholdRms} (${metrics.noiseFloorDbfs} dBFS)`;
+        log(`Stage A complete: status=${stageARes.status}, floor=${metrics.noiseFloorDbfs} dBFS, VAD=${metrics.vadThresholdRms}`);
+        stageBSession = Cal.createStageBSession();
+        phase = "stageB";
+        setStatus("Stage B: Spoken Word Check");
+        els.stagePrompt.textContent = `Stage B Calibration: Say "${stageBSession.currentWord()}"`;
+      }
+      return;
+    }
+
+    const isVoice = frameStats.rms >= vadThreshold;
+    if (inSpeech && !isVoice) {
+      lastSpeechEndMs = performance.now();
+    }
+    inSpeech = isVoice;
+
+    if (recognizer && recognizer.mode === "vosk-wasm" && audioCtx) {
+      const downsampled = Resampler.downsampleFloat32(input, audioCtx.sampleRate, 16000);
+      if (downsampled.length > 0) {
+        if (!reusableBuf16 || reusableBuf16.length !== downsampled.length) {
+          reusableBuf16 = audioCtx.createBuffer(1, downsampled.length, 16000);
+        }
+        reusableBuf16.copyToChannel(downsampled, 0);
+        recognizer.acceptWaveform(reusableBuf16);
+      }
+    }
+  }
+
+  async function attachAudioCapture(source) {
+    silentGain = audioCtx.createGain();
+    silentGain.gain.value = 0;
+
+    if (audioCtx.audioWorklet && typeof AudioWorkletNode === "function") {
+      try {
+        await audioCtx.audioWorklet.addModule("./pcm-worklet.js");
+        const workletNode = new AudioWorkletNode(audioCtx, "apps4kids-pcm-capture", {
+          processorOptions: { frameSize: 4096 },
+        });
+        workletNode.port.onmessage = function (ev) {
+          if (ev.data && ev.data.length) {
+            processAudioFrame(ev.data);
+          }
+        };
+        source.connect(workletNode);
+        workletNode.connect(silentGain);
+        silentGain.connect(audioCtx.destination);
+        captureNode = workletNode;
+        metrics.captureMode = "audio-worklet";
+        log("Audio capture attached via AudioWorkletNode.");
+        return;
+      } catch (err) {
+        log("AudioWorkletNode unavailable (" + err.message + "); falling back to ScriptProcessorNode.");
+      }
+    }
+
+    const legacyNode = audioCtx.createScriptProcessor(4096, 1, 1);
+    legacyNode.onaudioprocess = function (event) {
+      processAudioFrame(event.inputBuffer.getChannelData(0));
+    };
+    source.connect(legacyNode);
+    legacyNode.connect(silentGain);
+    silentGain.connect(audioCtx.destination);
+    captureNode = legacyNode;
+    metrics.captureMode = "script-processor-fallback";
   }
 
   async function startSession() {
@@ -173,52 +254,13 @@
       }
 
       const source = audioCtx.createMediaStreamSource(mediaStream);
-      processor = audioCtx.createScriptProcessor(4096, 1, 1);
       phase = "stageA";
       stageAFrames = [];
       stageAStart = performance.now();
       setStatus("Stage A: Measuring Room Noise (2s)");
       els.stagePrompt.textContent = "Stay quiet for 2 seconds while measuring room noise...";
 
-      processor.onaudioprocess = function (event) {
-        const input = event.inputBuffer.getChannelData(0);
-        const frameStats = Cal.analyzeFrame(input);
-        const pct = Math.min(100, Math.round(frameStats.rms * 400));
-        els.rmsMeter.style.width = pct + "%";
-
-        if (phase === "stageA") {
-          stageAFrames.push(new Float32Array(input));
-          if (performance.now() - stageAStart >= Cal.STAGE_A_DURATION_MS) {
-            const stageARes = Cal.computeStageAResult(stageAFrames);
-            vadThreshold = stageARes.vadThresholdRms;
-            metrics.noiseFloorDbfs = Number(stageARes.noiseFloorDbfs.toFixed(1));
-            metrics.vadThresholdRms = Number(vadThreshold.toFixed(4));
-            els.vadThresholdVal.textContent = `${metrics.vadThresholdRms} (${metrics.noiseFloorDbfs} dBFS)`;
-            log(`Stage A complete: status=${stageARes.status}, floor=${metrics.noiseFloorDbfs} dBFS, VAD=${metrics.vadThresholdRms}`);
-            stageBSession = Cal.createStageBSession();
-            phase = "stageB";
-            setStatus("Stage B: Spoken Word Check");
-            els.stagePrompt.textContent = `Stage B Calibration: Say "${stageBSession.currentWord()}"`;
-          }
-          return;
-        }
-
-        const isVoice = frameStats.rms >= vadThreshold;
-        if (inSpeech && !isVoice) {
-          lastSpeechEndMs = performance.now();
-        }
-        inSpeech = isVoice;
-
-        if (recognizer && recognizer.mode === "vosk-wasm") {
-          const downsampled = Resampler.downsampleFloat32(input, audioCtx.sampleRate, 16000);
-          const buf16 = audioCtx.createBuffer(1, downsampled.length, 16000);
-          buf16.copyToChannel(downsampled, 0);
-          recognizer.acceptWaveform(buf16);
-        }
-      };
-
-      source.connect(processor);
-      processor.connect(audioCtx.destination);
+      await attachAudioCapture(source);
     } catch (err) {
       log("Error starting session: " + err.message);
       stopSession("Error: " + err.message);
@@ -231,10 +273,15 @@
       clearInterval(stabilityTimer);
       stabilityTimer = null;
     }
-    if (processor) {
-      processor.disconnect();
-      processor = null;
+    if (captureNode) {
+      captureNode.disconnect();
+      captureNode = null;
     }
+    if (silentGain) {
+      silentGain.disconnect();
+      silentGain = null;
+    }
+    reusableBuf16 = null;
     if (mediaStream) {
       mediaStream.getTracks().forEach((t) => t.stop());
       mediaStream = null;
