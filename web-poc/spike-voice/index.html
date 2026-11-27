@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; connect-src 'self'; worker-src 'self' blob:;" />
+  <!-- 'unsafe-eval' and blob: worker-src are required specifically by the local vosk-browser Emscripten bundle in this offline web PoC and will be removed when migrating to native iOS/WKWebView. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'unsafe-eval'; style-src 'self'; connect-src 'self'; worker-src 'self' blob:;" />
   <title>Apps4Kids — Gate 0 Offline Voice Spike</title>
   <link rel="manifest" href="./manifest.webmanifest" />
   <link rel="stylesheet" href="./styles.css" />

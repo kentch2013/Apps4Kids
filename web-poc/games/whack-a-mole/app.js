@@ -28,6 +28,7 @@
     calibStartBtn: document.getElementById("calibStartBtn"),
     calibBackBtn: document.getElementById("calibBackBtn"),
     calibPrompt: document.getElementById("calibPrompt"),
+    calibError: document.getElementById("calibError"),
     calibMeter: document.getElementById("calibMeter"),
     calibDryRunBar: document.getElementById("calibDryRunBar"),
 
@@ -447,6 +448,10 @@
       recognizer = null;
     }
     els.calibStartBtn.disabled = false;
+    if (els.calibError) {
+      els.calibError.textContent = "";
+      els.calibError.hidden = true;
+    }
     els.calibDryRunBar.hidden = true;
     els.gameDryRunBar.hidden = true;
   }
@@ -522,6 +527,10 @@
 
   async function startCalibration() {
     els.calibStartBtn.disabled = true;
+    if (els.calibError) {
+      els.calibError.textContent = "";
+      els.calibError.hidden = true;
+    }
     els.calibPrompt.textContent = "Unlocking microphone...";
 
     const sessionItems = [];
@@ -567,6 +576,14 @@
       onResult: handleRecognizedPayload,
       onStatus: function () {},
     });
+
+    if (recognizer.fallbackReason && els.calibError) {
+      els.calibError.textContent =
+        "Offline voice engine unavailable (" +
+        recognizer.fallbackReason +
+        "). Dry-run mode enabled below.";
+      els.calibError.hidden = false;
+    }
 
     if (recognizer.mode === "dry-run") {
       els.calibDryRunBar.hidden = false;
