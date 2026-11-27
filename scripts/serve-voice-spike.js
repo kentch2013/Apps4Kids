@@ -2,11 +2,16 @@
 "use strict";
 
 const http = require("http");
+const https = require("https");
 const fs = require("fs");
+const os = require("os");
 const path = require("path");
 
-const SPIKE_DIR = path.resolve(__dirname, "..", "web-poc", "spike-voice");
-const PORT = parseInt(process.env.PORT || "8443", 10);
+const ROOT = path.resolve(__dirname, "..");
+const SPIKE_DIR = path.join(ROOT, "web-poc", "spike-voice");
+const DEFAULT_PORT = 8443;
+const DEFAULT_CERT = path.join(ROOT, ".certs", "dev-cert.pem");
+const DEFAULT_KEY = path.join(ROOT, ".certs", "dev-key.pem");
 
 const MIME = {
   ".html": "text/html; charset=utf-8",
@@ -18,7 +23,54 @@ const MIME = {
   ".gz": "application/gzip",
 };
 
-const server = http.createServer((req, res) => {
+function parseServerArgs(argv, env) {
+  const args = Array.isArray(argv) ? argv : [];
+  const e = env || process.env;
+  let port = parseInt(e.PORT || String(DEFAULT_PORT), 10);
+  let certPath = e.TLS_CERT || "";
+  let keyPath = e.TLS_KEY || "";
+  let useDefaultHttps = false;
+
+  for (let i = 0; i < args.length; i++) {
+    const a = args[i];
+    if (a === "--cert" && args[i + 1]) {
+      certPath = args[++i];
+    } else if (a === "--key" && args[i + 1]) {
+      keyPath = args[++i];
+    } else if (a === "--port" && args[i + 1]) {
+      port = parseInt(args[++i], 10);
+    } else if (a === "--https") {
+      useDefaultHttps = true;
+    }
+  }
+
+  if (useDefaultHttps && !certPath && !keyPath) {
+    certPath = DEFAULT_CERT;
+    keyPath = DEFAULT_KEY;
+  }
+
+  const httpsEnabled = Boolean(certPath || keyPath);
+  if (httpsEnabled && (!certPath || !keyPath)) {
+    throw new Error("HTTPS mode requires both --cert and --key paths.");
+  }
+
+  return { port, certPath, keyPath, httpsEnabled };
+}
+
+function getLanAddresses() {
+  const nets = os.networkInterfaces();
+  const addrs = [];
+  for (const name of Object.keys(nets)) {
+    for (const info of nets[name] || []) {
+      if (info && info.family === "IPv4" && !info.internal) {
+        addrs.push(info.address);
+      }
+    }
+  }
+  return addrs;
+}
+
+function requestHandler(req, res) {
   const cleanUrl = (req.url || "/").split("?")[0];
   const relPath = cleanUrl === "/" ? "index.html" : cleanUrl.replace(/^\/+/, "");
   const fullPath = path.resolve(SPIKE_DIR, relPath);
@@ -48,12 +100,32 @@ const server = http.createServer((req, res) => {
     }
     fs.createReadStream(fullPath).pipe(res);
   });
-});
+}
+
+function createServerInstance(opts) {
+  const cfg = opts || { httpsEnabled: false };
+  if (cfg.httpsEnabled) {
+    const tlsOptions = {
+      cert: fs.readFileSync(cfg.certPath),
+      key: fs.readFileSync(cfg.keyPath),
+    };
+    return https.createServer(tlsOptions, requestHandler);
+  }
+  return http.createServer(requestHandler);
+}
+
+const server = http.createServer(requestHandler);
 
 if (require.main === module) {
-  server.listen(PORT, "0.0.0.0", () => {
-    console.log(`Apps4Kids Gate 0 Voice Spike listening at http://localhost:${PORT}`);
+  const cfg = parseServerArgs(process.argv.slice(2), process.env);
+  const activeServer = cfg.httpsEnabled ? createServerInstance(cfg) : server;
+  const proto = cfg.httpsEnabled ? "https" : "http";
+  activeServer.listen(cfg.port, "0.0.0.0", () => {
+    console.log(`Apps4Kids Gate 0 Voice Spike listening at ${proto}://localhost:${cfg.port}`);
+    for (const ip of getLanAddresses()) {
+      console.log(`  LAN (iPhone Safari): ${proto}://${ip}:${cfg.port}`);
+    }
   });
 }
 
-module.exports = { server };
+module.exports = { server, parseServerArgs, createServerInstance, getLanAddresses };

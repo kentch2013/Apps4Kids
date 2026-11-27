@@ -3,14 +3,49 @@
 
   const TARGET_SAMPLE_RATE = 16000;
   const DEFAULT_MODEL_URL = "./vendor/vosk/vosk-model-small-en-us-0.15.tar.gz";
+  const DEFAULT_SCRIPT_URL = "./vendor/vosk/vosk.js";
+
+  function tryLoadLocalVoskScript(scriptUrl) {
+    if (typeof root.Vosk !== "undefined" && typeof root.Vosk.createModel === "function") {
+      return Promise.resolve(true);
+    }
+    if (typeof document === "undefined" || !document.head) {
+      return Promise.resolve(false);
+    }
+    const url = scriptUrl || DEFAULT_SCRIPT_URL;
+    if (/^https?:\/\//i.test(url)) {
+      return Promise.resolve(false);
+    }
+    const existing = document.querySelector('script[data-apps4kids-vosk="' + url + '"]');
+    if (existing) {
+      return Promise.resolve(typeof root.Vosk !== "undefined" && typeof root.Vosk.createModel === "function");
+    }
+    return new Promise(function (resolve) {
+      const script = document.createElement("script");
+      script.src = url;
+      script.async = true;
+      script.setAttribute("data-apps4kids-vosk", url);
+      script.onload = function () {
+        resolve(typeof root.Vosk !== "undefined" && typeof root.Vosk.createModel === "function");
+      };
+      script.onerror = function () {
+        resolve(false);
+      };
+      document.head.appendChild(script);
+    });
+  }
 
   async function createOfflineRecognizer(options) {
-    const grammar = options.grammar || [];
-    const modelUrl = options.modelUrl || DEFAULT_MODEL_URL;
-    const onResult = options.onResult || function () {};
-    const onStatus = options.onStatus || function () {};
+    const opts = options || {};
+    const grammar = opts.grammar || [];
+    const modelUrl = opts.modelUrl || DEFAULT_MODEL_URL;
+    const scriptUrl = opts.scriptUrl || modelUrl.replace(/[^/]+$/, "vosk.js");
+    const onResult = opts.onResult || function () {};
+    const onStatus = opts.onStatus || function () {};
 
     const startTime = performance.now();
+
+    await tryLoadLocalVoskScript(scriptUrl);
 
     if (typeof root.Vosk === "undefined" || typeof root.Vosk.createModel !== "function") {
       onStatus("Local Vosk WASM runtime not staged in ./vendor/vosk/ — running in Dry-Run/Calibration-Only mode.");
@@ -77,6 +112,8 @@
   root.Apps4KidsVoskAdapter = {
     TARGET_SAMPLE_RATE,
     DEFAULT_MODEL_URL,
+    DEFAULT_SCRIPT_URL,
+    tryLoadLocalVoskScript,
     createOfflineRecognizer,
   };
 })(typeof globalThis !== "undefined" ? globalThis : this);

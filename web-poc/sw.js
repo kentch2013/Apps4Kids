@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_NAME = "apps4kids-webpoc-v1";
+const CACHE_NAME = "apps4kids-webpoc-v2";
 const PRECACHE_ASSETS = [
   "./index.html",
   "./styles.css",
@@ -11,6 +11,7 @@ const PRECACHE_ASSETS = [
   "./spike-voice/calibration.js",
   "./spike-voice/resampler.js",
   "./spike-voice/vosk-adapter.js",
+  "./spike-voice/pcm-worklet.js",
   "./games/whack-a-mole/engine.js",
   "./games/whack-a-mole/app.js",
   "../assets/manifest.json",

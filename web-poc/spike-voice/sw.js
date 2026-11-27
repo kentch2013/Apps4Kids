@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_NAME = "apps4kids-gate0-voice-v1";
+const CACHE_NAME = "apps4kids-gate0-voice-v2";
 const PRECACHE_ASSETS = [
   "./",
   "./index.html",
@@ -10,6 +10,7 @@ const PRECACHE_ASSETS = [
   "./resampler.js",
   "./vocab-matcher.js",
   "./vosk-adapter.js",
+  "./pcm-worklet.js",
   "./app.js",
 ];
 
