@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "domains": [
+    {
+      "id": "01_letters",
+      "label": "Letters & Phonics",
+      "active": false,
+      "curriculum_file": "preschool-curriculum/core/01_letters.json"
+    },
+    {
+      "id": "02_numbers_quantities",
+      "label": "Numbers & Quantities",
+      "active": true,
+      "curriculum_file": "preschool-curriculum/core/02_numbers_quantities.json"
+    },
+    {
+      "id": "03_symbols_icons",
+      "label": "Symbols & Icons",
+      "active": false,
+      "curriculum_file": "preschool-curriculum/core/03_symbols_icons.json"
+    },
+    {
+      "id": "04_shapes_spatial",
+      "label": "Shapes & Spatial",
+      "active": false,
+      "curriculum_file": "preschool-curriculum/core/04_shapes_spatial.json"
+    },
+    {
+      "id": "05_colors_measurement",
+      "label": "Colors & Measurement",
+      "active": true,
+      "curriculum_file": "preschool-curriculum/core/05_colors_measurement.json"
+    },
+    {
+      "id": "06_time_money",
+      "label": "Time & Money",
+      "active": false,
+      "curriculum_file": "preschool-curriculum/core/06_time_money.json"
+    },
+    {
+      "id": "07_science_nature",
+      "label": "Science & Nature",
+      "active": false,
+      "curriculum_file": "preschool-curriculum/core/07_science_nature.json"
+    },
+    {
+      "id": "08_social_community",
+      "label": "Social & Community",
+      "active": false,
+      "curriculum_file": "preschool-curriculum/core/08_social_community.json"
+    },
+    {
+      "id": "09_emotions_everyday",
+      "label": "Emotions & Everyday",
+      "active": false,
+      "curriculum_file": "preschool-curriculum/core/09_emotions_everyday.json"
+    }
+  ],
+  "games": [
+    {
+      "id": "whack-a-mole",
+      "name": "Voice Whack-a-Mole",
+      "tagline": "Name any mole that pops up to bop it — 100% voice-only!",
+      "entry": "./games/whack-a-mole/app.js",
+      "input_mode": "voice_only",
+      "supported_domains": ["02_numbers_quantities", "05_colors_measurement"],
+      "supported_tiers": [1, 2, 3, 4]
+    }
+  ]
+}
