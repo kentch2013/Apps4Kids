@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; worker-src 'self' blob:;" />
+  <title>Apps4Kids — Voice Whack-a-Mole PoC</title>
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <!-- Screen 1: Parent Touch Setup Launcher -->
+    <section id="screenSetup" class="screen">
+      <header class="setup-header">
+        <h1>Apps4Kids</h1>
+        <span id="swStatus" class="status-pill">Loading...</span>
+      </header>
+
+      <div class="flow-toggle" role="tablist" aria-label="Launcher flow">
+        <button id="flowSkillBtn" type="button" class="toggle-btn active">Skill &rarr; Games</button>
+        <button id="flowGameBtn" type="button" class="toggle-btn">Game &rarr; Skills</button>
+      </div>
+
+      <div class="card">
+        <h2>1. Pick Skill Domains</h2>
+        <div id="domainList" class="chip-grid"></div>
+      </div>
+
+      <div class="card">
+        <h2>2. Pick Difficulty Tier</h2>
+        <div id="tierList" class="chip-grid"></div>
+      </div>
+
+      <div class="card">
+        <h2>3. Pick Game</h2>
+        <div id="gameList" class="game-list"></div>
+      </div>
+
+      <p id="setupError" class="error-text" role="alert"></p>
+      <button id="startSetupBtn" type="button" class="primary-btn">Continue to Mic Check</button>
+    </section>
+
+    <!-- Screen 2: Pre-Game 2-Stage Mic Calibration -->
+    <section id="screenCalib" class="screen" hidden>
+      <header class="setup-header">
+        <h1>Mic Check</h1>
+        <button id="calibBackBtn" type="button" class="ghost-btn">Back</button>
+      </header>
+      <div class="card center-card">
+        <p id="calibPrompt" class="calib-prompt">Parent tap once to unlock the microphone.</p>
+        <div class="meter-track" aria-label="Microphone level">
+          <div id="calibMeter" class="meter-fill"></div>
+        </div>
+        <button id="calibStartBtn" type="button" class="primary-btn">Tap to Start Mic Check</button>
+        <div id="calibDryRunBar" class="sim-bar" hidden>
+          <span>Dry-run voice simulator:</span>
+          <button type="button" class="sim-btn" data-calib-word="red">red</button>
+          <button type="button" class="sim-btn" data-calib-word="two">two</button>
+          <button type="button" class="sim-btn" data-calib-word="blue">blue</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screen 3: 100% Voice-Only Child Gameplay (Zero On-Screen Reading) -->
+    <section id="screenGame" class="screen game-screen" hidden>
+      <header class="game-hud">
+        <div id="starBar" class="star-bar" aria-label="Stars earned"></div>
+        <div class="hud-right">
+          <div id="micIndicator" class="mic-pill listening" aria-label="Listening"></div>
+          <button id="parentExitBtn" type="button" class="exit-icon-btn" aria-label="Exit to parent setup">&times;</button>
+        </div>
+      </header>
+
+      <div id="moleGrid" class="mole-grid" aria-label="Whack-a-Mole play board"></div>
+      <div id="gameDryRunBar" class="sim-bar" hidden></div>
+    </section>
+
+    <!-- Screen 4: Round Complete Celebration -->
+    <section id="screenWin" class="screen" hidden>
+      <div class="card center-card win-card">
+        <div id="winStars" class="star-bar large"></div>
+        <div class="win-actions">
+          <button id="playAgainBtn" type="button" class="primary-btn">Play Again</button>
+          <button id="changeSkillBtn" type="button" class="ghost-btn">Change Skill</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./spike-voice/calibration.js"></script>
+  <script src="./spike-voice/resampler.js"></script>
+  <script src="./spike-voice/vosk-adapter.js"></script>
+  <script src="./shared/voice-matcher.js"></script>
+  <script src="./launcher.js"></script>
+  <script src="./games/whack-a-mole/engine.js"></script>
+  <script src="./games/whack-a-mole/app.js"></script>
+</body>
+</html>
