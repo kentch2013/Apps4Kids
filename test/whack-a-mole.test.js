@@ -357,6 +357,72 @@ assert.ok(engineMod.TIER_CONFIG && engineMod.TIER_CONFIG[1] && engineMod.TIER_CO
   }
 }
 
+// 10. Mobile >=44px touch targets & compact-phone (375x667) collapsible (Soon) skill disclosure
+{
+  const pocCss = fs.readFileSync(path.join(WEB_POC_DIR, "styles.css"), "utf8");
+  const spikeCss = fs.readFileSync(path.join(WEB_POC_DIR, "spike-voice", "styles.css"), "utf8");
+  const pocHtml = fs.readFileSync(path.join(WEB_POC_DIR, "index.html"), "utf8");
+  const whackApp = fs.readFileSync(path.join(WEB_POC_DIR, "games", "whack-a-mole", "app.js"), "utf8");
+
+  function assertMinHeightAtLeast44(css, selectorPattern, label) {
+    const m = css.match(new RegExp(selectorPattern + "\\s*\\{([^}]*)\\}", "s"));
+    assert.ok(m, `Missing CSS rule for ${label}`);
+    const mh = m[1].match(/min-height\s*:\s*(\d+)px/i);
+    const h = m[1].match(/(?:^|[;\s])height\s*:\s*(\d+)px/i);
+    const px = mh ? Number(mh[1]) : h ? Number(h[1]) : 0;
+    assert.ok(px >= 44, `${label} must enforce height/min-height >= 44px (found ${px}px)`);
+  }
+
+  assertMinHeightAtLeast44(pocCss, "\\.toggle-btn", "web-poc .toggle-btn");
+  assertMinHeightAtLeast44(pocCss, "\\.chip", "web-poc .chip");
+  assertMinHeightAtLeast44(pocCss, "\\.game-card", "web-poc .game-card");
+  assertMinHeightAtLeast44(pocCss, "\\.primary-btn", "web-poc .primary-btn");
+  assertMinHeightAtLeast44(pocCss, "\\.ghost-btn", "web-poc .ghost-btn");
+  assertMinHeightAtLeast44(pocCss, "\\.exit-icon-btn", "web-poc .exit-icon-btn");
+  assertMinHeightAtLeast44(pocCss, "\\.sim-btn", "web-poc .sim-btn");
+  assertMinHeightAtLeast44(pocCss, "\\.soon-summary", "web-poc .soon-summary");
+
+  const exitRule = pocCss.match(/\.exit-icon-btn\s*\{([^}]*)\}/s);
+  assert.ok(exitRule, "Missing .exit-icon-btn rule");
+  const exitW = exitRule[1].match(/min-width\s*:\s*(\d+)px/i) || exitRule[1].match(/(?:^|[;\s])width\s*:\s*(\d+)px/i);
+  assert.ok(exitW && Number(exitW[1]) >= 44, ".exit-icon-btn must be >= 44px wide");
+
+  assert.ok(
+    /\.error-text:empty\s*\{[^}]*display\s*:\s*none\s*;/s.test(pocCss),
+    "web-poc/styles.css must collapse empty .error-text to reduce 375x667 scroll burden"
+  );
+
+  assertMinHeightAtLeast44(spikeCss, "\\.btn", "spike-voice .btn");
+  assertMinHeightAtLeast44(spikeCss, "\\.dry-run\\s+button", "spike-voice .dry-run button");
+
+  // Collapsible <details> for disabled (Soon) skills, collapsed by default (no open attribute)
+  assert.ok(
+    /<details[^>]*id="soonDomainsDetails"[^>]*>/i.test(pocHtml),
+    "web-poc/index.html must include #soonDomainsDetails collapsible disclosure"
+  );
+  const detailsTag = pocHtml.match(/<details[^>]*id="soonDomainsDetails"[^>]*>/i)[0];
+  assert.ok(
+    !/\bopen\b/i.test(detailsTag),
+    "#soonDomainsDetails must be collapsed by default so active skills and CTA fit above the fold on 375x667"
+  );
+  assert.ok(
+    pocHtml.includes('class="soon-summary"') && pocHtml.includes('id="soonDomainList"'),
+    "web-poc/index.html must include .soon-summary and #soonDomainList inside #soonDomainsDetails"
+  );
+  assert.ok(
+    whackApp.includes("soonDomainsDetails") && whackApp.includes("soonDomainList"),
+    "whack-a-mole/app.js must route disabled (Soon) domains into #soonDomainList / #soonDomainsDetails"
+  );
+
+  for (const [rel, text] of [
+    ["web-poc/styles.css", pocCss],
+    ["web-poc/spike-voice/styles.css", spikeCss],
+  ]) {
+    const ext = text.match(/https?:\/\/[^\s"'`<>)]+/i);
+    assert.strictEqual(ext, null, `Disallowed external runtime URL in ${rel}: ${ext ? ext[0] : ""}`);
+  }
+}
+
 console.log(
-  "WHACK-A-MOLE POC TESTS PASSED | Launcher, anti-confusion spawner, multi-mole voice matching, 2-retry hint + mic-gating, tier scaling, and offline CSP/SW verified."
+  "WHACK-A-MOLE POC TESTS PASSED | Launcher, anti-confusion spawner, multi-mole voice matching, 2-retry hint + mic-gating, tier scaling, offline CSP/SW, and >=44px mobile touch targets / compact fold verified."
 );

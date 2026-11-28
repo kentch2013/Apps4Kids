@@ -20,6 +20,8 @@
     flowSkillBtn: document.getElementById("flowSkillBtn"),
     flowGameBtn: document.getElementById("flowGameBtn"),
     domainList: document.getElementById("domainList"),
+    soonDomainsDetails: document.getElementById("soonDomainsDetails"),
+    soonDomainList: document.getElementById("soonDomainList"),
     tierList: document.getElementById("tierList"),
     gameList: document.getElementById("gameList"),
     startSetupBtn: document.getElementById("startSetupBtn"),
@@ -183,6 +185,9 @@
     els.setupError.textContent = "";
 
     els.domainList.innerHTML = "";
+    if (els.soonDomainList) {
+      els.soonDomainList.innerHTML = "";
+    }
     const eligibleSkills =
       launcherFlow === "game_to_skill"
         ? Launcher.getEligibleSkills(gamesManifest, selectedGameId)
@@ -195,6 +200,7 @@
         )
       : null;
 
+    let soonCount = 0;
     for (const dom of gamesManifest.domains) {
       const btn = document.createElement("button");
       btn.type = "button";
@@ -216,7 +222,15 @@
         }
         renderSetup();
       });
-      els.domainList.appendChild(btn);
+      if (!dom.active && els.soonDomainList) {
+        els.soonDomainList.appendChild(btn);
+        soonCount += 1;
+      } else {
+        els.domainList.appendChild(btn);
+      }
+    }
+    if (els.soonDomainsDetails) {
+      els.soonDomainsDetails.hidden = soonCount === 0;
     }
 
     els.tierList.innerHTML = "";

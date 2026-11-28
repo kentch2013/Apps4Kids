@@ -69,12 +69,17 @@ h2 {
   gap: 8px;
 }
 .btn {
+  min-height: 44px;
+  min-width: 44px;
   padding: 10px 14px;
   border-radius: 8px;
   border: 1px solid #cbd5e1;
   background: #ffffff;
   font-size: 0.95rem;
   font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 .btn.primary {
@@ -90,9 +95,23 @@ h2 {
   margin-top: 12px;
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 8px;
   align-items: center;
   font-size: 0.85rem;
+}
+.dry-run button {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 .metrics-grid {
   display: grid;
