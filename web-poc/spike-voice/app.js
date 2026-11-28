@@ -65,13 +65,59 @@
     els.statusBadge.textContent = text;
   }
 
+  const SW_CACHE_NAME = "apps4kids-gate0-voice-v3";
+  const REQUIRED_SHELL_URLS = ["./index.html", "./pcm-worklet.js", "./vosk-adapter.js", "./app.js"];
+  const OPTIONAL_VOSK_URLS = [
+    "./vendor/vosk/vosk.js",
+    "./vendor/vosk/vosk-model-small-en-us-0.15.tar.gz",
+  ];
+
+  async function verifyOfflineCacheReady() {
+    if (typeof caches === "undefined" || typeof caches.open !== "function") {
+      return { shellReady: false, voskCached: false };
+    }
+    const cache = await caches.open(SW_CACHE_NAME);
+    const cachedKeys = await cache.keys();
+    const cachedSet = new Set(
+      cachedKeys.map(function (req) {
+        return req.url;
+      })
+    );
+    const shellReady = REQUIRED_SHELL_URLS.every(function (rel) {
+      return cachedSet.has(new URL(rel, window.location.href).href);
+    });
+    const voskCached = OPTIONAL_VOSK_URLS.every(function (rel) {
+      return cachedSet.has(new URL(rel, window.location.href).href);
+    });
+    return { shellReady, voskCached };
+  }
+
   function registerServiceWorker() {
     if ("serviceWorker" in navigator) {
+      els.swStatus.textContent = "Caching offline pack...";
+
+      function refreshOfflineStatus() {
+        return verifyOfflineCacheReady().then(function (status) {
+          if (!status.shellReady) {
+            els.swStatus.textContent = "Caching offline pack...";
+          } else if (status.voskCached) {
+            els.swStatus.textContent = "Ready for Airplane Mode (Vosk cached)";
+          } else {
+            els.swStatus.textContent = "Ready for Airplane Mode (shell cached)";
+          }
+        });
+      }
+
+      navigator.serviceWorker.addEventListener("controllerchange", function () {
+        refreshOfflineStatus().catch(function () {});
+      });
+
       navigator.serviceWorker
         .register("./sw.js")
         .then(function () {
-          els.swStatus.textContent = "Service Worker active (offline ready)";
+          return navigator.serviceWorker.ready;
         })
+        .then(refreshOfflineStatus)
         .catch(function (err) {
           els.swStatus.textContent = "SW error: " + err.message;
         });

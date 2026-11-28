@@ -255,8 +255,179 @@ const WEB_POC_DIR = path.join(ROOT, "web-poc");
     );
   }
 
+  // 8. Manifest-driven SW precaching, CI-safe optional Vosk caching, prefix-scoped cache cleanup & honest Airplane Mode UI
+  {
+    const pocSwMod = require(path.join(WEB_POC_DIR, "sw.js"));
+    const spikeSwMod = require(path.join(SPIKE_DIR, "sw.js"));
+
+    assert.strictEqual(pocSwMod.CACHE_PREFIX, "apps4kids-webpoc-");
+    assert.strictEqual(pocSwMod.CACHE_NAME, "apps4kids-webpoc-v3");
+    assert.strictEqual(spikeSwMod.CACHE_PREFIX, "apps4kids-gate0-voice-");
+    assert.strictEqual(spikeSwMod.CACHE_NAME, "apps4kids-gate0-voice-v3");
+    assert.ok(
+      !spikeSwMod.PRECACHE_ASSETS.includes("./"),
+      "spike-voice/sw.js must precache ./index.html rather than bare ./ so serve:poc never 404s on directory path"
+    );
+
+    const realManifest = JSON.parse(
+      fs.readFileSync(path.join(ROOT, "assets", "manifest.json"), "utf8")
+    );
+    const extracted = pocSwMod.extractManifestAssetUrls(realManifest, "../");
+    assert.strictEqual(new Set(extracted).size, extracted.length, "Extracted manifest URLs must be deduplicated");
+    assert.ok(
+      extracted.every((u) => !/^https?:\/\//i.test(u)),
+      "Extracted manifest URLs must never include external HTTP(S) URLs"
+    );
+
+    for (const sfxFile of ["bop.wav", "pop_up.wav", "duck_down.wav", "round_win.wav"]) {
+      assert.ok(
+        extracted.includes(`../assets/audio/sfx/${sfxFile}`),
+        `Manifest precache list must include SFX ${sfxFile}`
+      );
+    }
+    const promptUrls = extracted.filter((u) => u.startsWith("../assets/audio/prompts/") && u.endsWith(".wav"));
+    const svgUrls = extracted.filter((u) => u.startsWith("../assets/visuals/") && u.endsWith(".svg"));
+    const itemWavUrls = extracted.filter((u) => u.startsWith("../assets/audio/items/") && u.endsWith(".wav"));
+    assert.ok(promptUrls.length >= 5, `Expected >= 5 prompt WAVs, found ${promptUrls.length}`);
+    assert.ok(svgUrls.length >= 90, `Expected >= 90 Numbers & Colors SVGs, found ${svgUrls.length}`);
+    assert.ok(itemWavUrls.length >= 90, `Expected >= 90 Numbers & Colors item WAVs, found ${itemWavUrls.length}`);
+
+    const filteredExternal = pocSwMod.extractManifestAssetUrls(
+      {
+        sfx: { bad: { path: "https://evil.example/a.wav" }, good: { path: "assets/audio/sfx/bop.wav" } },
+        prompts: {},
+        items: {},
+      },
+      "../"
+    );
+    assert.deepStrictEqual(
+      filteredExternal,
+      ["../assets/audio/sfx/bop.wav"],
+      "extractManifestAssetUrls must ignore external URLs"
+    );
+
+    function createMockCacheStorage(initialKeys) {
+      const store = new Map();
+      for (const k of initialKeys || []) {
+        store.set(k, new Map());
+      }
+      return {
+        store,
+        async open(name) {
+          if (!store.has(name)) store.set(name, new Map());
+          const bucket = store.get(name);
+          return {
+            async addAll(urls) {
+              for (const u of urls) {
+                bucket.set(u, { ok: true, status: 200, url: u });
+              }
+            },
+            async put(url, res) {
+              bucket.set(url, res);
+            },
+            async match(url) {
+              return bucket.get(url) || undefined;
+            },
+            async keys() {
+              return Array.from(bucket.keys()).map((u) => ({ url: u }));
+            },
+          };
+        },
+        async keys() {
+          return Array.from(store.keys());
+        },
+        async delete(name) {
+          return store.delete(name);
+        },
+      };
+    }
+
+    function createMockFetch(voskPresent) {
+      return async function mockFetch(url) {
+        if (url === "../assets/manifest.json") {
+          return { ok: true, status: 200, async json() { return realManifest; } };
+        }
+        if (url.includes("vendor/vosk/")) {
+          if (voskPresent) {
+            return { ok: true, status: 200, url };
+          }
+          return { ok: false, status: 404, url };
+        }
+        return { ok: true, status: 200, url };
+      };
+    }
+
+    // 8a. web-poc/sw.js CI-safe install (vendor/vosk absent -> 404)
+    const ciPocCaches = createMockCacheStorage();
+    const ciPocRes = await pocSwMod.precacheAll(ciPocCaches, createMockFetch(false));
+    assert.strictEqual(ciPocRes.cacheName, "apps4kids-webpoc-v3");
+    assert.strictEqual(ciPocRes.manifestCount, extracted.length);
+    assert.strictEqual(ciPocRes.voskCached.length, 0, "Unstaged Vosk files must be skipped gracefully in CI");
+    assert.strictEqual(ciPocRes.voskSkipped.length, 2);
+    const ciPocBucket = ciPocCaches.store.get("apps4kids-webpoc-v3");
+    assert.ok(ciPocBucket.has("../assets/audio/sfx/bop.wav"), "SFX WAV must be cached");
+    assert.ok(ciPocBucket.has(svgUrls[0]), "Active item SVG must be cached");
+    assert.ok(ciPocBucket.has(itemWavUrls[0]), "Active item WAV must be cached");
+
+    // 8b. web-poc/sw.js staged live install (vendor/vosk present -> 200)
+    const stagedPocCaches = createMockCacheStorage();
+    const stagedPocRes = await pocSwMod.precacheAll(stagedPocCaches, createMockFetch(true));
+    assert.strictEqual(stagedPocRes.voskCached.length, 2, "Staged Vosk assets must be cached when present");
+    assert.strictEqual(stagedPocRes.voskSkipped.length, 0);
+    const stagedPocBucket = stagedPocCaches.store.get("apps4kids-webpoc-v3");
+    assert.ok(stagedPocBucket.has("./spike-voice/vendor/vosk/vosk.js"));
+    assert.ok(stagedPocBucket.has("./spike-voice/vendor/vosk/vosk-model-small-en-us-0.15.tar.gz"));
+
+    // 8c. web-poc/spike-voice/sw.js CI-safe & staged install
+    const ciSpikeCaches = createMockCacheStorage();
+    const ciSpikeRes = await spikeSwMod.precacheAll(ciSpikeCaches, createMockFetch(false));
+    assert.strictEqual(ciSpikeRes.voskCached.length, 0);
+    assert.strictEqual(ciSpikeRes.voskSkipped.length, 2);
+
+    const stagedSpikeCaches = createMockCacheStorage();
+    const stagedSpikeRes = await spikeSwMod.precacheAll(stagedSpikeCaches, createMockFetch(true));
+    assert.strictEqual(stagedSpikeRes.voskCached.length, 2);
+    assert.strictEqual(stagedSpikeRes.voskSkipped.length, 0);
+    const stagedSpikeBucket = stagedSpikeCaches.store.get("apps4kids-gate0-voice-v3");
+    assert.ok(stagedSpikeBucket.has("./vendor/vosk/vosk.js"));
+    assert.ok(stagedSpikeBucket.has("./vendor/vosk/vosk-model-small-en-us-0.15.tar.gz"));
+
+    // 8d. Prefix-scoped stale cache cleanup on activate (never clobber sibling SW cache)
+    const sharedCaches = createMockCacheStorage([
+      "apps4kids-webpoc-v1",
+      "apps4kids-webpoc-v2",
+      "apps4kids-webpoc-v3",
+      "apps4kids-gate0-voice-v2",
+      "apps4kids-gate0-voice-v3",
+    ]);
+    const pocDeleted = await pocSwMod.cleanupStaleCaches(sharedCaches);
+    assert.deepStrictEqual(pocDeleted.sort(), ["apps4kids-webpoc-v1", "apps4kids-webpoc-v2"]);
+    assert.ok(sharedCaches.store.has("apps4kids-webpoc-v3"), "Active web-poc cache must be retained");
+    assert.ok(sharedCaches.store.has("apps4kids-gate0-voice-v3"), "Sibling spike-voice cache must not be deleted by web-poc SW");
+
+    const spikeDeleted = await spikeSwMod.cleanupStaleCaches(sharedCaches);
+    assert.deepStrictEqual(spikeDeleted, ["apps4kids-gate0-voice-v2"]);
+    assert.ok(sharedCaches.store.has("apps4kids-gate0-voice-v3"), "Active spike-voice cache must be retained");
+    assert.ok(sharedCaches.store.has("apps4kids-webpoc-v3"), "Sibling web-poc cache must not be deleted by spike-voice SW");
+
+    // 8e. Honest offline-ready status UI in both app.js files
+    const pocAppSrc = fs.readFileSync(path.join(WEB_POC_DIR, "games", "whack-a-mole", "app.js"), "utf8");
+    assert.ok(pocAppSrc.includes("Caching offline pack..."), "whack-a-mole/app.js must display warming status");
+    assert.ok(pocAppSrc.includes("Ready for Airplane Mode"), "whack-a-mole/app.js must display Ready for Airplane Mode once verified");
+    assert.ok(pocAppSrc.includes("navigator.serviceWorker.ready"), "whack-a-mole/app.js must await navigator.serviceWorker.ready");
+    assert.ok(pocAppSrc.includes("caches.open"), "whack-a-mole/app.js must verify Cache Storage before showing ready");
+    assert.ok(!pocAppSrc.includes('"Offline ready"'), "whack-a-mole/app.js must not show premature 'Offline ready' on register()");
+
+    const spikeAppSrc = fs.readFileSync(path.join(SPIKE_DIR, "app.js"), "utf8");
+    assert.ok(spikeAppSrc.includes("Caching offline pack..."), "spike-voice/app.js must display warming status");
+    assert.ok(spikeAppSrc.includes("Ready for Airplane Mode"), "spike-voice/app.js must display Ready for Airplane Mode once verified");
+    assert.ok(spikeAppSrc.includes("navigator.serviceWorker.ready"), "spike-voice/app.js must await navigator.serviceWorker.ready");
+    assert.ok(spikeAppSrc.includes("caches.open"), "spike-voice/app.js must verify Cache Storage before showing ready");
+    assert.ok(!spikeAppSrc.includes("Service Worker active (offline ready)"), "spike-voice/app.js must not show premature offline ready on register()");
+  }
+
   console.log(
-    "VOICE HARDENING TESTS PASSED | AudioWorkletNode, reusable 16kHz buffer, Web Audio SFX pre-decode, local HTTPS servers, quiet-window FP counter, CSP worker policy, createModel() fallback, CSS [hidden] enforcement, and dev staging helper verified."
+    "VOICE HARDENING TESTS PASSED | AudioWorkletNode, reusable 16kHz buffer, Web Audio SFX pre-decode, local HTTPS servers, quiet-window FP counter, CSP worker policy, createModel() fallback, CSS [hidden] enforcement, manifest-driven SW precaching, and dev staging helper verified."
   );
 })().catch((err) => {
   console.error(err);
