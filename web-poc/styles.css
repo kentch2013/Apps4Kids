@@ -13,7 +13,7 @@ html, body {
   max-width: 480px;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 16px;
+  padding: 12px 14px;
   display: flex;
   flex-direction: column;
 }
@@ -25,11 +25,11 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .setup-header h1 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
 }
 .status-pill {
   font-size: 0.78rem;
@@ -43,15 +43,20 @@ html, body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .toggle-btn {
-  padding: 10px;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 10px 12px;
   border-radius: 12px;
   border: 2px solid #cbd5e1;
   background: #ffffff;
   font-weight: 700;
   font-size: 0.92rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 .toggle-btn.active {
@@ -62,13 +67,13 @@ html, body {
 .card {
   background: #ffffff;
   border-radius: 16px;
-  padding: 14px;
-  margin-bottom: 12px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
   box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
 }
 .card h2 {
-  margin: 0 0 10px;
-  font-size: 1rem;
+  margin: 0 0 6px;
+  font-size: 0.95rem;
   color: #334155;
 }
 .chip-grid {
@@ -77,12 +82,17 @@ html, body {
   gap: 8px;
 }
 .chip {
+  min-height: 44px;
+  min-width: 44px;
   padding: 8px 12px;
   border-radius: 999px;
   border: 2px solid #cbd5e1;
   background: #f8fafc;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 .chip.selected {
@@ -94,20 +104,38 @@ html, body {
   opacity: 0.45;
   cursor: not-allowed;
 }
+.soon-domains {
+  margin-top: 6px;
+}
+.soon-summary {
+  min-height: 44px;
+  padding: 6px 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+.soon-chip-grid {
+  margin-top: 6px;
+}
 .game-list {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 .game-card {
+  min-height: 44px;
   text-align: left;
-  padding: 12px;
+  padding: 10px 12px;
   border-radius: 12px;
   border: 2px solid #cbd5e1;
   background: #f8fafc;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 3px;
   cursor: pointer;
 }
 .game-card.selected {
@@ -115,18 +143,22 @@ html, body {
   background: #eff6ff;
 }
 .game-card span {
-  font-size: 0.85rem;
+  font-size: 0.83rem;
   color: #475569;
 }
 .primary-btn {
   width: 100%;
-  padding: 14px;
+  min-height: 46px;
+  padding: 12px 14px;
   border-radius: 14px;
   border: none;
   background: #2563eb;
   color: #ffffff;
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 .primary-btn:disabled {
@@ -134,11 +166,16 @@ html, body {
   cursor: not-allowed;
 }
 .ghost-btn {
+  min-height: 44px;
+  min-width: 44px;
   padding: 10px 16px;
   border-radius: 12px;
   border: 2px solid #cbd5e1;
   background: #ffffff;
   font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 .error-text {
@@ -146,6 +183,9 @@ html, body {
   font-weight: 600;
   min-height: 1.2em;
   margin: 4px 0 8px;
+}
+.error-text:empty {
+  display: none;
 }
 .center-card {
   text-align: center;
@@ -215,14 +255,19 @@ html, body {
   box-shadow: 0 0 0 6px rgba(249, 115, 22, 0.25);
 }
 .exit-icon-btn {
-  width: 34px;
-  height: 34px;
+  min-width: 44px;
+  min-height: 44px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   border: 2px solid #cbd5e1;
   background: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   font-weight: 700;
   line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 .mole-grid {
@@ -285,12 +330,17 @@ html, body {
   font-size: 0.85rem;
 }
 .sim-btn {
+  min-height: 44px;
+  min-width: 44px;
   padding: 8px 12px;
   border-radius: 10px;
   border: 1px solid #2563eb;
   background: #eff6ff;
   color: #1d4ed8;
   font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 .sim-btn.secondary {
