@@ -426,8 +426,134 @@ const WEB_POC_DIR = path.join(ROOT, "web-poc");
     assert.ok(!spikeAppSrc.includes("Service Worker active (offline ready)"), "spike-voice/app.js must not show premature offline ready on register()");
   }
 
+  // 9. Graceful missing local TLS certificate handling in --https servers (Issue #24)
+  {
+    const os = require("os");
+    const { spawnSync } = require("child_process");
+    const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "apps4kids-tls-test-"));
+    try {
+      const existingCert = path.join(tmpDir, "existing-cert.pem");
+      const existingKey = path.join(tmpDir, "existing-key.pem");
+      const missingCert = path.join(tmpDir, "missing-cert.pem");
+      const missingKey = path.join(tmpDir, "missing-key.pem");
+      fs.writeFileSync(existingCert, "DUMMY CERT");
+      fs.writeFileSync(existingKey, "DUMMY KEY");
+
+      const servers = [
+        {
+          name: "serve-web-poc.js",
+          scriptPath: path.join(ROOT, "scripts", "serve-web-poc.js"),
+          npmScript: "serve:poc",
+        },
+        {
+          name: "serve-voice-spike.js",
+          scriptPath: path.join(ROOT, "scripts", "serve-voice-spike.js"),
+          npmScript: "serve:spike",
+        },
+      ];
+
+      for (const srv of servers) {
+        const mod = require(srv.scriptPath);
+        assert.strictEqual(
+          typeof mod.validateTlsCertFiles,
+          "function",
+          `${srv.name} must export validateTlsCertFiles`
+        );
+        assert.strictEqual(
+          mod.validateTlsCertFiles(existingCert, existingKey),
+          null,
+          `${srv.name} validateTlsCertFiles must return null when both files exist`
+        );
+
+        // 9a. Programmatic createServerInstance throws TLS_CERT_MISSING without ENOENT
+        assert.throws(
+          () =>
+            mod.createServerInstance({
+              httpsEnabled: true,
+              certPath: missingCert,
+              keyPath: missingKey,
+            }),
+          (err) =>
+            err &&
+            err.code === "TLS_CERT_MISSING" &&
+            err.message.includes(missingCert) &&
+            err.message.includes(missingKey) &&
+            err.message.includes("winget install FiloSottile.mkcert") &&
+            err.message.includes("mkcert -install") &&
+            err.message.includes("npm run stage:live") &&
+            !/ENOENT/i.test(err.message),
+          `${srv.name} createServerInstance must throw TLS_CERT_MISSING with actionable instructions`
+        );
+
+        // 9b. CLI with missing --cert and --key exits cleanly with code 1 and no ENOENT stack trace
+        const bothMissing = spawnSync(
+          process.execPath,
+          [srv.scriptPath, "--cert", missingCert, "--key", missingKey],
+          { encoding: "utf8" }
+        );
+        assert.strictEqual(bothMissing.status, 1, `${srv.name} must exit with code 1 when cert & key are missing`);
+        assert.ok(bothMissing.stderr.includes(missingCert), `${srv.name} stderr must name missing cert path`);
+        assert.ok(bothMissing.stderr.includes(missingKey), `${srv.name} stderr must name missing key path`);
+        assert.ok(
+          bothMissing.stderr.includes("winget install FiloSottile.mkcert") &&
+            bothMissing.stderr.includes("mkcert -install") &&
+            bothMissing.stderr.includes("npm run stage:live"),
+          `${srv.name} stderr must include Windows mkcert + stage:live setup instructions`
+        );
+        assert.ok(
+          bothMissing.stderr.includes("--cert <path> --key <path>") &&
+            bothMissing.stderr.includes(`npm run ${srv.npmScript}`),
+          `${srv.name} stderr must include custom --cert/--key and desktop localhost HTTP fallback`
+        );
+        assert.ok(
+          !/ENOENT/i.test(bothMissing.stderr) && !/at Object\.openSync/i.test(bothMissing.stderr),
+          `${srv.name} stderr must not leak an unhandled ENOENT stack trace`
+        );
+
+        // 9c. CLI with only key missing reports only the missing key path
+        const keyOnlyMissing = spawnSync(
+          process.execPath,
+          [srv.scriptPath, "--cert", existingCert, "--key", missingKey],
+          { encoding: "utf8" }
+        );
+        assert.strictEqual(keyOnlyMissing.status, 1, `${srv.name} must exit with code 1 when key is missing`);
+        assert.ok(keyOnlyMissing.stderr.includes(missingKey), `${srv.name} stderr must name missing key path`);
+        assert.ok(!keyOnlyMissing.stderr.includes(existingCert), `${srv.name} stderr must not flag existing cert as missing`);
+        assert.ok(!/ENOENT/i.test(keyOnlyMissing.stderr), `${srv.name} stderr must not contain ENOENT`);
+
+        // 9d. CLI with only cert missing reports only the missing cert path
+        const certOnlyMissing = spawnSync(
+          process.execPath,
+          [srv.scriptPath, "--cert", missingCert, "--key", existingKey],
+          { encoding: "utf8" }
+        );
+        assert.strictEqual(certOnlyMissing.status, 1, `${srv.name} must exit with code 1 when cert is missing`);
+        assert.ok(certOnlyMissing.stderr.includes(missingCert), `${srv.name} stderr must name missing cert path`);
+        assert.ok(!certOnlyMissing.stderr.includes(existingKey), `${srv.name} stderr must not flag existing key as missing`);
+        assert.ok(!/ENOENT/i.test(certOnlyMissing.stderr), `${srv.name} stderr must not contain ENOENT`);
+
+        // 9e. Default --https CLI check when .certs/dev-cert.pem or .certs/dev-key.pem is absent
+        const defaultCert = path.join(ROOT, ".certs", "dev-cert.pem");
+        const defaultKey = path.join(ROOT, ".certs", "dev-key.pem");
+        if (!fs.existsSync(defaultCert) || !fs.existsSync(defaultKey)) {
+          const defaultMissing = spawnSync(process.execPath, [srv.scriptPath, "--https"], {
+            encoding: "utf8",
+          });
+          assert.strictEqual(defaultMissing.status, 1, `${srv.name} --https must exit with code 1 when .certs/ is missing`);
+          assert.ok(
+            defaultMissing.stderr.includes("dev-cert.pem") || defaultMissing.stderr.includes("dev-key.pem"),
+            `${srv.name} --https stderr must name missing default cert/key path`
+          );
+          assert.ok(!/ENOENT/i.test(defaultMissing.stderr), `${srv.name} --https must not leak ENOENT stack trace`);
+        }
+      }
+    } finally {
+      fs.rmSync(tmpDir, { recursive: true, force: true });
+    }
+  }
+
   console.log(
-    "VOICE HARDENING TESTS PASSED | AudioWorkletNode, reusable 16kHz buffer, Web Audio SFX pre-decode, local HTTPS servers, quiet-window FP counter, CSP worker policy, createModel() fallback, CSS [hidden] enforcement, manifest-driven SW precaching, and dev staging helper verified."
+    "VOICE HARDENING TESTS PASSED | AudioWorkletNode, reusable 16kHz buffer, Web Audio SFX pre-decode, local HTTPS servers, missing-cert guard, quiet-window FP counter, CSP worker policy, createModel() fallback, CSS [hidden] enforcement, manifest-driven SW precaching, and dev staging helper verified."
   );
 })().catch((err) => {
   console.error(err);

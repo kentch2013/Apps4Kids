@@ -124,9 +124,42 @@ function requestHandler(req, res) {
   });
 }
 
+function validateTlsCertFiles(certPath, keyPath) {
+  const missing = [];
+  if (!fs.existsSync(certPath)) {
+    missing.push(`TLS certificate: ${certPath}`);
+  }
+  if (!fs.existsSync(keyPath)) {
+    missing.push(`TLS private key: ${keyPath}`);
+  }
+  if (missing.length === 0) {
+    return null;
+  }
+  return [
+    "[ERROR] Cannot start HTTPS server: missing local TLS certificate file(s):",
+    ...missing.map((m) => `  - ${m}`),
+    "",
+    "How to fix:",
+    "  1. Generate trusted LAN certs on Windows:",
+    "       winget install FiloSottile.mkcert",
+    "       mkcert -install",
+    "       npm run stage:live",
+    "  2. Or pass custom certificate paths:",
+    "       npm run serve:poc -- --cert <path> --key <path>",
+    "  3. Or run over HTTP on desktop localhost (omit --https):",
+    "       npm run serve:poc",
+  ].join("\n");
+}
+
 function createServerInstance(opts) {
   const cfg = opts || { httpsEnabled: false };
   if (cfg.httpsEnabled) {
+    const missingMsg = validateTlsCertFiles(cfg.certPath, cfg.keyPath);
+    if (missingMsg) {
+      const err = new Error(missingMsg);
+      err.code = "TLS_CERT_MISSING";
+      throw err;
+    }
     const tlsOptions = {
       cert: fs.readFileSync(cfg.certPath),
       key: fs.readFileSync(cfg.keyPath),
@@ -139,8 +172,19 @@ function createServerInstance(opts) {
 const server = http.createServer(requestHandler);
 
 if (require.main === module) {
-  const cfg = parseServerArgs(process.argv.slice(2), process.env);
-  const activeServer = cfg.httpsEnabled ? createServerInstance(cfg) : server;
+  let cfg;
+  let activeServer;
+  try {
+    cfg = parseServerArgs(process.argv.slice(2), process.env);
+    activeServer = cfg.httpsEnabled ? createServerInstance(cfg) : server;
+  } catch (err) {
+    if (err && err.code === "TLS_CERT_MISSING") {
+      console.error(err.message);
+      process.exit(1);
+    }
+    console.error(`[ERROR] ${err && err.message ? err.message : String(err)}`);
+    process.exit(1);
+  }
   const proto = cfg.httpsEnabled ? "https" : "http";
   activeServer.listen(cfg.port, "0.0.0.0", () => {
     console.log(`Apps4Kids Web PoC listening at ${proto}://localhost:${cfg.port}/web-poc/index.html`);
@@ -150,4 +194,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { server, isAllowedPath, parseServerArgs, createServerInstance, getLanAddresses };
+module.exports = { server, isAllowedPath, parseServerArgs, createServerInstance, getLanAddresses, validateTlsCertFiles };
