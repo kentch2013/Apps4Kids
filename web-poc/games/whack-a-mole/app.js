@@ -76,19 +76,92 @@
     });
   }
 
+  const SW_CACHE_NAME = "apps4kids-webpoc-v3";
+
+  function collectExpectedAssetUrls(manifest) {
+    const urls = [];
+    const seen = new Set();
+    if (!manifest || typeof manifest !== "object") return urls;
+
+    function addRel(rel) {
+      if (!rel || typeof rel !== "string") return;
+      if (/^https?:\/\//i.test(rel) || rel.startsWith("//")) return;
+      const abs = new URL("../" + rel.replace(/^\/+/, ""), window.location.href).href;
+      if (!seen.has(abs)) {
+        seen.add(abs);
+        urls.push(abs);
+      }
+    }
+
+    if (manifest.sfx && typeof manifest.sfx === "object") {
+      Object.keys(manifest.sfx).forEach(function (k) {
+        if (manifest.sfx[k] && manifest.sfx[k].path) addRel(manifest.sfx[k].path);
+      });
+    }
+    if (manifest.prompts && typeof manifest.prompts === "object") {
+      Object.keys(manifest.prompts).forEach(function (k) {
+        if (manifest.prompts[k] && manifest.prompts[k].path) addRel(manifest.prompts[k].path);
+      });
+    }
+    if (manifest.items && typeof manifest.items === "object") {
+      Object.keys(manifest.items).forEach(function (id) {
+        const entry = manifest.items[id];
+        if (!entry) return;
+        if (entry.audio) addRel(entry.audio);
+        if (entry.visual && entry.visual.svg) addRel(entry.visual.svg);
+      });
+    }
+    return urls;
+  }
+
+  async function verifyOfflineCacheReady() {
+    if (typeof caches === "undefined" || typeof caches.open !== "function") {
+      return false;
+    }
+    const cache = await caches.open(SW_CACHE_NAME);
+    const manifestUrl = new URL("../assets/manifest.json", window.location.href).href;
+    const manifestRes = await cache.match(manifestUrl);
+    if (!manifestRes) return false;
+    const manifest = await manifestRes.json();
+    const expectedUrls = collectExpectedAssetUrls(manifest);
+    if (expectedUrls.length === 0) return false;
+    const cachedKeys = await cache.keys();
+    const cachedSet = new Set(
+      cachedKeys.map(function (req) {
+        return req.url;
+      })
+    );
+    return expectedUrls.every(function (url) {
+      return cachedSet.has(url);
+    });
+  }
+
   function registerServiceWorker() {
     if (!("serviceWorker" in navigator)) {
       els.swStatus.textContent = "Offline cache unavailable";
       return;
     }
+    els.swStatus.textContent = "Caching offline pack...";
+
+    function refreshOfflineStatus() {
+      return verifyOfflineCacheReady().then(function (ready) {
+        els.swStatus.textContent = ready ? "Ready for Airplane Mode" : "Caching offline pack...";
+      });
+    }
+
+    navigator.serviceWorker.addEventListener("controllerchange", function () {
+      refreshOfflineStatus().catch(function () {});
+    });
+
     navigator.serviceWorker
       .register("./sw.js", { scope: "/" })
       .catch(function () {
         return navigator.serviceWorker.register("./sw.js");
       })
       .then(function () {
-        els.swStatus.textContent = "Offline ready";
+        return navigator.serviceWorker.ready;
       })
+      .then(refreshOfflineStatus)
       .catch(function () {
         els.swStatus.textContent = "Local session";
       });
